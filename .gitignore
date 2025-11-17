@@ -1,24 +1,173 @@
-# Build
-build
-/sample/build
-/sample-wasm/build
-_bad_scm
+# ============================================
+# PDFium Library - Git Ignore Configuration
+# ============================================
+
+# Build Directories (5+ GB of compiled artifacts)
+build/
+/sample/build/
+/sample-wasm/build/
+/sample-apple/build/
+_bad_scm/
+
+# Build Artifacts
 *.tgz
+*.tar.gz
+*.zip
+*.a
+*.so
+*.dylib
+*.dll
+*.exe
+*.wasm
+*.o
+*.obj
+*.pyc
 
-# System
-.DS_Store
-Thumbs.db
+# Build Logs
+build.log
+*.log
+*.out
 
-# IDE
-.idea
-.iml
-.vscode
-.cmserver.*
+# Python Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+virtualenv/
 
-# Byte-compiled / optimized / DLL files
+# Python Cache
 __pycache__/
 *.py[cod]
 *$py.class
+*.pyo
+*.pyd
+.Python
 
-# Virtual env
-.venv
+# Distribution / Packaging
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# System Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+
+# IDE / Editor Files
+.idea/
+*.iml
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.cproject
+.settings/
+.cmserver.*
+*.code-workspace
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.out
+*.app
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+*.cmake
+
+# Ninja
+.ninja_deps
+.ninja_log
+
+# Depot Tools Cache
+.cipd/
+.gclient
+.gclient_entries
+
+# Emscripten Cache
+.emscripten_cache/
+.emscripten_ports/
+
+# Test Results
+test-results/
+*.test
+*.tlog
+
+# Documentation Generated Files
+/docs/_build/
+/docs/.doctrees/
+*.dox
+
+# Temporary Files
+*.tmp
+*.temp
+*.bak
+*.backup
+*~
+.*.swp
+
+# OS Generated Files
+.fseventsd
+.DocumentRevisions-V100
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Archives
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Patches
+*.patch
+*.diff
+
+# Lock files (can be controversial, but usually safe to ignore in build repos)
+*.lock
+.gclient_entries
+*.gclient
+
+# Core dumps
+core
+core.*
+
+# Claude AI Session Data (optional - remove if you want to track)
+.claude/
