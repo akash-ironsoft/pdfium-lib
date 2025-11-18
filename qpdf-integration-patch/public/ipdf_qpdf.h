@@ -5,7 +5,7 @@
 #ifndef PUBLIC_IPDF_QPDF_H_
 #define PUBLIC_IPDF_QPDF_H_
 
-#include "public/fpdfview.h"
+#include "fpdfview.h"
 
 #ifdef __cplusplus
 extern "C" {
