@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PDF Text Extractor - Test Client</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      min-height: 100vh;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+      padding: 40px;
+      max-width: 800px;
+      width: 100%;
+    }
+
+    h1 {
+      color: #333;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .subtitle {
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 14px;
+    }
+
+    .upload-section {
+      margin-bottom: 30px;
+    }
+
+    .file-input-wrapper {
+      position: relative;
+      display: inline-block;
+      cursor: pointer;
+      margin-right: 10px;
+    }
+
+    .file-input-wrapper input[type=file] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .file-label {
+      display: inline-block;
+      padding: 12px 24px;
+      background: #667eea;
+      color: white;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .file-label:hover {
+      background: #5568d3;
+    }
+
+    .file-name {
+      display: inline-block;
+      color: #666;
+      font-size: 14px;
+      vertical-align: middle;
+    }
+
+    button {
+      padding: 12px 30px;
+      background: #764ba2;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      font-weight: 600;
+      transition: background 0.3s;
+      display: block;
+      width: 100%;
+      margin-top: 15px;
+    }
+
+    button:hover:not(:disabled) {
+      background: #653a8e;
+    }
+
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+
+    .loading {
+      display: none;
+      text-align: center;
+      margin: 20px 0;
+      color: #667eea;
+      font-weight: 600;
+    }
+
+    .loading.active {
+      display: block;
+    }
+
+    .spinner {
+      border: 3px solid #f3f3f3;
+      border-top: 3px solid #667eea;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      animation: spin 1s linear infinite;
+      margin: 10px auto;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .result-section {
+      margin-top: 30px;
+      display: none;
+    }
+
+    .result-section.active {
+      display: block;
+    }
+
+    .stats {
+      background: #f8f9fa;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+    }
+
+    .stat-item {
+      display: inline-block;
+      margin-right: 30px;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      color: #666;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+
+    .stat-value {
+      color: #333;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .tabs {
+      display: flex;
+      border-bottom: 2px solid #e0e0e0;
+      margin-bottom: 20px;
+    }
+
+    .tab {
+      padding: 10px 20px;
+      cursor: pointer;
+      border: none;
+      background: none;
+      color: #666;
+      font-size: 14px;
+      font-weight: 600;
+      transition: color 0.3s;
+      width: auto;
+      margin: 0;
+    }
+
+    .tab:hover {
+      color: #667eea;
+    }
+
+    .tab.active {
+      color: #667eea;
+      border-bottom: 3px solid #667eea;
+      margin-bottom: -2px;
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+
+    .text-content {
+      background: #f8f9fa;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 20px;
+      max-height: 400px;
+      overflow-y: auto;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-family: 'Courier New', monospace;
+      font-size: 14px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .page-item {
+      margin-bottom: 30px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    .page-item:last-child {
+      border-bottom: none;
+    }
+
+    .page-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .page-number {
+      font-weight: bold;
+      color: #667eea;
+      font-size: 16px;
+    }
+
+    .char-count {
+      color: #999;
+      font-size: 12px;
+    }
+
+    .error {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c33;
+      padding: 15px;
+      border-radius: 5px;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>PDF Text Extractor</h1>
+    <p class="subtitle">Upload a PDF file to extract its text content using PDFium WASM</p>
+
+    <div class="upload-section">
+      <div class="file-input-wrapper">
+        <input type="file" id="pdfFile" accept="application/pdf">
+        <label for="pdfFile" class="file-label">Choose PDF File</label>
+      </div>
+      <span class="file-name" id="fileName">No file selected</span>
+      <button id="extractBtn" onclick="extractText()" disabled>Extract Text</button>
+    </div>
+
+    <div class="loading" id="loading">
+      <div class="spinner"></div>
+      <p>Extracting text from PDF...</p>
+    </div>
+
+    <div class="result-section" id="resultSection">
+      <div class="stats">
+        <div class="stat-item">
+          <div class="stat-label">Pages</div>
+          <div class="stat-value" id="pageCount">-</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">File Size</div>
+          <div class="stat-value" id="fileSize">-</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-label">Characters</div>
+          <div class="stat-value" id="totalChars">-</div>
+        </div>
+      </div>
+
+      <div class="tabs">
+        <button class="tab active" onclick="switchTab('full')">Full Text</button>
+        <button class="tab" onclick="switchTab('pages')">By Page</button>
+        <button class="tab" onclick="switchTab('json')">JSON</button>
+      </div>
+
+      <div class="tab-content active" id="fullTab">
+        <div class="text-content" id="fullText"></div>
+      </div>
+
+      <div class="tab-content" id="pagesTab">
+        <div id="pagesContent"></div>
+      </div>
+
+      <div class="tab-content" id="jsonTab">
+        <div class="text-content" id="jsonContent"></div>
+      </div>
+    </div>
+
+    <div class="error" id="error" style="display: none;"></div>
+  </div>
+
+  <script>
+    const API_URL = 'http://localhost:3000';
+    let currentResult = null;
+
+    // File selection handler
+    document.getElementById('pdfFile').addEventListener('change', function(e) {
+      const file = e.target.files[0];
+      const fileNameSpan = document.getElementById('fileName');
+      const extractBtn = document.getElementById('extractBtn');
+
+      if (file) {
+        fileNameSpan.textContent = file.name;
+        extractBtn.disabled = false;
+      } else {
+        fileNameSpan.textContent = 'No file selected';
+        extractBtn.disabled = true;
+      }
+
+      // Hide previous results
+      document.getElementById('resultSection').classList.remove('active');
+      document.getElementById('error').style.display = 'none';
+    });
+
+    async function extractText() {
+      const fileInput = document.getElementById('pdfFile');
+      const file = fileInput.files[0];
+
+      if (!file) {
+        showError('Please select a PDF file');
+        return;
+      }
+
+      const loading = document.getElementById('loading');
+      const resultSection = document.getElementById('resultSection');
+      const errorDiv = document.getElementById('error');
+
+      // Show loading
+      loading.classList.add('active');
+      resultSection.classList.remove('active');
+      errorDiv.style.display = 'none';
+
+      const formData = new FormData();
+      formData.append('pdf', file);
+
+      try {
+        const response = await fetch(`${API_URL}/extract-text`, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (!result.success) {
+          throw new Error(result.error || 'Failed to extract text');
+        }
+
+        currentResult = result;
+        displayResult(result);
+      } catch (error) {
+        showError(error.message);
+      } finally {
+        loading.classList.remove('active');
+      }
+    }
+
+    function displayResult(result) {
+      const resultSection = document.getElementById('resultSection');
+
+      // Update stats
+      document.getElementById('pageCount').textContent = result.pageCount;
+      document.getElementById('fileSize').textContent = formatFileSize(result.size);
+
+      const totalChars = result.pages.reduce((sum, page) => sum + (page.characterCount || 0), 0);
+      document.getElementById('totalChars').textContent = totalChars.toLocaleString();
+
+      // Full text tab
+      document.getElementById('fullText').textContent = result.fullText || 'No text extracted';
+
+      // Pages tab
+      const pagesContent = document.getElementById('pagesContent');
+      pagesContent.innerHTML = '';
+
+      result.pages.forEach(page => {
+        const pageDiv = document.createElement('div');
+        pageDiv.className = 'page-item';
+
+        const header = document.createElement('div');
+        header.className = 'page-header';
+
+        const pageNum = document.createElement('div');
+        pageNum.className = 'page-number';
+        pageNum.textContent = `Page ${page.pageNumber}`;
+
+        const charCount = document.createElement('div');
+        charCount.className = 'char-count';
+        charCount.textContent = `${page.characterCount || 0} characters`;
+
+        header.appendChild(pageNum);
+        header.appendChild(charCount);
+
+        const content = document.createElement('div');
+        content.className = 'text-content';
+        content.textContent = page.text || (page.error || 'No text');
+
+        pageDiv.appendChild(header);
+        pageDiv.appendChild(content);
+        pagesContent.appendChild(pageDiv);
+      });
+
+      // JSON tab
+      document.getElementById('jsonContent').textContent = JSON.stringify(result, null, 2);
+
+      resultSection.classList.add('active');
+    }
+
+    function switchTab(tab) {
+      // Update tab buttons
+      const tabs = document.querySelectorAll('.tab');
+      tabs.forEach(t => t.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Update tab content
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(c => c.classList.remove('active'));
+
+      if (tab === 'full') {
+        document.getElementById('fullTab').classList.add('active');
+      } else if (tab === 'pages') {
+        document.getElementById('pagesTab').classList.add('active');
+      } else if (tab === 'json') {
+        document.getElementById('jsonTab').classList.add('active');
+      }
+    }
+
+    function formatFileSize(bytes) {
+      if (bytes < 1024) return bytes + ' B';
+      if (bytes < 1024 * 1024) return (bytes / 1024).toFixed(1) + ' KB';
+      return (bytes / (1024 * 1024)).toFixed(1) + ' MB';
+    }
+
+    function showError(message) {
+      const errorDiv = document.getElementById('error');
+      errorDiv.textContent = 'Error: ' + message;
+      errorDiv.style.display = 'block';
+    }
+
+    // Check server health on load
+    window.addEventListener('load', async () => {
+      try {
+        const response = await fetch(`${API_URL}/health`);
+        const health = await response.json();
+        if (!health.pdfiumLoaded) {
+          showError('Server is running but PDFium is not loaded');
+        }
+      } catch (error) {
+        showError('Cannot connect to server at ' + API_URL);
+      }
+    });
+  </script>
+</body>
+</html>
