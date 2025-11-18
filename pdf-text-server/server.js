@@ -58,9 +58,10 @@ async function initializePDFium() {
     FPDF.Text_CountChars = Module.cwrap('FPDFText_CountChars', 'number', ['number']);
     FPDF.Text_GetText = Module.cwrap('FPDFText_GetText', 'number', ['number', 'number', 'number', 'number']);
 
-    // QPDF functions for PDF-to-JSON
-    FPDF.QPDF_PDFToJSON = Module.cwrap('QPDF_PDFToJSON', 'number', ['number', 'number', 'number']);
-    FPDF.QPDF_FreeString = Module.cwrap('QPDF_FreeString', '', ['number']);
+    // QPDF integration functions (PDFium public API)
+    // Note: Using old QPDF_ names temporarily until WASM is rebuilt with IPDF_ names
+    FPDF.IPDF_QPDF_PDFToJSON = Module.cwrap('QPDF_PDFToJSON', 'number', ['number', 'number', 'number']);
+    FPDF.IPDF_QPDF_FreeString = Module.cwrap('QPDF_FreeString', '', ['number']);
 
     // Initialize the library
     FPDF.Init();
@@ -222,21 +223,21 @@ function convertPDFToJSON(pdfBuffer, version = 2) {
     const wasmBuffer = Module._malloc(pdfBuffer.length);
     Module.HEAPU8.set(pdfBuffer, wasmBuffer);
 
-    // Call QPDF function
-    const jsonPtr = FPDF.QPDF_PDFToJSON(wasmBuffer, pdfBuffer.length, version);
+    // Call IPDF QPDF function
+    const jsonPtr = FPDF.IPDF_QPDF_PDFToJSON(wasmBuffer, pdfBuffer.length, version);
 
     // Free the input buffer
     Module._free(wasmBuffer);
 
     if (!jsonPtr) {
-      throw new Error('QPDF failed to convert PDF to JSON');
+      throw new Error('IPDF QPDF failed to convert PDF to JSON');
     }
 
     // Read JSON string from WASM memory
     const jsonString = Module.UTF8ToString(jsonPtr);
 
     // Free the JSON string
-    FPDF.QPDF_FreeString(jsonPtr);
+    FPDF.IPDF_QPDF_FreeString(jsonPtr);
 
     // Parse and return JSON
     return JSON.parse(jsonString);

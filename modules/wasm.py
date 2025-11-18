@@ -633,6 +633,16 @@ def run_task_generate():
                 "libjpeg.a",
             )
 
+            # PDFium source directory for QPDF integration
+            pdfium_src_dir = os.path.join(
+                current_dir,
+                "build",
+                target["target_os"],
+                "pdfium",
+            )
+
+            fpdf_qpdf_file = os.path.join(pdfium_src_dir, "fpdfsdk", "fpdf_qpdf.cpp")
+
             base_command = [
                 "em++",
                 "{0}".format("-g" if config == "debug" else "-O2"),
@@ -642,10 +652,12 @@ def run_task_generate():
                 "-s",
                 'EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "wasmExports", "HEAP8", "HEAP16", "HEAP32", "HEAPU8", "HEAPU16", "HEAPU32", "HEAPF32", "HEAPF64", "addFunction", "removeFunction", "setValue", "UTF8ToString", "stringToUTF8"]\'',
                 "custom.cpp",
+                fpdf_qpdf_file,
                 lib_file_out,
                 qpdf_lib_file,
                 libjpeg_file,
                 "-I{0}".format(include_dir),
+                "-I{0}".format(pdfium_src_dir),
                 "-I{0}".format(qpdf_include_dir),
                 "-I{0}".format(qpdf_libqpdf_dir),
                 "-s",
