@@ -1,0 +1,19 @@
+# Git attributes for PDFium-lib
+
+# Ensure shell scripts use LF (Unix) line endings
+*.sh text eol=lf
+
+# Ensure Python scripts use LF line endings
+*.py text eol=lf
+
+# Binary files
+*.wasm binary
+*.a binary
+*.so binary
+*.dylib binary
+*.dll binary
+*.exe binary
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary

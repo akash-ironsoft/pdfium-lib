@@ -18,15 +18,19 @@ _bad_scm/
 *.dylib
 *.dll
 *.exe
-*.wasm
 *.o
 *.obj
 *.pyc
+
+# WASM files (globally ignored, but allow in pdf-text-server)
+*.wasm
+!pdf-text-server/*.wasm
 
 # Build Logs
 build.log
 *.log
 *.out
+!pdf-text-server/*.log
 
 # Python Virtual Environments
 venv/
