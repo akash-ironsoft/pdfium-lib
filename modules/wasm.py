@@ -581,10 +581,10 @@ def run_task_generate():
                 function_list = (
                     exported_functions.strip("[]").replace(" ", "").split(",")
                 )
-                function_list.extend(["_malloc", "_free"])
+                function_list.extend(["_malloc", "_free", "_IPDF_QPDF_PDFToJSON", "_IPDF_QPDF_FreeString"])
                 complete_functions_list = '["' + '","'.join(function_list) + '"]'
             else:
-                complete_functions_list = '["_malloc", "_free"]'
+                complete_functions_list = '["_malloc", "_free", "_IPDF_QPDF_PDFToJSON", "_IPDF_QPDF_FreeString"]'
 
             # QPDF paths
             qpdf_include_dir = os.path.join(

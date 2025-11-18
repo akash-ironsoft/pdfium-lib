@@ -59,9 +59,8 @@ async function initializePDFium() {
     FPDF.Text_GetText = Module.cwrap('FPDFText_GetText', 'number', ['number', 'number', 'number', 'number']);
 
     // QPDF integration functions (PDFium public API)
-    // Note: Using old QPDF_ names temporarily until WASM is rebuilt with IPDF_ names
-    FPDF.IPDF_QPDF_PDFToJSON = Module.cwrap('QPDF_PDFToJSON', 'number', ['number', 'number', 'number']);
-    FPDF.IPDF_QPDF_FreeString = Module.cwrap('QPDF_FreeString', '', ['number']);
+    FPDF.IPDF_QPDF_PDFToJSON = Module.cwrap('IPDF_QPDF_PDFToJSON', 'number', ['number', 'number', 'number']);
+    FPDF.IPDF_QPDF_FreeString = Module.cwrap('IPDF_QPDF_FreeString', '', ['number']);
 
     // Initialize the library
     FPDF.Init();
