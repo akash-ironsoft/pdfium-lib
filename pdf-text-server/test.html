@@ -269,6 +269,7 @@
       </div>
       <span class="file-name" id="fileName">No file selected</span>
       <button id="extractBtn" onclick="extractText()" disabled>Extract Text</button>
+      <button id="jsonBtn" onclick="convertToJSON()" disabled style="background: #16a085;">Convert to QPDF JSON</button>
     </div>
 
     <div class="loading" id="loading">
@@ -323,13 +324,16 @@
       const file = e.target.files[0];
       const fileNameSpan = document.getElementById('fileName');
       const extractBtn = document.getElementById('extractBtn');
+      const jsonBtn = document.getElementById('jsonBtn');
 
       if (file) {
         fileNameSpan.textContent = file.name;
         extractBtn.disabled = false;
+        jsonBtn.disabled = false;
       } else {
         fileNameSpan.textContent = 'No file selected';
         extractBtn.disabled = true;
+        jsonBtn.disabled = true;
       }
 
       // Hide previous results
@@ -377,6 +381,76 @@
       } finally {
         loading.classList.remove('active');
       }
+    }
+
+    async function convertToJSON() {
+      const fileInput = document.getElementById('pdfFile');
+      const file = fileInput.files[0];
+
+      if (!file) {
+        showError('Please select a PDF file');
+        return;
+      }
+
+      const loading = document.getElementById('loading');
+      const resultSection = document.getElementById('resultSection');
+      const errorDiv = document.getElementById('error');
+
+      // Show loading
+      loading.querySelector('p').textContent = 'Converting PDF to JSON using QPDF...';
+      loading.classList.add('active');
+      resultSection.classList.remove('active');
+      errorDiv.style.display = 'none';
+
+      const formData = new FormData();
+      formData.append('pdf', file);
+
+      try {
+        const response = await fetch(`${API_URL}/pdf-to-json`, {
+          method: 'POST',
+          body: formData
+        });
+
+        const result = await response.json();
+
+        if (!result.success) {
+          throw new Error(result.error || 'Failed to convert PDF to JSON');
+        }
+
+        currentResult = result;
+        displayQPDFResult(result);
+      } catch (error) {
+        showError(error.message);
+      } finally {
+        loading.classList.remove('active');
+        loading.querySelector('p').textContent = 'Extracting text from PDF...';
+      }
+    }
+
+    function displayQPDFResult(result) {
+      const resultSection = document.getElementById('resultSection');
+
+      // Update stats
+      document.getElementById('pageCount').textContent = '-';
+      document.getElementById('fileSize').textContent = formatFileSize(result.size || 0);
+      document.getElementById('totalChars').textContent = JSON.stringify(result.qpdf).length.toLocaleString();
+
+      // Full text tab - show summary
+      document.getElementById('fullText').textContent = 'QPDF JSON Conversion Result\n\nJSON Version: ' + (result.qpdf?.qpdf?.[0]?.jsonversion || 'N/A') + '\n\nUse the JSON tab to view the full QPDF output.';
+
+      // Pages tab - clear
+      const pagesContent = document.getElementById('pagesContent');
+      pagesContent.innerHTML = '<div class="text-content">QPDF JSON does not provide page-by-page text. Use the JSON tab to view the full structure.</div>';
+
+      // JSON tab - show QPDF JSON
+      document.getElementById('jsonContent').textContent = JSON.stringify(result.qpdf, null, 2);
+
+      // Switch to JSON tab automatically
+      switchTab('json');
+      document.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+      document.querySelectorAll('.tab')[2].classList.add('active');
+
+      resultSection.classList.add('active');
     }
 
     function displayResult(result) {
@@ -430,11 +504,6 @@
     }
 
     function switchTab(tab) {
-      // Update tab buttons
-      const tabs = document.querySelectorAll('.tab');
-      tabs.forEach(t => t.classList.remove('active'));
-      event.target.classList.add('active');
-
       // Update tab content
       const contents = document.querySelectorAll('.tab-content');
       contents.forEach(c => c.classList.remove('active'));
@@ -445,6 +514,13 @@
         document.getElementById('pagesTab').classList.add('active');
       } else if (tab === 'json') {
         document.getElementById('jsonTab').classList.add('active');
+      }
+
+      // Update tab buttons (if called from user click)
+      if (window.event && window.event.target) {
+        const tabs = document.querySelectorAll('.tab');
+        tabs.forEach(t => t.classList.remove('active'));
+        window.event.target.classList.add('active');
       }
     }
 

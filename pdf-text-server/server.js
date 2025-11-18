@@ -58,6 +58,10 @@ async function initializePDFium() {
     FPDF.Text_CountChars = Module.cwrap('FPDFText_CountChars', 'number', ['number']);
     FPDF.Text_GetText = Module.cwrap('FPDFText_GetText', 'number', ['number', 'number', 'number', 'number']);
 
+    // QPDF functions for PDF-to-JSON
+    FPDF.QPDF_PDFToJSON = Module.cwrap('QPDF_PDFToJSON', 'number', ['number', 'number', 'number']);
+    FPDF.QPDF_FreeString = Module.cwrap('QPDF_FreeString', '', ['number']);
+
     // Initialize the library
     FPDF.Init();
 
@@ -211,6 +215,37 @@ function extractTextFromPDF(pdfBuffer) {
   }
 }
 
+// Convert PDF to JSON using QPDF
+function convertPDFToJSON(pdfBuffer, version = 2) {
+  try {
+    // Allocate WASM memory for PDF bytes
+    const wasmBuffer = Module._malloc(pdfBuffer.length);
+    Module.HEAPU8.set(pdfBuffer, wasmBuffer);
+
+    // Call QPDF function
+    const jsonPtr = FPDF.QPDF_PDFToJSON(wasmBuffer, pdfBuffer.length, version);
+
+    // Free the input buffer
+    Module._free(wasmBuffer);
+
+    if (!jsonPtr) {
+      throw new Error('QPDF failed to convert PDF to JSON');
+    }
+
+    // Read JSON string from WASM memory
+    const jsonString = Module.UTF8ToString(jsonPtr);
+
+    // Free the JSON string
+    FPDF.QPDF_FreeString(jsonPtr);
+
+    // Parse and return JSON
+    return JSON.parse(jsonString);
+  } catch (error) {
+    console.error('Error converting PDF to JSON:', error);
+    throw error;
+  }
+}
+
 // Routes
 app.get('/', (req, res) => {
   res.json({
@@ -219,6 +254,7 @@ app.get('/', (req, res) => {
     endpoints: {
       health: 'GET /health',
       extractText: 'POST /extract-text',
+      pdfToJson: 'POST /pdf-to-json',
     },
   });
 });
@@ -258,6 +294,52 @@ app.post('/extract-text', upload.single('pdf'), async (req, res) => {
     });
   } catch (error) {
     console.error('Error processing PDF:', error);
+    res.status(500).json({
+      success: false,
+      error: error.message,
+    });
+  }
+});
+
+app.post('/pdf-to-json', upload.single('pdf'), async (req, res) => {
+  try {
+    if (!req.file) {
+      return res.status(400).json({
+        success: false,
+        error: 'No PDF file provided',
+      });
+    }
+
+    if (!Module) {
+      return res.status(503).json({
+        success: false,
+        error: 'PDFium module not initialized',
+      });
+    }
+
+    console.log(`Converting PDF to JSON: ${req.file.originalname} (${req.file.size} bytes)`);
+
+    // Get version from query parameter (default: 2)
+    const version = parseInt(req.query.version) || 2;
+
+    if (version !== 1 && version !== 2) {
+      return res.status(400).json({
+        success: false,
+        error: 'Invalid version. Must be 1 or 2',
+      });
+    }
+
+    const result = convertPDFToJSON(req.file.buffer, version);
+
+    res.json({
+      success: true,
+      filename: req.file.originalname,
+      size: req.file.size,
+      version: version,
+      qpdf: result,
+    });
+  } catch (error) {
+    console.error('Error converting PDF to JSON:', error);
     res.status(500).json({
       success: false,
       error: error.message,

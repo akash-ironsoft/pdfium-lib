@@ -586,6 +586,53 @@ def run_task_generate():
             else:
                 complete_functions_list = '["_malloc", "_free"]'
 
+            # QPDF paths
+            qpdf_include_dir = os.path.join(
+                current_dir,
+                "build",
+                target["target_os"],
+                "pdfium",
+                "third_party",
+                "qpdf",
+                "include",
+            )
+
+            qpdf_libqpdf_dir = os.path.join(
+                current_dir,
+                "build",
+                target["target_os"],
+                "pdfium",
+                "third_party",
+                "qpdf",
+                "libqpdf",
+            )
+
+            qpdf_lib_file = os.path.join(
+                current_dir,
+                "build",
+                target["target_os"],
+                "pdfium",
+                "out",
+                f"{target['target_os']}-{target['target_cpu']}-{config}",
+                "obj",
+                "third_party",
+                "qpdf",
+                "libqpdf.a",
+            )
+
+            libjpeg_file = os.path.join(
+                current_dir,
+                "build",
+                target["target_os"],
+                "pdfium",
+                "out",
+                f"{target['target_os']}-{target['target_cpu']}-{config}",
+                "obj",
+                "third_party",
+                "libjpeg_turbo",
+                "libjpeg.a",
+            )
+
             base_command = [
                 "em++",
                 "{0}".format("-g" if config == "debug" else "-O2"),
@@ -593,10 +640,14 @@ def run_task_generate():
                 f"EXPORTED_FUNCTIONS={complete_functions_list}",
                 "-s", "ALLOW_TABLE_GROWTH",
                 "-s",
-                'EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "wasmExports", "HEAP8", "HEAP16", "HEAP32", "HEAPU8", "HEAPU16", "HEAPU32", "HEAPF32", "HEAPF64", "addFunction", "removeFunction", "setValue"]\'',
+                'EXPORTED_RUNTIME_METHODS=\'["ccall", "cwrap", "wasmExports", "HEAP8", "HEAP16", "HEAP32", "HEAPU8", "HEAPU16", "HEAPU32", "HEAPF32", "HEAPF64", "addFunction", "removeFunction", "setValue", "UTF8ToString", "stringToUTF8"]\'',
                 "custom.cpp",
                 lib_file_out,
+                qpdf_lib_file,
+                libjpeg_file,
                 "-I{0}".format(include_dir),
+                "-I{0}".format(qpdf_include_dir),
+                "-I{0}".format(qpdf_libqpdf_dir),
                 "-s",
                 "USE_ZLIB=1",
                 "-s",
@@ -607,9 +658,13 @@ def run_task_generate():
                 "ALLOW_MEMORY_GROWTH=1",
                 "-sMODULARIZE",
                 "-sEXPORT_NAME=PDFiumModule",
-                "-std=c++11",
+                "-std=c++17",
+                "-frtti",
+                "-fexceptions",
+                "-sDISABLE_EXCEPTION_CATCHING=0",
                 "-Wall",
                 "--no-entry",
+                "-Wl,--allow-multiple-definition",
             ]
 
             # Generate UMD (CommonJS + AMD) module and .wasm file
