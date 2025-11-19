@@ -226,7 +226,7 @@ fi
 case "${PLATFORM}" in
     wasm|WASM)
         PLATFORM="wasm"
-        BUILD_TASKS=("build-pdfium-wasm" "patch-wasm" "build-wasm" "install-wasm")
+        BUILD_TASKS=("build-pdfium-wasm" "patch-wasm" "build-wasm" "generate-wasm" "install-wasm")
         ;;
     ios|iOS)
         PLATFORM="ios"
