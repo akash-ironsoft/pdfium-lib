@@ -1,4 +1,4 @@
 [submodule "build/emscripten/pdfium/third_party/qpdf"]
 	path = build/emscripten/pdfium/third_party/qpdf
-	url = https://github.com/akash-ironsoft/qpdf.git
-	branch = PDF-2105-integrate-qpdf-into-pdfium-wasm
+	url = git@github.com:iron-software/Universal.Qpdf.git
+	branch = feature/pdf-2105-qpdf-integration
