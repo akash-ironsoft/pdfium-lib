@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__FX__FILEAVAIL" kind="struct" language="C++" prot="public">
+    <compoundname>_FX_FILEAVAIL</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__FX__FILEAVAIL_1ab1d496a67a0eb822ed168ca46a2398c0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _FX_FILEAVAIL::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>_FX_FILEAVAIL::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="35" column="7" bodyfile="fpdf_dataavail.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FX__FILEAVAIL_1a14977a61b12fe27e2ba6e36afef9d56c" prot="public" static="no" mutable="no">
+        <type>FPDF_BOOL(*</type>
+        <definition>FPDF_BOOL(* _FX_FILEAVAIL::IsDataAvail) (struct _FX_FILEAVAIL *pThis, size_t offset, size_t size)</definition>
+        <argsstring>)(struct _FX_FILEAVAIL *pThis, size_t offset, size_t size)</argsstring>
+        <name>IsDataAvail</name>
+        <qualifiedname>_FX_FILEAVAIL::IsDataAvail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="49" column="3" bodyfile="fpdf_dataavail.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_dataavail.h" line="33" column="1" bodyfile="fpdf_dataavail.h" bodystart="33" bodyend="52"/>
+    <listofallmembers>
+      <member refid="struct__FX__FILEAVAIL_1a14977a61b12fe27e2ba6e36afef9d56c" prot="public" virt="non-virtual"><scope>_FX_FILEAVAIL</scope><name>IsDataAvail</name></member>
+      <member refid="struct__FX__FILEAVAIL_1ab1d496a67a0eb822ed168ca46a2398c0" prot="public" virt="non-virtual"><scope>_FX_FILEAVAIL</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

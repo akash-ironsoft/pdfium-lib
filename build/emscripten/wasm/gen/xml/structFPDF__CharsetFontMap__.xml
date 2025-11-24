@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__CharsetFontMap__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_CharsetFontMap_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__CharsetFontMap___1af50ebae78d028365bfd855047cede7b6" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_CharsetFontMap_::charset</definition>
+        <argsstring></argsstring>
+        <name>charset</name>
+        <qualifiedname>FPDF_CharsetFontMap_::charset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="214" column="7" bodyfile="fpdf_sysfontinfo.h" bodystart="214" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__CharsetFontMap___1aa9373ad6ceea6a15785b581602a9f6b2" prot="public" static="no" mutable="no">
+        <type>const char *</type>
+        <definition>const char* FPDF_CharsetFontMap_::fontname</definition>
+        <argsstring></argsstring>
+        <name>fontname</name>
+        <qualifiedname>FPDF_CharsetFontMap_::fontname</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="215" column="14" bodyfile="fpdf_sysfontinfo.h" bodystart="215" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_sysfontinfo.h" line="213" column="1" bodyfile="fpdf_sysfontinfo.h" bodystart="213" bodyend="216"/>
+    <listofallmembers>
+      <member refid="structFPDF__CharsetFontMap___1af50ebae78d028365bfd855047cede7b6" prot="public" virt="non-virtual"><scope>FPDF_CharsetFontMap_</scope><name>charset</name></member>
+      <member refid="structFPDF__CharsetFontMap___1aa9373ad6ceea6a15785b581602a9f6b2" prot="public" virt="non-virtual"><scope>FPDF_CharsetFontMap_</scope><name>fontname</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

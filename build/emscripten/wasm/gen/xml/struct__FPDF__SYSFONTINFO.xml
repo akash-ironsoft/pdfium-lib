@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__FPDF__SYSFONTINFO" kind="struct" language="C++" prot="public">
+    <compoundname>_FPDF_SYSFONTINFO</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1ad43189536f83b417211c22d0a7f774a4" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _FPDF_SYSFONTINFO::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="50" column="7" bodyfile="fpdf_sysfontinfo.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1a0db218f3d550353dd09e3205ac05a79b" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _FPDF_SYSFONTINFO::Release) (struct _FPDF_SYSFONTINFO *pThis)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis)</argsstring>
+        <name>Release</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::Release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="65" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1ab775607e5c413e51977f005afdb4d4a1" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _FPDF_SYSFONTINFO::EnumFonts) (struct _FPDF_SYSFONTINFO *pThis, void *pMapper)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, void *pMapper)</argsstring>
+        <name>EnumFonts</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::EnumFonts</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="83" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1ad05bbb0ba887b373557574e2acd6ceab" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void *(* _FPDF_SYSFONTINFO::MapFont) (struct _FPDF_SYSFONTINFO *pThis, int weight, FPDF_BOOL bItalic, int charset, int pitch_family, const char *face, FPDF_BOOL *bExact)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, int weight, FPDF_BOOL bItalic, int charset, int pitch_family, const char *face, FPDF_BOOL *bExact)</argsstring>
+        <name>MapFont</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::MapFont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="114" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="114" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1a3d8046066e40ea8c88eeb66c36c01369" prot="public" static="no" mutable="no">
+        <type>void *(*</type>
+        <definition>void *(* _FPDF_SYSFONTINFO::GetFont) (struct _FPDF_SYSFONTINFO *pThis, const char *face)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, const char *face)</argsstring>
+        <name>GetFont</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::GetFont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="136" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1a2b124130b55be62526094b778dafe7b7" prot="public" static="no" mutable="no">
+        <type>unsigned long(*</type>
+        <definition>unsigned long(* _FPDF_SYSFONTINFO::GetFontData) (struct _FPDF_SYSFONTINFO *pThis, void *hFont, unsigned int table, unsigned char *buffer, unsigned long buf_size)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, void *hFont, unsigned int table, unsigned char *buffer, unsigned long buf_size)</argsstring>
+        <name>GetFontData</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::GetFontData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="158" column="12" bodyfile="fpdf_sysfontinfo.h" bodystart="158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1a9366320719c2a61945747e390124f676" prot="public" static="no" mutable="no">
+        <type>unsigned long(*</type>
+        <definition>unsigned long(* _FPDF_SYSFONTINFO::GetFaceName) (struct _FPDF_SYSFONTINFO *pThis, void *hFont, char *buffer, unsigned long buf_size)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, void *hFont, char *buffer, unsigned long buf_size)</argsstring>
+        <name>GetFaceName</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::GetFaceName</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="179" column="12" bodyfile="fpdf_sysfontinfo.h" bodystart="179" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1ab0ce905d5ec99d8cd12be6b18ff34eb3" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _FPDF_SYSFONTINFO::GetFontCharset) (struct _FPDF_SYSFONTINFO *pThis, void *hFont)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, void *hFont)</argsstring>
+        <name>GetFontCharset</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::GetFontCharset</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="195" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="195" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FPDF__SYSFONTINFO_1a0ffed38f6d20b3c5b3b6a99c55907d9a" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _FPDF_SYSFONTINFO::DeleteFont) (struct _FPDF_SYSFONTINFO *pThis, void *hFont)</definition>
+        <argsstring>)(struct _FPDF_SYSFONTINFO *pThis, void *hFont)</argsstring>
+        <name>DeleteFont</name>
+        <qualifiedname>_FPDF_SYSFONTINFO::DeleteFont</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="208" column="3" bodyfile="fpdf_sysfontinfo.h" bodystart="208" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_sysfontinfo.h" line="48" column="1" bodyfile="fpdf_sysfontinfo.h" bodystart="48" bodyend="209"/>
+    <listofallmembers>
+      <member refid="struct__FPDF__SYSFONTINFO_1a0ffed38f6d20b3c5b3b6a99c55907d9a" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>DeleteFont</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1ab775607e5c413e51977f005afdb4d4a1" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>EnumFonts</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1a9366320719c2a61945747e390124f676" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>GetFaceName</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1a3d8046066e40ea8c88eeb66c36c01369" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>GetFont</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1ab0ce905d5ec99d8cd12be6b18ff34eb3" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>GetFontCharset</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1a2b124130b55be62526094b778dafe7b7" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>GetFontData</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1ad05bbb0ba887b373557574e2acd6ceab" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>MapFont</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1a0db218f3d550353dd09e3205ac05a79b" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>Release</name></member>
+      <member refid="struct__FPDF__SYSFONTINFO_1ad43189536f83b417211c22d0a7f774a4" prot="public" virt="non-virtual"><scope>_FPDF_SYSFONTINFO</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,958 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__text_8h" kind="file" language="C++">
+    <compoundname>fpdf_text.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_text.h</label>
+        <link refid="fpdf__text_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__text_8h_1ad812ff3dedc0ff55432c99f24c0f000a" prot="public" static="no">
+        <name>FPDF_MATCHCASE</name>
+        <initializer>0x00000001</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="483" column="9" bodyfile="fpdf_text.h" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__text_8h_1a3ab14f7388f8a4664269d525c9b0306e" prot="public" static="no">
+        <name>FPDF_MATCHWHOLEWORD</name>
+        <initializer>0x00000002</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="485" column="9" bodyfile="fpdf_text.h" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__text_8h_1a3cb74d6d625c3b1bdec8e471168a7990" prot="public" static="no">
+        <name>FPDF_CONSECUTIVE</name>
+        <initializer>0x00000004</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="487" column="9" bodyfile="fpdf_text.h" bodystart="487" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__text_8h_1ab55a35bc7d5322d3988a391596a05f3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_TEXTPAGE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_TEXTPAGE FPDF_CALLCONV FPDFText_LoadPage</definition>
+        <argsstring>(FPDF_PAGE page)</argsstring>
+        <name>FPDFText_LoadPage</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="31" column="41" declfile="fpdf_text.h" declline="31" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ac8159578f3e29da24ab23af1c616251b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFText_ClosePage</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page)</argsstring>
+        <name>FPDFText_ClosePage</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="42" column="32" declfile="fpdf_text.h" declline="42" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ab1e995dbf00db12d84b6b2a78855a889" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_CountChars</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page)</argsstring>
+        <name>FPDFText_CountChars</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="60" column="31" declfile="fpdf_text.h" declline="60" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1aecae532d7463f39c1e768add6ae37195" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned int FPDF_CALLCONV FPDFText_GetUnicode</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_GetUnicode</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="75" column="1" declfile="fpdf_text.h" declline="75" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a92fb61c986802055a85bb0048f7910f8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV FPDFText_GetTextObject</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_GetTextObject</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="90" column="1" declfile="fpdf_text.h" declline="90" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a313e5911e624003d5b7f2c7398b33aae" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_IsGenerated</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_IsGenerated</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="105" column="1" declfile="fpdf_text.h" declline="105" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a57b193b460cfdbebe870a6f8b17bd925" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_IsHyphen</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_IsHyphen</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="120" column="1" declfile="fpdf_text.h" declline="120" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a660fd483ad4ebaed161c36e7bbe1465d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_HasUnicodeMapError</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_HasUnicodeMapError</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="135" column="1" declfile="fpdf_text.h" declline="135" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a82064eaabf03ce3b6c4d953ce377ec12" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT double FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT double FPDF_CALLCONV FPDFText_GetFontSize</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_GetFontSize</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="148" column="34" declfile="fpdf_text.h" declline="148" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ac8b92936231e269d69e2767801daa6c9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFText_GetFontInfo</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, void *buffer, unsigned long buflen, int *flags)</argsstring>
+        <name>FPDFText_GetFontInfo</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="171" column="1" declfile="fpdf_text.h" declline="171" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a7b5b0660233194297ddde1920a5f2899" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetFontWeight</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_GetFontWeight</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="189" column="31" declfile="fpdf_text.h" declline="189" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a41d4425c5d557d30af66c2eb2541559f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetFillColor</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, unsigned int *R, unsigned int *G, unsigned int *B, unsigned int *A)</argsstring>
+        <name>FPDFText_GetFillColor</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="212" column="1" declfile="fpdf_text.h" declline="212" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a0313cea4ceecb0d2e0165e88f0f60d29" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetStrokeColor</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, unsigned int *R, unsigned int *G, unsigned int *B, unsigned int *A)</argsstring>
+        <name>FPDFText_GetStrokeColor</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="239" column="1" declfile="fpdf_text.h" declline="239" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a6400b5898b53f0b4f98f92e0570c116c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT float FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT float FPDF_CALLCONV FPDFText_GetCharAngle</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index)</argsstring>
+        <name>FPDFText_GetCharAngle</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="258" column="33" declfile="fpdf_text.h" declline="258" declcolumn="33"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a986b754b91e531302f6c9d9920645f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetCharBox</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, double *left, double *right, double *bottom, double *top)</argsstring>
+        <name>FPDFText_GetCharBox</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="282" column="37" declfile="fpdf_text.h" declline="282" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a806b1faacd8489a83677d40ba9e5527a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetLooseCharBox</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, FS_RECTF *rect)</argsstring>
+        <name>FPDFText_GetLooseCharBox</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FS__RECTF__" kindref="compound">FS_RECTF</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="307" column="1" declfile="fpdf_text.h" declline="307" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ac68755d8fcf1a54fd461c8019418e90a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetMatrix</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, FS_MATRIX *matrix)</argsstring>
+        <name>FPDFText_GetMatrix</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FS__MATRIX__" kindref="compound">FS_MATRIX</ref> *</type>
+          <declname>matrix</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="323" column="37" declfile="fpdf_text.h" declline="323" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a3737a8a40a242d023c24a14a0142eb8d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetCharOrigin</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int index, double *x, double *y)</argsstring>
+        <name>FPDFText_GetCharOrigin</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="343" column="1" declfile="fpdf_text.h" declline="343" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a59b735980c87a7299e5a60efb8a22a4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetCharIndexAtPos</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, double x, double y, double xTolerance, double yTolerance)</argsstring>
+        <name>FPDFText_GetCharIndexAtPos</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>xTolerance</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>yTolerance</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="366" column="1" declfile="fpdf_text.h" declline="366" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a824721a5ab0046ccdb7ab76c814e109f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetText</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int start_index, int count, unsigned short *result)</argsstring>
+        <name>FPDFText_GetText</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>result</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="392" column="31" declfile="fpdf_text.h" declline="392" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a79f75199e7bfdff2099c36abc2c775c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_CountRects</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int start_index, int count)</argsstring>
+        <name>FPDFText_CountRects</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="415" column="31" declfile="fpdf_text.h" declline="415" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ad2fd61b2bddbe571ecb7430304b0285d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_GetRect</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int rect_index, double *left, double *top, double *right, double *bottom)</argsstring>
+        <name>FPDFText_GetRect</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rect_index</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="441" column="37" declfile="fpdf_text.h" declline="441" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a738a7c9c0a80c45436869ef154bb23a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetBoundedText</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, double left, double top, double right, double bottom, unsigned short *buffer, int buflen)</argsstring>
+        <name>FPDFText_GetBoundedText</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="472" column="31" declfile="fpdf_text.h" declline="472" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ae5f24bfd73933c916cfb7f11fdb25580" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_SCHHANDLE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_SCHHANDLE FPDF_CALLCONV FPDFText_FindStart</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, FPDF_WIDESTRING findwhat, unsigned long flags, int start_index)</argsstring>
+        <name>FPDFText_FindStart</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>findwhat</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="502" column="1" declfile="fpdf_text.h" declline="502" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1aded7bfb94c1485b6604a2e6bbfedb6f7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_FindNext</definition>
+        <argsstring>(FPDF_SCHHANDLE handle)</argsstring>
+        <name>FPDFText_FindNext</name>
+        <param>
+          <type>FPDF_SCHHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="515" column="37" declfile="fpdf_text.h" declline="515" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1abd32ffb892e90470e8c3473e0fc0ed06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFText_FindPrev</definition>
+        <argsstring>(FPDF_SCHHANDLE handle)</argsstring>
+        <name>FPDFText_FindPrev</name>
+        <param>
+          <type>FPDF_SCHHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="525" column="37" declfile="fpdf_text.h" declline="525" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a0678c0658a2ccc1e19b3278398f1afb1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetSchResultIndex</definition>
+        <argsstring>(FPDF_SCHHANDLE handle)</argsstring>
+        <name>FPDFText_GetSchResultIndex</name>
+        <param>
+          <type>FPDF_SCHHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="535" column="31" declfile="fpdf_text.h" declline="535" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1af580a9ca4900077335384df2ed238b6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetSchCount</definition>
+        <argsstring>(FPDF_SCHHANDLE handle)</argsstring>
+        <name>FPDFText_GetSchCount</name>
+        <param>
+          <type>FPDF_SCHHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="545" column="31" declfile="fpdf_text.h" declline="545" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a9b68a502f20e1c9a60543d3316b26e68" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFText_FindClose</definition>
+        <argsstring>(FPDF_SCHHANDLE handle)</argsstring>
+        <name>FPDFText_FindClose</name>
+        <param>
+          <type>FPDF_SCHHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="555" column="32" declfile="fpdf_text.h" declline="555" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1ac8420fe3dbb750d66d083ac2e73e934a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_PAGELINK FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_PAGELINK FPDF_CALLCONV FPDFLink_LoadWebLinks</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page)</argsstring>
+        <name>FPDFLink_LoadWebLinks</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="577" column="1" declfile="fpdf_text.h" declline="577" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1af648cd7043369626c0b3e234ec20a720" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFLink_CountWebLinks</definition>
+        <argsstring>(FPDF_PAGELINK link_page)</argsstring>
+        <name>FPDFLink_CountWebLinks</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="586" column="31" declfile="fpdf_text.h" declline="586" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a11bd3e2266f3e686a4e1cdba0399e9fc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFLink_GetURL</definition>
+        <argsstring>(FPDF_PAGELINK link_page, int link_index, unsigned short *buffer, int buflen)</argsstring>
+        <name>FPDFLink_GetURL</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>link_index</declname>
+        </param>
+        <param>
+          <type>unsigned short *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="607" column="31" declfile="fpdf_text.h" declline="607" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a7ad0674cbc2e0e883ad01e511830fd16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFLink_CountRects</definition>
+        <argsstring>(FPDF_PAGELINK link_page, int link_index)</argsstring>
+        <name>FPDFLink_CountRects</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>link_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="621" column="31" declfile="fpdf_text.h" declline="621" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a997f73f7501bc78809205959d334354d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFLink_GetRect</definition>
+        <argsstring>(FPDF_PAGELINK link_page, int link_index, int rect_index, double *left, double *top, double *right, double *bottom)</argsstring>
+        <name>FPDFLink_GetRect</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>link_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rect_index</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>top</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>double *</type>
+          <declname>bottom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="644" column="37" declfile="fpdf_text.h" declline="644" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a2f961fbab2f87bef3c5381a56ca88a3d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFLink_GetTextRange</definition>
+        <argsstring>(FPDF_PAGELINK link_page, int link_index, int *start_char_index, int *char_count)</argsstring>
+        <name>FPDFLink_GetTextRange</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>link_index</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>start_char_index</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>char_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="667" column="1" declfile="fpdf_text.h" declline="667" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__text_8h_1a5c6606c437ba1508fdefaee75618f44c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFLink_CloseWebLinks</definition>
+        <argsstring>(FPDF_PAGELINK link_page)</argsstring>
+        <name>FPDFLink_CloseWebLinks</name>
+        <param>
+          <type>FPDF_PAGELINK</type>
+          <declname>link_page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_text.h" line="679" column="32" declfile="fpdf_text.h" declline="679" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_text.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,1669 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__formfill_8h" kind="file" language="C++">
+    <compoundname>fpdf_formfill.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <includedby refid="fpdf__annot_8h" local="yes">fpdf_annot.h</includedby>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_formfill.h</label>
+        <link refid="fpdf__formfill_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>fpdf_annot.h</label>
+        <link refid="fpdf__annot_8h_source"/>
+      </node>
+      <node id="1">
+        <label>fpdf_formfill.h</label>
+        <link refid="fpdf__formfill_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="struct__IPDF__JsPlatform" prot="public">_IPDF_JsPlatform</innerclass>
+    <innerclass refid="struct__FPDF__SYSTEMTIME" prot="public">_FPDF_SYSTEMTIME</innerclass>
+    <innerclass refid="struct__FPDF__FORMFILLINFO" prot="public">_FPDF_FORMFILLINFO</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__formfill_8h_1a26184c44f5cbfcda94efd3d0fb161045" prot="public" static="no">
+        <name>FORMTYPE_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="16" column="9" bodyfile="fpdf_formfill.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1afbe3125b7d278b8361841e16f80541bc" prot="public" static="no">
+        <name>FORMTYPE_ACRO_FORM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="17" column="9" bodyfile="fpdf_formfill.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a9a4f846045ab50163153f67b60e48583" prot="public" static="no">
+        <name>FORMTYPE_XFA_FULL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="18" column="9" bodyfile="fpdf_formfill.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a73f43a863268cbe62e4bb3ac9480b91e" prot="public" static="no">
+        <name>FORMTYPE_XFA_FOREGROUND</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="19" column="9" bodyfile="fpdf_formfill.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a865dc176b0f23abaf6d2fd896e756dfe" prot="public" static="no">
+        <name>FORMTYPE_COUNT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="21" column="9" bodyfile="fpdf_formfill.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1aa380a55b392b95ec92ac4b5e9ea8c8cf" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_BUTTON_OK</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="23" column="9" bodyfile="fpdf_formfill.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a3069b3aa19c29af3befba71d6293fec2" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_BUTTON_OKCANCEL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="24" column="9" bodyfile="fpdf_formfill.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a3d7b3d3d3370d1546f1255aed1860332" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_BUTTON_YESNO</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="25" column="9" bodyfile="fpdf_formfill.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ae31764ec8f1a6950081cc9ace7780158" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_BUTTON_YESNOCANCEL</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="26" column="9" bodyfile="fpdf_formfill.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a212b18b9541c1577e97243663f084d12" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_BUTTON_DEFAULT</name>
+        <initializer>JSPLATFORM_ALERT_BUTTON_OK</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="27" column="9" bodyfile="fpdf_formfill.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a310088481334bb4dcb560cf77182cc7f" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_ERROR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="29" column="9" bodyfile="fpdf_formfill.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a7f14e0dfaeffb61338ac7039229af521" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_WARNING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="30" column="9" bodyfile="fpdf_formfill.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ab3813e1e9dcedb4f851fc483100cd3fb" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_QUESTION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="31" column="9" bodyfile="fpdf_formfill.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1acd84d7d01a38a4209305cf268154bb4e" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_STATUS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="32" column="9" bodyfile="fpdf_formfill.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a2edee94f099672e24256c46eb1e246d2" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_ASTERISK</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="33" column="9" bodyfile="fpdf_formfill.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a5e7c93eb764568802765b1553100de51" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_ICON_DEFAULT</name>
+        <initializer>JSPLATFORM_ALERT_ICON_ERROR</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="34" column="9" bodyfile="fpdf_formfill.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a7d0ad5c315275362de497a5b796487e2" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_RETURN_OK</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="36" column="9" bodyfile="fpdf_formfill.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1abd1126107bdacdcc15b523d7690c4a32" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_RETURN_CANCEL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="37" column="9" bodyfile="fpdf_formfill.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a5af93dcadea6b0de204b8fd6a4133b1b" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_RETURN_NO</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="38" column="9" bodyfile="fpdf_formfill.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a0c0048de27bf87f0ffd50acef326ff0d" prot="public" static="no">
+        <name>JSPLATFORM_ALERT_RETURN_YES</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="39" column="9" bodyfile="fpdf_formfill.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ad33ff485ab4f65a2ef2de1e223482e80" prot="public" static="no">
+        <name>JSPLATFORM_BEEP_ERROR</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="41" column="9" bodyfile="fpdf_formfill.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1aa0ba07656ac1c8ef812b2a84e6853cd6" prot="public" static="no">
+        <name>JSPLATFORM_BEEP_WARNING</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="42" column="9" bodyfile="fpdf_formfill.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ae8141e026015d57f45bc81ef08455a7b" prot="public" static="no">
+        <name>JSPLATFORM_BEEP_QUESTION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="43" column="9" bodyfile="fpdf_formfill.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a8384d17ade1bcadb78e459b9ab86aab6" prot="public" static="no">
+        <name>JSPLATFORM_BEEP_STATUS</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="44" column="9" bodyfile="fpdf_formfill.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a14e0f3531f21f856bff52b0952f9f686" prot="public" static="no">
+        <name>JSPLATFORM_BEEP_DEFAULT</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="45" column="9" bodyfile="fpdf_formfill.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1afab49af4cf827f410e204c3196bb4673" prot="public" static="no">
+        <name>FXCT_ARROW</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="303" column="9" bodyfile="fpdf_formfill.h" bodystart="303" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1af3005babd3e6cd909ed952857d643e33" prot="public" static="no">
+        <name>FXCT_NESW</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="304" column="9" bodyfile="fpdf_formfill.h" bodystart="304" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a04a471fd77f0f50fa9e36e390c4accde" prot="public" static="no">
+        <name>FXCT_NWSE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="305" column="9" bodyfile="fpdf_formfill.h" bodystart="305" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a5e4f972c861787aeeea41df611d6aa81" prot="public" static="no">
+        <name>FXCT_VBEAM</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="306" column="9" bodyfile="fpdf_formfill.h" bodystart="306" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ab3b0ca216d9e1d41dfb503d7c39721a6" prot="public" static="no">
+        <name>FXCT_HBEAM</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="307" column="9" bodyfile="fpdf_formfill.h" bodystart="307" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a28a1bddcb49dd67f3e72d80a6c00edf9" prot="public" static="no">
+        <name>FXCT_HAND</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="308" column="9" bodyfile="fpdf_formfill.h" bodystart="308" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a019beb275272ce447abd28c08865bd12" prot="public" static="no">
+        <name>FPDFDOC_AACTION_WC</name>
+        <initializer>0x10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1132" column="9" bodyfile="fpdf_formfill.h" bodystart="1132" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a0e246f7a06487e6fba9035689c07e401" prot="public" static="no">
+        <name>FPDFDOC_AACTION_WS</name>
+        <initializer>0x11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1133" column="9" bodyfile="fpdf_formfill.h" bodystart="1133" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a8a150fa1dfdb64533ae56f6090b82d60" prot="public" static="no">
+        <name>FPDFDOC_AACTION_DS</name>
+        <initializer>0x12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1134" column="9" bodyfile="fpdf_formfill.h" bodystart="1134" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1aa62a7cc95823de7245e7c8eb85e813da" prot="public" static="no">
+        <name>FPDFDOC_AACTION_WP</name>
+        <initializer>0x13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1135" column="9" bodyfile="fpdf_formfill.h" bodystart="1135" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ac415f8f84e7a7e453d42b5a30d518684" prot="public" static="no">
+        <name>FPDFDOC_AACTION_DP</name>
+        <initializer>0x14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1136" column="9" bodyfile="fpdf_formfill.h" bodystart="1136" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1ae4d12fa92fb10ce21f0e6474712a1259" prot="public" static="no">
+        <name>FPDFPAGE_AACTION_OPEN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1157" column="9" bodyfile="fpdf_formfill.h" bodystart="1157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a807c86c37a7a0ed8697421fc45ea9250" prot="public" static="no">
+        <name>FPDFPAGE_AACTION_CLOSE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1158" column="9" bodyfile="fpdf_formfill.h" bodystart="1158" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a88de804a4e3d2c3e007bb563c3c44762" prot="public" static="no">
+        <name>FPDF_FORMFIELD_UNKNOWN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1577" column="9" bodyfile="fpdf_formfill.h" bodystart="1577" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a33255ce503435dd2b13ef1f67254453f" prot="public" static="no">
+        <name>FPDF_FORMFIELD_PUSHBUTTON</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1578" column="9" bodyfile="fpdf_formfill.h" bodystart="1578" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a340dcca1bbf00f1f5aa4543e91f738d7" prot="public" static="no">
+        <name>FPDF_FORMFIELD_CHECKBOX</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1579" column="9" bodyfile="fpdf_formfill.h" bodystart="1579" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a5a4e8c83aa561344623b16b9e614ca49" prot="public" static="no">
+        <name>FPDF_FORMFIELD_RADIOBUTTON</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1580" column="9" bodyfile="fpdf_formfill.h" bodystart="1580" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a381900f523c71e73dc56b44af423d4c5" prot="public" static="no">
+        <name>FPDF_FORMFIELD_COMBOBOX</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1581" column="9" bodyfile="fpdf_formfill.h" bodystart="1581" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a62b7fe968c93dbd8252724fd2a2f315e" prot="public" static="no">
+        <name>FPDF_FORMFIELD_LISTBOX</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1582" column="9" bodyfile="fpdf_formfill.h" bodystart="1582" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a50602cae7cb5afa47cea40cda97370c6" prot="public" static="no">
+        <name>FPDF_FORMFIELD_TEXTFIELD</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1583" column="9" bodyfile="fpdf_formfill.h" bodystart="1583" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a6814da29a34999408b9ce6606585c90f" prot="public" static="no">
+        <name>FPDF_FORMFIELD_SIGNATURE</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1584" column="9" bodyfile="fpdf_formfill.h" bodystart="1584" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__formfill_8h_1a5b1fe33b66b426b1bf341739a27bd8cb" prot="public" static="no">
+        <name>FPDF_FORMFIELD_COUNT</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1599" column="9" bodyfile="fpdf_formfill.h" bodystart="1599" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__formfill_8h_1a318c64e91fea51a38bd17d6f5d2d5b0a" prot="public" static="no">
+        <type>struct <ref refid="struct__IPDF__JsPlatform" kindref="compound">_IPDF_JsPlatform</ref></type>
+        <definition>typedef struct _IPDF_JsPlatform IPDF_JSPLATFORM</definition>
+        <argsstring></argsstring>
+        <name>IPDF_JSPLATFORM</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="300" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="fpdf__formfill_8h_1a7e1db479d8a3f7cb480ee2cf5ce79add" prot="public" static="no">
+        <type>void(*</type>
+        <definition>typedef void(* TimerCallback) (int idEvent)</definition>
+        <argsstring>)(int idEvent)</argsstring>
+        <name>TimerCallback</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="316" column="9" bodyfile="fpdf_formfill.h" bodystart="316" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="fpdf__formfill_8h_1a2fb7c172c4a7e92aa5cada809a0e93f8" prot="public" static="no">
+        <type>struct <ref refid="struct__FPDF__SYSTEMTIME" kindref="compound">_FPDF_SYSTEMTIME</ref></type>
+        <definition>typedef struct _FPDF_SYSTEMTIME FPDF_SYSTEMTIME</definition>
+        <argsstring></argsstring>
+        <name>FPDF_SYSTEMTIME</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="328" column="17"/>
+      </memberdef>
+      <memberdef kind="typedef" id="fpdf__formfill_8h_1aa981822481322710f55e2a2cac016d95" prot="public" static="no">
+        <type>struct <ref refid="struct__FPDF__FORMFILLINFO" kindref="compound">_FPDF_FORMFILLINFO</ref></type>
+        <definition>typedef struct _FPDF_FORMFILLINFO FPDF_FORMFILLINFO</definition>
+        <argsstring></argsstring>
+        <name>FPDF_FORMFILLINFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1044" column="19"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__formfill_8h_1abe7300f7b90d1901780ec2c23f262060" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_FORMHANDLE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_FORMHANDLE FPDF_CALLCONV FPDFDOC_InitFormFillEnvironment</definition>
+        <argsstring>(FPDF_DOCUMENT document, FPDF_FORMFILLINFO *formInfo)</argsstring>
+        <name>FPDFDOC_InitFormFillEnvironment</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FPDF__FORMFILLINFO" kindref="compound">FPDF_FORMFILLINFO</ref> *</type>
+          <declname>formInfo</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1058" column="1" declfile="fpdf_formfill.h" declline="1058" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1adb49145defbc4b74ee0a09a871c3d37e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFDOC_ExitFormFillEnvironment</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FPDFDOC_ExitFormFillEnvironment</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1071" column="1" declfile="fpdf_formfill.h" declline="1071" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a0e84ac69626d4e48cb24d7c370035a57" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_OnAfterLoadPage</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FORM_OnAfterLoadPage</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1082" column="32" declfile="fpdf_formfill.h" declline="1082" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a5b54f5e7a16e7e5a14f3ca4673b672a1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_OnBeforeClosePage</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FORM_OnBeforeClosePage</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1094" column="32" declfile="fpdf_formfill.h" declline="1094" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a9002af97c914be28dd01c143c73a364f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_DoDocumentJSAction</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FORM_DoDocumentJSAction</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1110" column="1" declfile="fpdf_formfill.h" declline="1110" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a9fb13ffe9da2e19e7ad05d5ec9f639aa" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_DoDocumentOpenAction</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FORM_DoDocumentOpenAction</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1124" column="1" declfile="fpdf_formfill.h" declline="1124" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aaa4ce443488e67e403f0765314536d88" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_DoDocumentAAction</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, int aaType)</argsstring>
+        <name>FORM_DoDocumentAAction</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aaType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1151" column="32" declfile="fpdf_formfill.h" declline="1151" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a886b9760d12748c1382e9d1075df3b42" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_DoPageAAction</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_FORMHANDLE hHandle, int aaType)</argsstring>
+        <name>FORM_DoPageAAction</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>aaType</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1174" column="32" declfile="fpdf_formfill.h" declline="1174" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a006a7738bfa9630c6a34e1505797a53a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnMouseMove</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnMouseMove</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1191" column="37" declfile="fpdf_formfill.h" declline="1191" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a55af0bd1632fcdc628db573cb57658da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnMouseWheel</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, const FS_POINTF *page_coord, int delta_x, int delta_y)</argsstring>
+        <name>FORM_OnMouseWheel</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>page_coord</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delta_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>delta_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1220" column="37" declfile="fpdf_formfill.h" declline="1220" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a2b34fa529b815d4dd67437c23a5deb54" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnFocus</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnFocus</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1243" column="37" declfile="fpdf_formfill.h" declline="1243" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a980d08adf283bf9e12f2a9ceb6a73d3e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnLButtonDown</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnLButtonDown</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1263" column="37" declfile="fpdf_formfill.h" declline="1263" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aa7ef1a7deb11e3651139dc6d386c7e36" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnRButtonDown</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnRButtonDown</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1274" column="37" declfile="fpdf_formfill.h" declline="1274" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a33a605571c42ddd3a8d274ddba7fbaf7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnLButtonUp</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnLButtonUp</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1291" column="37" declfile="fpdf_formfill.h" declline="1291" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a817884b9c65261535811ce7088a92765" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnRButtonUp</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnRButtonUp</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1302" column="37" declfile="fpdf_formfill.h" declline="1302" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a64c35e2c0926be09c069b40f2790f346" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnLButtonDoubleClick</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int modifier, double page_x, double page_y)</argsstring>
+        <name>FORM_OnLButtonDoubleClick</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1323" column="1" declfile="fpdf_formfill.h" declline="1323" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a594910d7971106f8fd9cca772d2726d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnKeyDown</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int nKeyCode, int modifier)</argsstring>
+        <name>FORM_OnKeyDown</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nKeyCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1341" column="37" declfile="fpdf_formfill.h" declline="1341" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ad410aaa5ea88201ebc967fa7ed0dba61" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnKeyUp</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int nKeyCode, int modifier)</argsstring>
+        <name>FORM_OnKeyUp</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nKeyCode</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1361" column="37" declfile="fpdf_formfill.h" declline="1361" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ab60d8daca71f311633328d3bb509bb15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_OnChar</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int nChar, int modifier)</argsstring>
+        <name>FORM_OnChar</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nChar</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>modifier</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1378" column="37" declfile="fpdf_formfill.h" declline="1378" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ac7e83f002766b134fd76e331255ff015" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FORM_GetFocusedText</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, void *buffer, unsigned long buflen)</argsstring>
+        <name>FORM_GetFocusedText</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1399" column="1" declfile="fpdf_formfill.h" declline="1399" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aa4a2d8a22c18d9888a02cecf01ab216b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FORM_GetSelectedText</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, void *buffer, unsigned long buflen)</argsstring>
+        <name>FORM_GetSelectedText</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1420" column="1" declfile="fpdf_formfill.h" declline="1420" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a585a8234d4f7c6364eb685ddc466e0e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_ReplaceAndKeepSelection</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, FPDF_WIDESTRING wsText)</argsstring>
+        <name>FORM_ReplaceAndKeepSelection</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>wsText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1441" column="1" declfile="fpdf_formfill.h" declline="1441" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a6f3e913a5fde02a8310d2b9a39e94ae2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FORM_ReplaceSelection</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, FPDF_WIDESTRING wsText)</argsstring>
+        <name>FORM_ReplaceSelection</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>wsText</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1459" column="32" declfile="fpdf_formfill.h" declline="1459" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aea8c4f7c1ef9d5cfc683bd4b09a93300" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_SelectAllText</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page)</argsstring>
+        <name>FORM_SelectAllText</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1474" column="1" declfile="fpdf_formfill.h" declline="1474" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1acdcd3b2c77019c1563e466f6cfe51539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_CanUndo</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page)</argsstring>
+        <name>FORM_CanUndo</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1485" column="37" declfile="fpdf_formfill.h" declline="1485" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a8a61d0f07a7637ffd76186eefea3d4f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_CanRedo</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page)</argsstring>
+        <name>FORM_CanRedo</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1497" column="37" declfile="fpdf_formfill.h" declline="1497" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aec2b7a617ef08551fae469d2bd4c819b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_Undo</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page)</argsstring>
+        <name>FORM_Undo</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1508" column="37" declfile="fpdf_formfill.h" declline="1508" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ab00c61859aa261d196e9fc917aa97a35" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_Redo</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page)</argsstring>
+        <name>FORM_Redo</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1519" column="37" declfile="fpdf_formfill.h" declline="1519" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a159dcb5bc6152e59ff5947f4cbc81469" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_ForceToKillFocus</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FORM_ForceToKillFocus</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1532" column="1" declfile="fpdf_formfill.h" declline="1532" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a9064b540b0c476ecee1e37d54cc99515" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_GetFocusedAnnot</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, int *page_index, FPDF_ANNOTATION *annot)</argsstring>
+        <name>FORM_GetFocusedAnnot</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>page_index</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION *</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1555" column="1" declfile="fpdf_formfill.h" declline="1555" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a8d6cf890dcc15b41a4eb9035ce9ff9e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_SetFocusedAnnot</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FORM_SetFocusedAnnot</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1572" column="1" declfile="fpdf_formfill.h" declline="1572" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ab3c4b155230f3a8e0b17d9958aca7cc6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFPage_HasFormFieldAtPoint</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, double page_x, double page_y)</argsstring>
+        <name>FPDFPage_HasFormFieldAtPoint</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1626" column="1" declfile="fpdf_formfill.h" declline="1626" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a8710144d0b4876271899adb1b8932f14" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFPage_FormFieldZOrderAtPoint</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, double page_x, double page_y)</argsstring>
+        <name>FPDFPage_FormFieldZOrderAtPoint</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_x</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>page_y</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1643" column="1" declfile="fpdf_formfill.h" declline="1643" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1aad06f35ea06a01fbf170fac4d9a78af5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_SetFormFieldHighlightColor</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, int fieldType, unsigned long color)</argsstring>
+        <name>FPDF_SetFormFieldHighlightColor</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fieldType</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>color</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1669" column="1" declfile="fpdf_formfill.h" declline="1669" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a2104c85a2d2009c0f3ced9ab10ee5ef0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_SetFormFieldHighlightAlpha</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, unsigned char alpha)</argsstring>
+        <name>FPDF_SetFormFieldHighlightAlpha</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>alpha</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1686" column="1" declfile="fpdf_formfill.h" declline="1686" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ad518103e15472e05736d5c378ca2d55c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_RemoveFormFieldHighlight</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FPDF_RemoveFormFieldHighlight</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1699" column="1" declfile="fpdf_formfill.h" declline="1699" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1af8833ad340c9cf07603228254b75f7d3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_FFLDraw</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_BITMAP bitmap, FPDF_PAGE page, int start_x, int start_y, int size_x, int size_y, int rotate, int flags)</argsstring>
+        <name>FPDF_FFLDraw</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_BITMAP</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1736" column="32" declfile="fpdf_formfill.h" declline="1736" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1af916a040caf5a69981a7ec25f20b50b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_GetFormType</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDF_GetFormType</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1767" column="31" declfile="fpdf_formfill.h" declline="1767" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1a155f19a43afc9f381924dbe52492d1a5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_SetIndexSelected</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int index, FPDF_BOOL selected)</argsstring>
+        <name>FORM_SetIndexSelected</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>FPDF_BOOL</type>
+          <declname>selected</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1791" column="1" declfile="fpdf_formfill.h" declline="1791" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1ab9e72edd7f2bab5b31bcde0e4bebf74e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FORM_IsIndexSelected</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, int index)</argsstring>
+        <name>FORM_IsIndexSelected</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1814" column="1" declfile="fpdf_formfill.h" declline="1814" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__formfill_8h_1afa73871d4978e09a6f2b25cb5abb88a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_LoadXFA</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDF_LoadXFA</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="1824" column="37" declfile="fpdf_formfill.h" declline="1824" declcolumn="37"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_formfill.h"/>
+  </compounddef>
+</doxygen>

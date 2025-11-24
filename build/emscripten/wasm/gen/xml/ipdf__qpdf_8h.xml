@@ -1,0 +1,102 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="ipdf__qpdf_8h" kind="file" language="C++">
+    <compoundname>ipdf_qpdf.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>ipdf_qpdf.h</label>
+        <link refid="ipdf__qpdf_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="ipdf__qpdf_8h_1ab30d0b53622d31c4ae830e5d0d539257" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT char *FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT char *FPDF_CALLCONV IPDF_QPDF_PDFToJSON</definition>
+        <argsstring>(const void *pdf_data, size_t pdf_size, int version)</argsstring>
+        <name>IPDF_QPDF_PDFToJSON</name>
+        <param>
+          <type>const void *</type>
+          <declname>pdf_data</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>pdf_size</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>version</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function: IPDF_QPDF_PDFToJSON Convert a PDF document to QPDF JSON format.</para>
+<para>Parameters: pdf_data - Pointer to the PDF file data in memory. pdf_size - Size of the PDF file data in bytes. version - QPDF JSON version (1 or 2). Version 1: Basic JSON structure Version 2: Extended JSON with more details</para>
+<para>Return value: A pointer to a null-terminated C string containing the JSON data. Returns NULL if the conversion fails.</para>
+<para>Comments: The returned string is allocated with malloc() and must be freed by calling IPDF_QPDF_FreeString() when done.</para>
+<para>The JSON format follows QPDF&apos;s JSON specification:<itemizedlist>
+<listitem><para>Version 1: Basic structure with objects and streams</para>
+</listitem><listitem><para>Version 2: Enhanced with encryption info, object streams, etc.</para>
+</listitem></itemizedlist>
+</para>
+<para>Example usage: char* json = IPDF_QPDF_PDFToJSON(pdf_data, size, 2); if (json) { // Use the JSON data... printf(&quot;%s\n&quot;, json);</para>
+<para>// Free when done IPDF_QPDF_FreeString(json); }</para>
+<para>Error handling: Returns NULL on error. Possible causes:<itemizedlist>
+<listitem><para>Invalid PDF data</para>
+</listitem><listitem><para>Insufficient memory</para>
+</listitem><listitem><para>QPDF processing error</para>
+</listitem><listitem><para>Invalid version parameter </para>
+</listitem></itemizedlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ipdf_qpdf.h" line="54" column="32" declfile="ipdf_qpdf.h" declline="54" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="ipdf__qpdf_8h_1a723301c08fa042e4f5ea82da5f4a4fec" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV IPDF_QPDF_FreeString</definition>
+        <argsstring>(char *str)</argsstring>
+        <name>IPDF_QPDF_FreeString</name>
+        <param>
+          <type>char *</type>
+          <declname>str</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+<para>Function: IPDF_QPDF_FreeString Free a string allocated by IPDF_QPDF_PDFToJSON.</para>
+<para>Parameters: str - Pointer to the string to free.</para>
+<para>Return value: None.</para>
+<para>Comments: This function must be called to free strings returned by IPDF_QPDF_PDFToJSON() to prevent memory leaks.</para>
+<para>Do not call this function with:<itemizedlist>
+<listitem><para>NULL pointers (safe to call, but no-op)</para>
+</listitem><listitem><para>Pointers not returned by IPDF_QPDF_PDFToJSON()</para>
+</listitem><listitem><para>Already freed pointers (undefined behavior)</para>
+</listitem></itemizedlist>
+</para>
+<para>Example usage: char* json = IPDF_QPDF_PDFToJSON(pdf_data, size, 2); if (json) { // Use json... IPDF_QPDF_FreeString(json); } </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="ipdf_qpdf.h" line="84" column="32" declfile="ipdf_qpdf.h" declline="84" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="ipdf_qpdf.h"/>
+  </compounddef>
+</doxygen>

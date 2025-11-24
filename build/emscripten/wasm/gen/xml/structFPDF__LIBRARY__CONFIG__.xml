@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__LIBRARY__CONFIG__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_LIBRARY_CONFIG_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1a035e6e628dfe3e25040eacdc0246a0da" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_LIBRARY_CONFIG_::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="250" column="7" bodyfile="fpdfview.h" bodystart="250" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1afa396e0c98aad5ed00a4e13a2408a393" prot="public" static="no" mutable="no">
+        <type>const char **</type>
+        <definition>const char** FPDF_LIBRARY_CONFIG_::m_pUserFontPaths</definition>
+        <argsstring></argsstring>
+        <name>m_pUserFontPaths</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::m_pUserFontPaths</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="256" column="14" bodyfile="fpdfview.h" bodystart="256" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1a61b166fcea5bc3aea5ae27c96509214e" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* FPDF_LIBRARY_CONFIG_::m_pIsolate</definition>
+        <argsstring></argsstring>
+        <name>m_pIsolate</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::m_pIsolate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="261" column="8" bodyfile="fpdfview.h" bodystart="261" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1a9eeb7d69228b71f509f241ed824e5d57" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FPDF_LIBRARY_CONFIG_::m_v8EmbedderSlot</definition>
+        <argsstring></argsstring>
+        <name>m_v8EmbedderSlot</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::m_v8EmbedderSlot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="267" column="16" bodyfile="fpdfview.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1ae606bd2afb8b84d12a378fb914809eb8" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* FPDF_LIBRARY_CONFIG_::m_pPlatform</definition>
+        <argsstring></argsstring>
+        <name>m_pPlatform</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::m_pPlatform</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="272" column="8" bodyfile="fpdfview.h" bodystart="272" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__LIBRARY__CONFIG___1aa3118c8a742c3ebde33c71f985a060bb" prot="public" static="no" mutable="no">
+        <type>FPDF_RENDERER_TYPE</type>
+        <definition>FPDF_RENDERER_TYPE FPDF_LIBRARY_CONFIG_::m_RendererType</definition>
+        <argsstring></argsstring>
+        <name>m_RendererType</name>
+        <qualifiedname>FPDF_LIBRARY_CONFIG_::m_RendererType</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="282" column="22" bodyfile="fpdfview.h" bodystart="282" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="247" column="1" bodyfile="fpdfview.h" bodystart="247" bodyend="283"/>
+    <listofallmembers>
+      <member refid="structFPDF__LIBRARY__CONFIG___1a61b166fcea5bc3aea5ae27c96509214e" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>m_pIsolate</name></member>
+      <member refid="structFPDF__LIBRARY__CONFIG___1ae606bd2afb8b84d12a378fb914809eb8" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>m_pPlatform</name></member>
+      <member refid="structFPDF__LIBRARY__CONFIG___1afa396e0c98aad5ed00a4e13a2408a393" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>m_pUserFontPaths</name></member>
+      <member refid="structFPDF__LIBRARY__CONFIG___1aa3118c8a742c3ebde33c71f985a060bb" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>m_RendererType</name></member>
+      <member refid="structFPDF__LIBRARY__CONFIG___1a9eeb7d69228b71f509f241ed824e5d57" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>m_v8EmbedderSlot</name></member>
+      <member refid="structFPDF__LIBRARY__CONFIG___1a035e6e628dfe3e25040eacdc0246a0da" prot="public" virt="non-virtual"><scope>FPDF_LIBRARY_CONFIG_</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,206 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__ppo_8h" kind="file" language="C++">
+    <compoundname>fpdf_ppo.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_ppo.h</label>
+        <link refid="fpdf__ppo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__ppo_8h_1ae5b5b8d6fc423158a578812b252f967e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_ImportPagesByIndex</definition>
+        <argsstring>(FPDF_DOCUMENT dest_doc, FPDF_DOCUMENT src_doc, const int *page_indices, unsigned long length, int index)</argsstring>
+        <name>FPDF_ImportPagesByIndex</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>dest_doc</declname>
+        </param>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>src_doc</declname>
+        </param>
+        <param>
+          <type>const int *</type>
+          <declname>page_indices</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="32" column="1" declfile="fpdf_ppo.h" declline="32" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a9fbbb6edc76bd3eca705c7fd0ce31d03" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_ImportPages</definition>
+        <argsstring>(FPDF_DOCUMENT dest_doc, FPDF_DOCUMENT src_doc, FPDF_BYTESTRING pagerange, int index)</argsstring>
+        <name>FPDF_ImportPages</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>dest_doc</declname>
+        </param>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>src_doc</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>pagerange</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="49" column="37" declfile="fpdf_ppo.h" declline="49" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a0089ce2b41348a5d34f783251219baf4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_DOCUMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_DOCUMENT FPDF_CALLCONV FPDF_ImportNPagesToOne</definition>
+        <argsstring>(FPDF_DOCUMENT src_doc, float output_width, float output_height, size_t num_pages_on_x_axis, size_t num_pages_on_y_axis)</argsstring>
+        <name>FPDF_ImportNPagesToOne</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>src_doc</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>output_width</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>output_height</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_pages_on_x_axis</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>num_pages_on_y_axis</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="72" column="1" declfile="fpdf_ppo.h" declline="72" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a6fee17beaf5ec4601f1f9ef32ad16c1d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_XOBJECT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_XOBJECT FPDF_CALLCONV FPDF_NewXObjectFromPage</definition>
+        <argsstring>(FPDF_DOCUMENT dest_doc, FPDF_DOCUMENT src_doc, int src_page_index)</argsstring>
+        <name>FPDF_NewXObjectFromPage</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>dest_doc</declname>
+        </param>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>src_doc</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>src_page_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="85" column="1" declfile="fpdf_ppo.h" declline="85" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a443c826441dcb79f7c71a48aefcd2e7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_CloseXObject</definition>
+        <argsstring>(FPDF_XOBJECT xobject)</argsstring>
+        <name>FPDF_CloseXObject</name>
+        <param>
+          <type>FPDF_XOBJECT</type>
+          <declname>xobject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="92" column="32" declfile="fpdf_ppo.h" declline="92" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a5d96b16aa200a0707ca4fe2f5854e019" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV FPDF_NewFormObjectFromXObject</definition>
+        <argsstring>(FPDF_XOBJECT xobject)</argsstring>
+        <name>FPDF_NewFormObjectFromXObject</name>
+        <param>
+          <type>FPDF_XOBJECT</type>
+          <declname>xobject</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="100" column="1" declfile="fpdf_ppo.h" declline="100" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ppo_8h_1a77f6a329f9fa46eda7d31d8e8069cdd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_CopyViewerPreferences</definition>
+        <argsstring>(FPDF_DOCUMENT dest_doc, FPDF_DOCUMENT src_doc)</argsstring>
+        <name>FPDF_CopyViewerPreferences</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>dest_doc</declname>
+        </param>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>src_doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ppo.h" line="109" column="1" declfile="fpdf_ppo.h" declline="109" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_ppo.h"/>
+  </compounddef>
+</doxygen>

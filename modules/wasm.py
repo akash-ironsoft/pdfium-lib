@@ -670,7 +670,7 @@ def run_task_generate():
                 "ALLOW_MEMORY_GROWTH=1",
                 "-sMODULARIZE",
                 "-sEXPORT_NAME=PDFiumModule",
-                "-std=c++17",
+                "-std=c++20",
                 "-frtti",
                 "-fexceptions",
                 "-sDISABLE_EXCEPTION_CATCHING=0",

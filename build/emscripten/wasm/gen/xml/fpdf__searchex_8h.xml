@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__searchex_8h" kind="file" language="C++">
+    <compoundname>fpdf_searchex.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_searchex.h</label>
+        <link refid="fpdf__searchex_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__searchex_8h_1ac148851ea43945d2c8eab33a47746115" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetCharIndexFromTextIndex</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int nTextIndex)</argsstring>
+        <name>FPDFText_GetCharIndexFromTextIndex</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nTextIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_searchex.h" line="24" column="1" declfile="fpdf_searchex.h" declline="24" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__searchex_8h_1abdb56cd9b74318bd180f696201c46353" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFText_GetTextIndexFromCharIndex</definition>
+        <argsstring>(FPDF_TEXTPAGE text_page, int nCharIndex)</argsstring>
+        <name>FPDFText_GetTextIndexFromCharIndex</name>
+        <param>
+          <type>FPDF_TEXTPAGE</type>
+          <declname>text_page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nCharIndex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_searchex.h" line="33" column="1" declfile="fpdf_searchex.h" declline="33" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_searchex.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,390 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__sysfontinfo_8h" kind="file" language="C++">
+    <compoundname>fpdf_sysfontinfo.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_sysfontinfo.h</label>
+        <link refid="fpdf__sysfontinfo_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__FPDF__SYSFONTINFO" prot="public">_FPDF_SYSFONTINFO</innerclass>
+    <innerclass refid="structFPDF__CharsetFontMap__" prot="public">FPDF_CharsetFontMap_</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1ac5c2c829dc80ffdf96e6e1c347d601ac" prot="public" static="no">
+        <name>FXFONT_ANSI_CHARSET</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="17" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a093e3754671ece220a1b229b4b0de8b3" prot="public" static="no">
+        <name>FXFONT_DEFAULT_CHARSET</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="18" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a798c9ba27bde149e9379c72ee68693a8" prot="public" static="no">
+        <name>FXFONT_SYMBOL_CHARSET</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="19" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a729c7998afb369f12a0fd2414609719e" prot="public" static="no">
+        <name>FXFONT_SHIFTJIS_CHARSET</name>
+        <initializer>128</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="20" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a1fa2af9687c151f497156f5b97b5fa4d" prot="public" static="no">
+        <name>FXFONT_HANGEUL_CHARSET</name>
+        <initializer>129</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="21" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1ad01e4549607cc83a31a73022e59b3702" prot="public" static="no">
+        <name>FXFONT_GB2312_CHARSET</name>
+        <initializer>134</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="22" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1ad720390a46806254d1d1ee28b56389f6" prot="public" static="no">
+        <name>FXFONT_CHINESEBIG5_CHARSET</name>
+        <initializer>136</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="23" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a909aba35bdf7b586c98488c8f8a7aae9" prot="public" static="no">
+        <name>FXFONT_GREEK_CHARSET</name>
+        <initializer>161</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="24" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1adbd5c16e48ef530dfc8b450f1ddc961a" prot="public" static="no">
+        <name>FXFONT_VIETNAMESE_CHARSET</name>
+        <initializer>163</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="25" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1abd5e2f8fa8a605eb078555b7a7026db0" prot="public" static="no">
+        <name>FXFONT_HEBREW_CHARSET</name>
+        <initializer>177</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="26" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1ac99974efefa3529e064dfd590fe8bb15" prot="public" static="no">
+        <name>FXFONT_ARABIC_CHARSET</name>
+        <initializer>178</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="27" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1aa36585dfac418f43871a9a07b50531b2" prot="public" static="no">
+        <name>FXFONT_CYRILLIC_CHARSET</name>
+        <initializer>204</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="28" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1af439bffb3bc5067ba13d357ccfb7bfad" prot="public" static="no">
+        <name>FXFONT_THAI_CHARSET</name>
+        <initializer>222</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="29" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a5a6e7994a38a32fac1b5352ac8e0d07a" prot="public" static="no">
+        <name>FXFONT_EASTERNEUROPEAN_CHARSET</name>
+        <initializer>238</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="30" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1ac21add7d9b72d04b7c68060a70a8a411" prot="public" static="no">
+        <name>FXFONT_FF_FIXEDPITCH</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="33" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a2cccbdb908b578d1488cf7800b43d4ce" prot="public" static="no">
+        <name>FXFONT_FF_ROMAN</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="34" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a1ae88dced8352f658012be5482fb76ef" prot="public" static="no">
+        <name>FXFONT_FF_SCRIPT</name>
+        <initializer>(4 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="35" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a678b31330245684988410e68c72d5c12" prot="public" static="no">
+        <name>FXFONT_FW_NORMAL</name>
+        <initializer>400</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="38" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__sysfontinfo_8h_1a09a3d810eb0dc7bc28f061eeaa1a76f8" prot="public" static="no">
+        <name>FXFONT_FW_BOLD</name>
+        <initializer>700</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="39" column="9" bodyfile="fpdf_sysfontinfo.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__sysfontinfo_8h_1a08d2b3c02d8742d6aef23cf38d5ffb87" prot="public" static="no">
+        <type>struct <ref refid="struct__FPDF__SYSFONTINFO" kindref="compound">_FPDF_SYSFONTINFO</ref></type>
+        <definition>typedef struct _FPDF_SYSFONTINFO FPDF_SYSFONTINFO</definition>
+        <argsstring></argsstring>
+        <name>FPDF_SYSFONTINFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="209" column="18"/>
+      </memberdef>
+      <memberdef kind="typedef" id="fpdf__sysfontinfo_8h_1a2822e937309137ef497d2a4d7607cc1a" prot="public" static="no">
+        <type>struct <ref refid="structFPDF__CharsetFontMap__" kindref="compound">FPDF_CharsetFontMap_</ref></type>
+        <definition>typedef struct FPDF_CharsetFontMap_ FPDF_CharsetFontMap</definition>
+        <argsstring></argsstring>
+        <name>FPDF_CharsetFontMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="216" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a5249550d5b3def6b2c8bbb7db50aad67" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT const <ref refid="structFPDF__CharsetFontMap__" kindref="compound">FPDF_CharsetFontMap</ref> *FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT const FPDF_CharsetFontMap *FPDF_CALLCONV FPDF_GetDefaultTTFMap</definition>
+        <argsstring>()</argsstring>
+        <name>FPDF_GetDefaultTTFMap</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="230" column="53" declfile="fpdf_sysfontinfo.h" declline="230" declcolumn="53"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a5411852ff8213f3e8a783ec980f3f6ac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT size_t FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT size_t FPDF_CALLCONV FPDF_GetDefaultTTFMapCount</definition>
+        <argsstring>()</argsstring>
+        <name>FPDF_GetDefaultTTFMapCount</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="241" column="34" declfile="fpdf_sysfontinfo.h" declline="241" declcolumn="34"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a30364a5b9b59ae28312ef28ee9fc1e7a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT const <ref refid="structFPDF__CharsetFontMap__" kindref="compound">FPDF_CharsetFontMap</ref> *FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT const FPDF_CharsetFontMap *FPDF_CALLCONV FPDF_GetDefaultTTFMapEntry</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>FPDF_GetDefaultTTFMapEntry</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="253" column="1" declfile="fpdf_sysfontinfo.h" declline="253" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a95e262cf21142ef13c7c1c703979e561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_AddInstalledFont</definition>
+        <argsstring>(void *mapper, const char *face, int charset)</argsstring>
+        <name>FPDF_AddInstalledFont</name>
+        <param>
+          <type>void *</type>
+          <declname>mapper</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>face</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>charset</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="266" column="32" declfile="fpdf_sysfontinfo.h" declline="266" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a95b31f7a22fd7c8e9e7485cf239788eb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_SetSystemFontInfo</definition>
+        <argsstring>(FPDF_SYSFONTINFO *font_info)</argsstring>
+        <name>FPDF_SetSystemFontInfo</name>
+        <param>
+          <type><ref refid="struct__FPDF__SYSFONTINFO" kindref="compound">FPDF_SYSFONTINFO</ref> *</type>
+          <declname>font_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="284" column="1" declfile="fpdf_sysfontinfo.h" declline="284" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a5dc2071021ce6253ec4b33f5e68f75d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT <ref refid="struct__FPDF__SYSFONTINFO" kindref="compound">FPDF_SYSFONTINFO</ref> *FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_SYSFONTINFO *FPDF_CALLCONV FPDF_GetDefaultSystemFontInfo</definition>
+        <argsstring>()</argsstring>
+        <name>FPDF_GetDefaultSystemFontInfo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="299" column="44" declfile="fpdf_sysfontinfo.h" declline="299" declcolumn="44"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__sysfontinfo_8h_1a40b9185350cfbcdd186a829ba92449c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_FreeDefaultSystemFontInfo</definition>
+        <argsstring>(FPDF_SYSFONTINFO *font_info)</argsstring>
+        <name>FPDF_FreeDefaultSystemFontInfo</name>
+        <param>
+          <type><ref refid="struct__FPDF__SYSFONTINFO" kindref="compound">FPDF_SYSFONTINFO</ref> *</type>
+          <declname>font_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_sysfontinfo.h" line="311" column="1" declfile="fpdf_sysfontinfo.h" declline="311" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_sysfontinfo.h"/>
+  </compounddef>
+</doxygen>

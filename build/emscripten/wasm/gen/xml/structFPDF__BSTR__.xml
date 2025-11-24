@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__BSTR__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_BSTR_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__BSTR___1a5067be0ec913ac93910201936dfc75e4" prot="public" static="no" mutable="no">
+        <type>char *</type>
+        <definition>char* FPDF_BSTR_::str</definition>
+        <argsstring></argsstring>
+        <name>str</name>
+        <qualifiedname>FPDF_BSTR_::str</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="125" column="8" bodyfile="fpdfview.h" bodystart="125" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__BSTR___1a0ebb3688b9b9cc0a003d6322a2ea95fd" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_BSTR_::len</definition>
+        <argsstring></argsstring>
+        <name>len</name>
+        <qualifiedname>FPDF_BSTR_::len</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="126" column="7" bodyfile="fpdfview.h" bodystart="126" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="124" column="1" bodyfile="fpdfview.h" bodystart="124" bodyend="127"/>
+    <listofallmembers>
+      <member refid="structFPDF__BSTR___1a0ebb3688b9b9cc0a003d6322a2ea95fd" prot="public" virt="non-virtual"><scope>FPDF_BSTR_</scope><name>len</name></member>
+      <member refid="structFPDF__BSTR___1a5067be0ec913ac93910201936dfc75e4" prot="public" virt="non-virtual"><scope>FPDF_BSTR_</scope><name>str</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

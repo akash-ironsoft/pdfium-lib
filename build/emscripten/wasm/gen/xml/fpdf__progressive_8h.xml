@@ -1,0 +1,233 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__progressive_8h" kind="file" language="C++">
+    <compoundname>fpdf_progressive.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_progressive.h</label>
+        <link refid="fpdf__progressive_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__IFSDK__PAUSE" prot="public">_IFSDK_PAUSE</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__progressive_8h_1a6ddcab312f1a4362ad338d362034074f" prot="public" static="no">
+        <name>FPDF_RENDER_READY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="15" column="9" bodyfile="fpdf_progressive.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__progressive_8h_1a0b844dd430e4e49bd4c442f6901b7a4d" prot="public" static="no">
+        <name>FPDF_RENDER_TOBECONTINUED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="16" column="9" bodyfile="fpdf_progressive.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__progressive_8h_1a4c3fb7078f15da18cefd553eafdcca48" prot="public" static="no">
+        <name>FPDF_RENDER_DONE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="17" column="9" bodyfile="fpdf_progressive.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__progressive_8h_1add8d1c60e87bbeb630be051c8c94a034" prot="public" static="no">
+        <name>FPDF_RENDER_FAILED</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="18" column="9" bodyfile="fpdf_progressive.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__progressive_8h_1a9dfc081d56e419c80815af989af076d8" prot="public" static="no">
+        <type>struct <ref refid="struct__IFSDK__PAUSE" kindref="compound">_IFSDK_PAUSE</ref></type>
+        <definition>typedef struct _IFSDK_PAUSE IFSDK_PAUSE</definition>
+        <argsstring></argsstring>
+        <name>IFSDK_PAUSE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="43" column="13"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__progressive_8h_1a18a67016fbcf1ee6aadc2e7d3ff9c927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_RenderPageBitmapWithColorScheme_Start</definition>
+        <argsstring>(FPDF_BITMAP bitmap, FPDF_PAGE page, int start_x, int start_y, int size_x, int size_y, int rotate, int flags, const FPDF_COLORSCHEME *color_scheme, IFSDK_PAUSE *pause)</argsstring>
+        <name>FPDF_RenderPageBitmapWithColorScheme_Start</name>
+        <param>
+          <type>FPDF_BITMAP</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structFPDF__COLORSCHEME__" kindref="compound">FPDF_COLORSCHEME</ref> *</type>
+          <declname>color_scheme</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__IFSDK__PAUSE" kindref="compound">IFSDK_PAUSE</ref> *</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="79" column="1" declfile="fpdf_progressive.h" declline="79" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__progressive_8h_1a9d9b2669a28d83b37fb21ad35ca8757e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_RenderPageBitmap_Start</definition>
+        <argsstring>(FPDF_BITMAP bitmap, FPDF_PAGE page, int start_x, int start_y, int size_x, int size_y, int rotate, int flags, IFSDK_PAUSE *pause)</argsstring>
+        <name>FPDF_RenderPageBitmap_Start</name>
+        <param>
+          <type>FPDF_BITMAP</type>
+          <declname>bitmap</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>start_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>size_y</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>rotate</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__IFSDK__PAUSE" kindref="compound">IFSDK_PAUSE</ref> *</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="117" column="31" declfile="fpdf_progressive.h" declline="117" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__progressive_8h_1adb42ceda124ec41b0b4588be3fa6a210" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_RenderPage_Continue</definition>
+        <argsstring>(FPDF_PAGE page, IFSDK_PAUSE *pause)</argsstring>
+        <name>FPDF_RenderPage_Continue</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__IFSDK__PAUSE" kindref="compound">IFSDK_PAUSE</ref> *</type>
+          <declname>pause</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="138" column="31" declfile="fpdf_progressive.h" declline="138" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__progressive_8h_1a8ae6edbc8287e66fd197b9634e0d5f0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_RenderPage_Close</definition>
+        <argsstring>(FPDF_PAGE page)</argsstring>
+        <name>FPDF_RenderPage_Close</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="149" column="32" declfile="fpdf_progressive.h" declline="149" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_progressive.h"/>
+  </compounddef>
+</doxygen>

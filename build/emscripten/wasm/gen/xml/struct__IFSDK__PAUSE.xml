@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__IFSDK__PAUSE" kind="struct" language="C++" prot="public">
+    <compoundname>_IFSDK_PAUSE</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__IFSDK__PAUSE_1a622ce95ce626e4bcebaa57b7a779596d" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _IFSDK_PAUSE::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>_IFSDK_PAUSE::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="27" column="7" bodyfile="fpdf_progressive.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IFSDK__PAUSE_1a64fa5573851c0b2f2ee88f0a51ee318a" prot="public" static="no" mutable="no">
+        <type>FPDF_BOOL(*</type>
+        <definition>FPDF_BOOL(* _IFSDK_PAUSE::NeedToPauseNow) (struct _IFSDK_PAUSE *pThis)</definition>
+        <argsstring>)(struct _IFSDK_PAUSE *pThis)</argsstring>
+        <name>NeedToPauseNow</name>
+        <qualifiedname>_IFSDK_PAUSE::NeedToPauseNow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="39" column="3" bodyfile="fpdf_progressive.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IFSDK__PAUSE_1a8a8d33f97461eb873afb7645a19d312d" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _IFSDK_PAUSE::user</definition>
+        <argsstring></argsstring>
+        <name>user</name>
+        <qualifiedname>_IFSDK_PAUSE::user</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_progressive.h" line="42" column="8" bodyfile="fpdf_progressive.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_progressive.h" line="25" column="1" bodyfile="fpdf_progressive.h" bodystart="25" bodyend="43"/>
+    <listofallmembers>
+      <member refid="struct__IFSDK__PAUSE_1a64fa5573851c0b2f2ee88f0a51ee318a" prot="public" virt="non-virtual"><scope>_IFSDK_PAUSE</scope><name>NeedToPauseNow</name></member>
+      <member refid="struct__IFSDK__PAUSE_1a8a8d33f97461eb873afb7645a19d312d" prot="public" virt="non-virtual"><scope>_IFSDK_PAUSE</scope><name>user</name></member>
+      <member refid="struct__IFSDK__PAUSE_1a622ce95ce626e4bcebaa57b7a779596d" prot="public" virt="non-virtual"><scope>_IFSDK_PAUSE</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

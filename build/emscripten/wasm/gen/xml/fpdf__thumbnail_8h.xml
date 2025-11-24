@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__thumbnail_8h" kind="file" language="C++">
+    <compoundname>fpdf_thumbnail.h</compoundname>
+    <includes local="no">stdint.h</includes>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_thumbnail.h</label>
+        <link refid="fpdf__thumbnail_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>stdint.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__thumbnail_8h_1a224754008f8a5acf329a0cdd8e37c6e3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFPage_GetDecodedThumbnailData</definition>
+        <argsstring>(FPDF_PAGE page, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFPage_GetDecodedThumbnailData</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_thumbnail.h" line="28" column="1" declfile="fpdf_thumbnail.h" declline="28" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__thumbnail_8h_1a0ae6aac788da32f960a5f12d184a236f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFPage_GetRawThumbnailData</definition>
+        <argsstring>(FPDF_PAGE page, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFPage_GetRawThumbnailData</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_thumbnail.h" line="43" column="1" declfile="fpdf_thumbnail.h" declline="43" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__thumbnail_8h_1a46a213d159f4cfc9e1f3796ceff7cf0d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BITMAP FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BITMAP FPDF_CALLCONV FPDFPage_GetThumbnailAsBitmap</definition>
+        <argsstring>(FPDF_PAGE page)</argsstring>
+        <name>FPDFPage_GetThumbnailAsBitmap</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_thumbnail.h" line="53" column="1" declfile="fpdf_thumbnail.h" declline="53" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_thumbnail.h"/>
+  </compounddef>
+</doxygen>

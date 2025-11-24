@@ -4,7 +4,7 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import PDFiumModule from "/home/akash/Dev/ironsoft/pdfium-lib/build/emscripten/wasm/release/node/pdfium.js";
+import PDFiumModule from "/home/akash/Dev/ironsoft/pdfium-lib/build/emscripten/publish/pdfium.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);

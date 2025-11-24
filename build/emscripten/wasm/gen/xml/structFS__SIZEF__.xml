@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFS__SIZEF__" kind="struct" language="C++" prot="public">
+    <compoundname>FS_SIZEF_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFS__SIZEF___1a901df329a562384a960210a974756a8a" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FS_SIZEF_::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>FS_SIZEF_::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="172" column="9" bodyfile="fpdfview.h" bodystart="172" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFS__SIZEF___1a28df03b0510a4099f4cb32f1300730ce" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FS_SIZEF_::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>FS_SIZEF_::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="173" column="9" bodyfile="fpdfview.h" bodystart="173" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="171" column="1" bodyfile="fpdfview.h" bodystart="171" bodyend="174"/>
+    <listofallmembers>
+      <member refid="structFS__SIZEF___1a28df03b0510a4099f4cb32f1300730ce" prot="public" virt="non-virtual"><scope>FS_SIZEF_</scope><name>height</name></member>
+      <member refid="structFS__SIZEF___1a901df329a562384a960210a974756a8a" prot="public" virt="non-virtual"><scope>FS_SIZEF_</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

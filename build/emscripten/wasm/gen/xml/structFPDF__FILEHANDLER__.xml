@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__FILEHANDLER__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_FILEHANDLER_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1a19b4edce4c9b5aea0df79f824cecc833" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* FPDF_FILEHANDLER_::clientData</definition>
+        <argsstring></argsstring>
+        <name>clientData</name>
+        <qualifiedname>FPDF_FILEHANDLER_::clientData</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="473" column="8" bodyfile="fpdfview.h" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1aed6a8377945656a6d856a40058ff915d" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* FPDF_FILEHANDLER_::Release) (void *clientData)</definition>
+        <argsstring>)(void *clientData)</argsstring>
+        <name>Release</name>
+        <qualifiedname>FPDF_FILEHANDLER_::Release</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="481" column="3" bodyfile="fpdfview.h" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1a79008a96186357dfacfab1cae4ac9b79" prot="public" static="no" mutable="no">
+        <type>FPDF_DWORD(*</type>
+        <definition>FPDF_DWORD(* FPDF_FILEHANDLER_::GetSize) (void *clientData)</definition>
+        <argsstring>)(void *clientData)</argsstring>
+        <name>GetSize</name>
+        <qualifiedname>FPDF_FILEHANDLER_::GetSize</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="489" column="3" bodyfile="fpdfview.h" bodystart="489" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1a498aad91c3ac7673323cdd63db41b538" prot="public" static="no" mutable="no">
+        <type>FPDF_RESULT(*</type>
+        <definition>FPDF_RESULT(* FPDF_FILEHANDLER_::ReadBlock) (void *clientData, FPDF_DWORD offset, void *buffer, FPDF_DWORD size)</definition>
+        <argsstring>)(void *clientData, FPDF_DWORD offset, void *buffer, FPDF_DWORD size)</argsstring>
+        <name>ReadBlock</name>
+        <qualifiedname>FPDF_FILEHANDLER_::ReadBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="504" column="3" bodyfile="fpdfview.h" bodystart="504" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1a4dd6365f6c5d0e9af01346c5ec27d051" prot="public" static="no" mutable="no">
+        <type>FPDF_RESULT(*</type>
+        <definition>FPDF_RESULT(* FPDF_FILEHANDLER_::WriteBlock) (void *clientData, FPDF_DWORD offset, const void *buffer, FPDF_DWORD size)</definition>
+        <argsstring>)(void *clientData, FPDF_DWORD offset, const void *buffer, FPDF_DWORD size)</argsstring>
+        <name>WriteBlock</name>
+        <qualifiedname>FPDF_FILEHANDLER_::WriteBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="521" column="3" bodyfile="fpdfview.h" bodystart="521" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1ac3ef2856ffc17c292567662dd3307888" prot="public" static="no" mutable="no">
+        <type>FPDF_RESULT(*</type>
+        <definition>FPDF_RESULT(* FPDF_FILEHANDLER_::Flush) (void *clientData)</definition>
+        <argsstring>)(void *clientData)</argsstring>
+        <name>Flush</name>
+        <qualifiedname>FPDF_FILEHANDLER_::Flush</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="531" column="3" bodyfile="fpdfview.h" bodystart="531" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEHANDLER___1aa8d28c031f76b8c2b5fef9446a906bd0" prot="public" static="no" mutable="no">
+        <type>FPDF_RESULT(*</type>
+        <definition>FPDF_RESULT(* FPDF_FILEHANDLER_::Truncate) (void *clientData, FPDF_DWORD size)</definition>
+        <argsstring>)(void *clientData, FPDF_DWORD size)</argsstring>
+        <name>Truncate</name>
+        <qualifiedname>FPDF_FILEHANDLER_::Truncate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="543" column="3" bodyfile="fpdfview.h" bodystart="543" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="470" column="1" bodyfile="fpdfview.h" bodystart="470" bodyend="544"/>
+    <listofallmembers>
+      <member refid="structFPDF__FILEHANDLER___1a19b4edce4c9b5aea0df79f824cecc833" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>clientData</name></member>
+      <member refid="structFPDF__FILEHANDLER___1ac3ef2856ffc17c292567662dd3307888" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>Flush</name></member>
+      <member refid="structFPDF__FILEHANDLER___1a79008a96186357dfacfab1cae4ac9b79" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>GetSize</name></member>
+      <member refid="structFPDF__FILEHANDLER___1a498aad91c3ac7673323cdd63db41b538" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>ReadBlock</name></member>
+      <member refid="structFPDF__FILEHANDLER___1aed6a8377945656a6d856a40058ff915d" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>Release</name></member>
+      <member refid="structFPDF__FILEHANDLER___1aa8d28c031f76b8c2b5fef9446a906bd0" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>Truncate</name></member>
+      <member refid="structFPDF__FILEHANDLER___1a4dd6365f6c5d0e9af01346c5ec27d051" prot="public" virt="non-virtual"><scope>FPDF_FILEHANDLER_</scope><name>WriteBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

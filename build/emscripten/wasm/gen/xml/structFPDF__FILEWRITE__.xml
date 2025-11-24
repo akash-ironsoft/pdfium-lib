@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__FILEWRITE__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_FILEWRITE_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__FILEWRITE___1a2f91543140f4993208eb71028575b54b" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_FILEWRITE_::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>FPDF_FILEWRITE_::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="23" column="7" bodyfile="fpdf_save.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEWRITE___1a16478cb86dddd21e6a284a9c83020730" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* FPDF_FILEWRITE_::WriteBlock) (struct FPDF_FILEWRITE_ *pThis, const void *pData, unsigned long size)</definition>
+        <argsstring>)(struct FPDF_FILEWRITE_ *pThis, const void *pData, unsigned long size)</argsstring>
+        <name>WriteBlock</name>
+        <qualifiedname>FPDF_FILEWRITE_::WriteBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="39" column="3" bodyfile="fpdf_save.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_save.h" line="19" column="1" bodyfile="fpdf_save.h" bodystart="19" bodyend="42"/>
+    <listofallmembers>
+      <member refid="structFPDF__FILEWRITE___1a2f91543140f4993208eb71028575b54b" prot="public" virt="non-virtual"><scope>FPDF_FILEWRITE_</scope><name>version</name></member>
+      <member refid="structFPDF__FILEWRITE___1a16478cb86dddd21e6a284a9c83020730" prot="public" virt="non-virtual"><scope>FPDF_FILEWRITE_</scope><name>WriteBlock</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

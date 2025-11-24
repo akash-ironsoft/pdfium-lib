@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__COLORSCHEME__" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_COLORSCHEME_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__COLORSCHEME___1ab83731e77a550376ef6f9ba07445400c" prot="public" static="no" mutable="no">
+        <type>FPDF_DWORD</type>
+        <definition>FPDF_DWORD FPDF_COLORSCHEME_::path_fill_color</definition>
+        <argsstring></argsstring>
+        <name>path_fill_color</name>
+        <qualifiedname>FPDF_COLORSCHEME_::path_fill_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="834" column="14" bodyfile="fpdfview.h" bodystart="834" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__COLORSCHEME___1ae9691f468d3232efae840aff207e8bbe" prot="public" static="no" mutable="no">
+        <type>FPDF_DWORD</type>
+        <definition>FPDF_DWORD FPDF_COLORSCHEME_::path_stroke_color</definition>
+        <argsstring></argsstring>
+        <name>path_stroke_color</name>
+        <qualifiedname>FPDF_COLORSCHEME_::path_stroke_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="835" column="14" bodyfile="fpdfview.h" bodystart="835" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__COLORSCHEME___1a93888d82e5950bb8d102616a40318796" prot="public" static="no" mutable="no">
+        <type>FPDF_DWORD</type>
+        <definition>FPDF_DWORD FPDF_COLORSCHEME_::text_fill_color</definition>
+        <argsstring></argsstring>
+        <name>text_fill_color</name>
+        <qualifiedname>FPDF_COLORSCHEME_::text_fill_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="836" column="14" bodyfile="fpdfview.h" bodystart="836" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__COLORSCHEME___1a1d4c4f12ea5bc0b844c554fac9eec3eb" prot="public" static="no" mutable="no">
+        <type>FPDF_DWORD</type>
+        <definition>FPDF_DWORD FPDF_COLORSCHEME_::text_stroke_color</definition>
+        <argsstring></argsstring>
+        <name>text_stroke_color</name>
+        <qualifiedname>FPDF_COLORSCHEME_::text_stroke_color</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="837" column="14" bodyfile="fpdfview.h" bodystart="837" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="833" column="1" bodyfile="fpdfview.h" bodystart="833" bodyend="838"/>
+    <listofallmembers>
+      <member refid="structFPDF__COLORSCHEME___1ab83731e77a550376ef6f9ba07445400c" prot="public" virt="non-virtual"><scope>FPDF_COLORSCHEME_</scope><name>path_fill_color</name></member>
+      <member refid="structFPDF__COLORSCHEME___1ae9691f468d3232efae840aff207e8bbe" prot="public" virt="non-virtual"><scope>FPDF_COLORSCHEME_</scope><name>path_stroke_color</name></member>
+      <member refid="structFPDF__COLORSCHEME___1a93888d82e5950bb8d102616a40318796" prot="public" virt="non-virtual"><scope>FPDF_COLORSCHEME_</scope><name>text_fill_color</name></member>
+      <member refid="structFPDF__COLORSCHEME___1a1d4c4f12ea5bc0b844c554fac9eec3eb" prot="public" virt="non-virtual"><scope>FPDF_COLORSCHEME_</scope><name>text_stroke_color</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

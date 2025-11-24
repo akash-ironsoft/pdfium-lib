@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__FS__MATRIX__" kind="struct" language="C++" prot="public">
+    <compoundname>_FS_MATRIX_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__FS__MATRIX___1aac0499ce592c970a4c2fd7bd78d82895" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::a</definition>
+        <argsstring></argsstring>
+        <name>a</name>
+        <qualifiedname>_FS_MATRIX_::a</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="147" column="9" bodyfile="fpdfview.h" bodystart="147" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FS__MATRIX___1a0b4eb712c4aab49066fc172147c69055" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::b</definition>
+        <argsstring></argsstring>
+        <name>b</name>
+        <qualifiedname>_FS_MATRIX_::b</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="148" column="9" bodyfile="fpdfview.h" bodystart="148" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FS__MATRIX___1ae83027c2173953c95c7195660bb678b8" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::c</definition>
+        <argsstring></argsstring>
+        <name>c</name>
+        <qualifiedname>_FS_MATRIX_::c</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="149" column="9" bodyfile="fpdfview.h" bodystart="149" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FS__MATRIX___1a491bcde48597eeeedb7857066d34e210" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::d</definition>
+        <argsstring></argsstring>
+        <name>d</name>
+        <qualifiedname>_FS_MATRIX_::d</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="150" column="9" bodyfile="fpdfview.h" bodystart="150" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FS__MATRIX___1a4dc66a65c7460667ac255933347b59e7" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::e</definition>
+        <argsstring></argsstring>
+        <name>e</name>
+        <qualifiedname>_FS_MATRIX_::e</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="151" column="9" bodyfile="fpdfview.h" bodystart="151" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FS__MATRIX___1a87079923256ef9952f62482e5a7cab11" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float _FS_MATRIX_::f</definition>
+        <argsstring></argsstring>
+        <name>f</name>
+        <qualifiedname>_FS_MATRIX_::f</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="152" column="9" bodyfile="fpdfview.h" bodystart="152" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="146" column="1" bodyfile="fpdfview.h" bodystart="146" bodyend="153"/>
+    <listofallmembers>
+      <member refid="struct__FS__MATRIX___1aac0499ce592c970a4c2fd7bd78d82895" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>a</name></member>
+      <member refid="struct__FS__MATRIX___1a0b4eb712c4aab49066fc172147c69055" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>b</name></member>
+      <member refid="struct__FS__MATRIX___1ae83027c2173953c95c7195660bb678b8" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>c</name></member>
+      <member refid="struct__FS__MATRIX___1a491bcde48597eeeedb7857066d34e210" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>d</name></member>
+      <member refid="struct__FS__MATRIX___1a4dc66a65c7460667ac255933347b59e7" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>e</name></member>
+      <member refid="struct__FS__MATRIX___1a87079923256ef9952f62482e5a7cab11" prot="public" virt="non-virtual"><scope>_FS_MATRIX_</scope><name>f</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

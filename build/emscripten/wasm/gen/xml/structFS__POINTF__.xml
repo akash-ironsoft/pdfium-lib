@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFS__POINTF__" kind="struct" language="C++" prot="public">
+    <compoundname>FS_POINTF_</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFS__POINTF___1aa0ae3d40192e7abccd2e0aba0454ee41" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FS_POINTF_::x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>FS_POINTF_::x</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="181" column="9" bodyfile="fpdfview.h" bodystart="181" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFS__POINTF___1a04b3ecdc598e70607309e6e58a0e4f21" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FS_POINTF_::y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>FS_POINTF_::y</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="182" column="9" bodyfile="fpdfview.h" bodystart="182" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="180" column="1" bodyfile="fpdfview.h" bodystart="180" bodyend="183"/>
+    <listofallmembers>
+      <member refid="structFS__POINTF___1aa0ae3d40192e7abccd2e0aba0454ee41" prot="public" virt="non-virtual"><scope>FS_POINTF_</scope><name>x</name></member>
+      <member refid="structFS__POINTF___1a04b3ecdc598e70607309e6e58a0e4f21" prot="public" virt="non-virtual"><scope>FS_POINTF_</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__flatten_8h" kind="file" language="C++">
+    <compoundname>fpdf_flatten.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_flatten.h</label>
+        <link refid="fpdf__flatten_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__flatten_8h_1a3a1695687bd5d2e19e2f538771805b93" prot="public" static="no">
+        <name>FLATTEN_FAIL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="14" column="9" bodyfile="fpdf_flatten.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__flatten_8h_1a0f4f2b761c84020b1c849fa3ff9ada50" prot="public" static="no">
+        <name>FLATTEN_SUCCESS</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="16" column="9" bodyfile="fpdf_flatten.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__flatten_8h_1a099ec21b84265bd72ca9c55a3fd5f2fc" prot="public" static="no">
+        <name>FLATTEN_NOTHINGTODO</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="18" column="9" bodyfile="fpdf_flatten.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__flatten_8h_1ab9185fd6a9017ccf54d4ba50f9161ff6" prot="public" static="no">
+        <name>FLAT_NORMALDISPLAY</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="21" column="9" bodyfile="fpdf_flatten.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__flatten_8h_1a00cf00b72a01236b232f268ac5616aad" prot="public" static="no">
+        <name>FLAT_PRINT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="23" column="9" bodyfile="fpdf_flatten.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__flatten_8h_1ad2263d23715c58cf26c62ac5e056ea2f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFPage_Flatten</definition>
+        <argsstring>(FPDF_PAGE page, int nFlag)</argsstring>
+        <name>FPDFPage_Flatten</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>nFlag</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_flatten.h" line="38" column="31" declfile="fpdf_flatten.h" declline="38" declcolumn="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_flatten.h"/>
+  </compounddef>
+</doxygen>

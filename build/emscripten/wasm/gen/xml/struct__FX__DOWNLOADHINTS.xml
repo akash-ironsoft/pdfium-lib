@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__FX__DOWNLOADHINTS" kind="struct" language="C++" prot="public">
+    <compoundname>_FX_DOWNLOADHINTS</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__FX__DOWNLOADHINTS_1a258965f5e5d6ee68a146812a2e207ce0" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _FX_DOWNLOADHINTS::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>_FX_DOWNLOADHINTS::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="73" column="7" bodyfile="fpdf_dataavail.h" bodystart="73" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__FX__DOWNLOADHINTS_1ac8f79fbdb2c23a648945021155174750" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _FX_DOWNLOADHINTS::AddSegment) (struct _FX_DOWNLOADHINTS *pThis, size_t offset, size_t size)</definition>
+        <argsstring>)(struct _FX_DOWNLOADHINTS *pThis, size_t offset, size_t size)</argsstring>
+        <name>AddSegment</name>
+        <qualifiedname>_FX_DOWNLOADHINTS::AddSegment</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="87" column="3" bodyfile="fpdf_dataavail.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_dataavail.h" line="71" column="1" bodyfile="fpdf_dataavail.h" bodystart="71" bodyend="90"/>
+    <listofallmembers>
+      <member refid="struct__FX__DOWNLOADHINTS_1ac8f79fbdb2c23a648945021155174750" prot="public" virt="non-virtual"><scope>_FX_DOWNLOADHINTS</scope><name>AddSegment</name></member>
+      <member refid="struct__FX__DOWNLOADHINTS_1a258965f5e5d6ee68a146812a2e207ce0" prot="public" virt="non-virtual"><scope>_FX_DOWNLOADHINTS</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,574 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__transformpage_8h" kind="file" language="C++">
+    <compoundname>fpdf_transformpage.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_transformpage.h</label>
+        <link refid="fpdf__transformpage_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a6bece588d9a0cd87ae0cd6e6c98dccfd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_SetMediaBox</definition>
+        <argsstring>(FPDF_PAGE page, float left, float bottom, float right, float top)</argsstring>
+        <name>FPDFPage_SetMediaBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="24" column="32" declfile="fpdf_transformpage.h" declline="24" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a85868aecf0a990650e524a41a7a3ea00" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_SetCropBox</definition>
+        <argsstring>(FPDF_PAGE page, float left, float bottom, float right, float top)</argsstring>
+        <name>FPDFPage_SetCropBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="37" column="32" declfile="fpdf_transformpage.h" declline="37" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a33c4f9f1d0735ab48b4b1c9ce7e2a561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_SetBleedBox</definition>
+        <argsstring>(FPDF_PAGE page, float left, float bottom, float right, float top)</argsstring>
+        <name>FPDFPage_SetBleedBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="50" column="32" declfile="fpdf_transformpage.h" declline="50" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a8e222202064bd6f2439132c8e1058f27" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_SetTrimBox</definition>
+        <argsstring>(FPDF_PAGE page, float left, float bottom, float right, float top)</argsstring>
+        <name>FPDFPage_SetTrimBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="63" column="32" declfile="fpdf_transformpage.h" declline="63" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a900bae8d2513e4841fb875e41a276743" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_SetArtBox</definition>
+        <argsstring>(FPDF_PAGE page, float left, float bottom, float right, float top)</argsstring>
+        <name>FPDFPage_SetArtBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="76" column="32" declfile="fpdf_transformpage.h" declline="76" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a49c5a67eff33c651ebc6011e86717602" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_GetMediaBox</definition>
+        <argsstring>(FPDF_PAGE page, float *left, float *bottom, float *right, float *top)</argsstring>
+        <name>FPDFPage_GetMediaBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="92" column="37" declfile="fpdf_transformpage.h" declline="92" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a4d496cd351f1c34571f5abc0af71abac" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_GetCropBox</definition>
+        <argsstring>(FPDF_PAGE page, float *left, float *bottom, float *right, float *top)</argsstring>
+        <name>FPDFPage_GetCropBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="108" column="37" declfile="fpdf_transformpage.h" declline="108" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a5434ac58b7fa6fb88da060782bd8633e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_GetBleedBox</definition>
+        <argsstring>(FPDF_PAGE page, float *left, float *bottom, float *right, float *top)</argsstring>
+        <name>FPDFPage_GetBleedBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="124" column="37" declfile="fpdf_transformpage.h" declline="124" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a30999e5b1eb83f348d91ad84b9a8fdd0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_GetTrimBox</definition>
+        <argsstring>(FPDF_PAGE page, float *left, float *bottom, float *right, float *top)</argsstring>
+        <name>FPDFPage_GetTrimBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="140" column="37" declfile="fpdf_transformpage.h" declline="140" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a1daee75681aecec626d246e12db470ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_GetArtBox</definition>
+        <argsstring>(FPDF_PAGE page, float *left, float *bottom, float *right, float *top)</argsstring>
+        <name>FPDFPage_GetArtBox</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="156" column="37" declfile="fpdf_transformpage.h" declline="156" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a50a8590368051382f34f37ba77f364e7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_TransFormWithClip</definition>
+        <argsstring>(FPDF_PAGE page, const FS_MATRIX *matrix, const FS_RECTF *clipRect)</argsstring>
+        <name>FPDFPage_TransFormWithClip</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__FS__MATRIX__" kindref="compound">FS_MATRIX</ref> *</type>
+          <declname>matrix</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__FS__RECTF__" kindref="compound">FS_RECTF</ref> *</type>
+          <declname>clipRect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="176" column="1" declfile="fpdf_transformpage.h" declline="176" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a5f415c3749bbffaaead0bef1d71f3acc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPageObj_TransformClipPath</definition>
+        <argsstring>(FPDF_PAGEOBJECT page_object, double a, double b, double c, double d, double e, double f)</argsstring>
+        <name>FPDFPageObj_TransformClipPath</name>
+        <param>
+          <type>FPDF_PAGEOBJECT</type>
+          <declname>page_object</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>a</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>b</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>c</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>d</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>e</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>f</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="191" column="1" declfile="fpdf_transformpage.h" declline="191" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a46b808ef297f7aae93d747ff9c7fbcc5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_CLIPPATH FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_CLIPPATH FPDF_CALLCONV FPDFPageObj_GetClipPath</definition>
+        <argsstring>(FPDF_PAGEOBJECT page_object)</argsstring>
+        <name>FPDFPageObj_GetClipPath</name>
+        <param>
+          <type>FPDF_PAGEOBJECT</type>
+          <declname>page_object</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="209" column="1" declfile="fpdf_transformpage.h" declline="209" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a4039985f3cd28e8f872f794b857dc8c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFClipPath_CountPaths</definition>
+        <argsstring>(FPDF_CLIPPATH clip_path)</argsstring>
+        <name>FPDFClipPath_CountPaths</name>
+        <param>
+          <type>FPDF_CLIPPATH</type>
+          <declname>clip_path</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="217" column="31" declfile="fpdf_transformpage.h" declline="217" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1ac6e49a4ee038ae95f90b5504ce60a838" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFClipPath_CountPathSegments</definition>
+        <argsstring>(FPDF_CLIPPATH clip_path, int path_index)</argsstring>
+        <name>FPDFClipPath_CountPathSegments</name>
+        <param>
+          <type>FPDF_CLIPPATH</type>
+          <declname>clip_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>path_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="227" column="1" declfile="fpdf_transformpage.h" declline="227" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a83f63bf8c1c7ed71212ac7edda9603dc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_PATHSEGMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_PATHSEGMENT FPDF_CALLCONV FPDFClipPath_GetPathSegment</definition>
+        <argsstring>(FPDF_CLIPPATH clip_path, int path_index, int segment_index)</argsstring>
+        <name>FPDFClipPath_GetPathSegment</name>
+        <param>
+          <type>FPDF_CLIPPATH</type>
+          <declname>clip_path</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>path_index</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>segment_index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="240" column="1" declfile="fpdf_transformpage.h" declline="240" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1a99e5ab59e7588696d3f99df048626539" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_CLIPPATH FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_CLIPPATH FPDF_CALLCONV FPDF_CreateClipPath</definition>
+        <argsstring>(float left, float bottom, float right, float top)</argsstring>
+        <name>FPDF_CreateClipPath</name>
+        <param>
+          <type>float</type>
+          <declname>left</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>bottom</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>right</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>top</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="253" column="41" declfile="fpdf_transformpage.h" declline="253" declcolumn="41"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1acb47eead9ac6a564743094e4090d6a20" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_DestroyClipPath</definition>
+        <argsstring>(FPDF_CLIPPATH clipPath)</argsstring>
+        <name>FPDF_DestroyClipPath</name>
+        <param>
+          <type>FPDF_CLIPPATH</type>
+          <declname>clipPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="261" column="32" declfile="fpdf_transformpage.h" declline="261" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__transformpage_8h_1afccbb2ce02648ac58a0416c447ee6e4c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_InsertClipPath</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_CLIPPATH clipPath)</argsstring>
+        <name>FPDFPage_InsertClipPath</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_CLIPPATH</type>
+          <declname>clipPath</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_transformpage.h" line="271" column="32" declfile="fpdf_transformpage.h" declline="271" declcolumn="32"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_transformpage.h"/>
+  </compounddef>
+</doxygen>

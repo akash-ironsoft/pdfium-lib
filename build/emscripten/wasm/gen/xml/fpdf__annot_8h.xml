@@ -1,0 +1,2242 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__annot_8h" kind="file" language="C++">
+    <compoundname>fpdf_annot.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <includes refid="fpdf__formfill_8h" local="yes">fpdf_formfill.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_annot.h</label>
+        <link refid="fpdf__annot_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>fpdf_formfill.h</label>
+        <link refid="fpdf__formfill_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__annot_8h_1a429f2b6c2ba5adbb812cc63d0a9b5f31" prot="public" static="no">
+        <name>FPDF_ANNOT_UNKNOWN</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="20" column="9" bodyfile="fpdf_annot.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ae85a6feda99f27df38d8ff611eece76b" prot="public" static="no">
+        <name>FPDF_ANNOT_TEXT</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="21" column="9" bodyfile="fpdf_annot.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1af0691826db2013268f624b6831f8aacb" prot="public" static="no">
+        <name>FPDF_ANNOT_LINK</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="22" column="9" bodyfile="fpdf_annot.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1aaa9790e87cca1f543bef7b5bbbfa5f77" prot="public" static="no">
+        <name>FPDF_ANNOT_FREETEXT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="23" column="9" bodyfile="fpdf_annot.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a3fc1bc0751847cee987dde2a3142e668" prot="public" static="no">
+        <name>FPDF_ANNOT_LINE</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="24" column="9" bodyfile="fpdf_annot.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1aa492ee04bb9a424c14031913c683dc32" prot="public" static="no">
+        <name>FPDF_ANNOT_SQUARE</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="25" column="9" bodyfile="fpdf_annot.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ae4cd4d28b782b0758fae2a70a35b726f" prot="public" static="no">
+        <name>FPDF_ANNOT_CIRCLE</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="26" column="9" bodyfile="fpdf_annot.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1accec6b90ac60d87095bf4f3bc8f89908" prot="public" static="no">
+        <name>FPDF_ANNOT_POLYGON</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="27" column="9" bodyfile="fpdf_annot.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1affeb9ab4e3cd07094e23e1eadc942ed4" prot="public" static="no">
+        <name>FPDF_ANNOT_POLYLINE</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="28" column="9" bodyfile="fpdf_annot.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a7277ea65b05caec43c59bcdcfdf6b21e" prot="public" static="no">
+        <name>FPDF_ANNOT_HIGHLIGHT</name>
+        <initializer>9</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="29" column="9" bodyfile="fpdf_annot.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a3585318dd1cd6269d900f200e59c3ce3" prot="public" static="no">
+        <name>FPDF_ANNOT_UNDERLINE</name>
+        <initializer>10</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="30" column="9" bodyfile="fpdf_annot.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a7c7e47869456c865c9f84a6116a86fc7" prot="public" static="no">
+        <name>FPDF_ANNOT_SQUIGGLY</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="31" column="9" bodyfile="fpdf_annot.h" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a2b043bd77aaab5234b541a1d8160efe4" prot="public" static="no">
+        <name>FPDF_ANNOT_STRIKEOUT</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="32" column="9" bodyfile="fpdf_annot.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a0c3ca1d8014403826c64477000512214" prot="public" static="no">
+        <name>FPDF_ANNOT_STAMP</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="33" column="9" bodyfile="fpdf_annot.h" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1acd073b4915af2e70d77620855a987b5a" prot="public" static="no">
+        <name>FPDF_ANNOT_CARET</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="34" column="9" bodyfile="fpdf_annot.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a81e7ea6e189168d58e1f03d95f0380fc" prot="public" static="no">
+        <name>FPDF_ANNOT_INK</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="35" column="9" bodyfile="fpdf_annot.h" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ad6167004673834784610b70c9cfcf064" prot="public" static="no">
+        <name>FPDF_ANNOT_POPUP</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="36" column="9" bodyfile="fpdf_annot.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a077cf681b9b675b0518b3036227a9e65" prot="public" static="no">
+        <name>FPDF_ANNOT_FILEATTACHMENT</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="37" column="9" bodyfile="fpdf_annot.h" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a80c94e4aa9a986c28e15eed065f2efc4" prot="public" static="no">
+        <name>FPDF_ANNOT_SOUND</name>
+        <initializer>18</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="38" column="9" bodyfile="fpdf_annot.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a1533d7fb47fb97ffe04f0e3d4884ad18" prot="public" static="no">
+        <name>FPDF_ANNOT_MOVIE</name>
+        <initializer>19</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="39" column="9" bodyfile="fpdf_annot.h" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a6aa9553eb25f10faaa6149a16563addd" prot="public" static="no">
+        <name>FPDF_ANNOT_WIDGET</name>
+        <initializer>20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="40" column="9" bodyfile="fpdf_annot.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a43ee282bdaabd4e52248e2b3e971971a" prot="public" static="no">
+        <name>FPDF_ANNOT_SCREEN</name>
+        <initializer>21</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="41" column="9" bodyfile="fpdf_annot.h" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1aecfb6658fb12e90a0e1452059df549cd" prot="public" static="no">
+        <name>FPDF_ANNOT_PRINTERMARK</name>
+        <initializer>22</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="42" column="9" bodyfile="fpdf_annot.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a7730533332bf04e15bf112b885afd196" prot="public" static="no">
+        <name>FPDF_ANNOT_TRAPNET</name>
+        <initializer>23</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="43" column="9" bodyfile="fpdf_annot.h" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a59267f5bb2eac63dc5f5f66f35e59acb" prot="public" static="no">
+        <name>FPDF_ANNOT_WATERMARK</name>
+        <initializer>24</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="44" column="9" bodyfile="fpdf_annot.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a1e5aeb2d84ac263db709605eb07a9a00" prot="public" static="no">
+        <name>FPDF_ANNOT_THREED</name>
+        <initializer>25</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="45" column="9" bodyfile="fpdf_annot.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a090c9c3f8d2e34a1600387bbc83868ef" prot="public" static="no">
+        <name>FPDF_ANNOT_RICHMEDIA</name>
+        <initializer>26</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="46" column="9" bodyfile="fpdf_annot.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a6949d3313333eaa00e01541242843c0e" prot="public" static="no">
+        <name>FPDF_ANNOT_XFAWIDGET</name>
+        <initializer>27</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="47" column="9" bodyfile="fpdf_annot.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ac5a12f0e39155857c0e8e93825f8a9ef" prot="public" static="no">
+        <name>FPDF_ANNOT_REDACT</name>
+        <initializer>28</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="48" column="9" bodyfile="fpdf_annot.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1abdb413fd36facdbb5ac76709119b8124" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="51" column="9" bodyfile="fpdf_annot.h" bodystart="51" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a1215de1e45c88924982052fc8a06ce72" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_INVISIBLE</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="52" column="9" bodyfile="fpdf_annot.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a1a803d2543cbcb57afd12de2b7eae1fb" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_HIDDEN</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="53" column="9" bodyfile="fpdf_annot.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a1ba4002948568b84dcf3e50f7962b3aa" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_PRINT</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="54" column="9" bodyfile="fpdf_annot.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a185ddd4de7ccac7fa6fcddbb1febf1e3" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_NOZOOM</name>
+        <initializer>(1 &lt;&lt; 3)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="55" column="9" bodyfile="fpdf_annot.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a184d1d068fa0c93c6ffd19730028be54" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_NOROTATE</name>
+        <initializer>(1 &lt;&lt; 4)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="56" column="9" bodyfile="fpdf_annot.h" bodystart="56" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1abfa639c6f1e177174eca436b6ee5dab8" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_NOVIEW</name>
+        <initializer>(1 &lt;&lt; 5)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="57" column="9" bodyfile="fpdf_annot.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a4db574776d0e3227a555c340c4f2d00c" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_READONLY</name>
+        <initializer>(1 &lt;&lt; 6)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="58" column="9" bodyfile="fpdf_annot.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a9e9060d4a7751f15d20df68823e0a12e" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_LOCKED</name>
+        <initializer>(1 &lt;&lt; 7)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="59" column="9" bodyfile="fpdf_annot.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ae0dc71788c664f18badb723cd6929563" prot="public" static="no">
+        <name>FPDF_ANNOT_FLAG_TOGGLENOVIEW</name>
+        <initializer>(1 &lt;&lt; 8)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="60" column="9" bodyfile="fpdf_annot.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a8b1b93a784089ddc95c2efc0f28c9257" prot="public" static="no">
+        <name>FPDF_ANNOT_APPEARANCEMODE_NORMAL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="62" column="9" bodyfile="fpdf_annot.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a29ed9b2a98a540f2d3a504a35601cee9" prot="public" static="no">
+        <name>FPDF_ANNOT_APPEARANCEMODE_ROLLOVER</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="63" column="9" bodyfile="fpdf_annot.h" bodystart="63" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1abb645c4e93572e789595b8299f95ed19" prot="public" static="no">
+        <name>FPDF_ANNOT_APPEARANCEMODE_DOWN</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="64" column="9" bodyfile="fpdf_annot.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a2942f34c46d383540d9e68543eb354df" prot="public" static="no">
+        <name>FPDF_ANNOT_APPEARANCEMODE_COUNT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="65" column="9" bodyfile="fpdf_annot.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ac057fe9c97242a43a0f9e7a103c966e6" prot="public" static="no">
+        <name>FPDF_FORMFLAG_NONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="69" column="9" bodyfile="fpdf_annot.h" bodystart="69" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a7f6007abab1a862ea52b25ea2919ba2c" prot="public" static="no">
+        <name>FPDF_FORMFLAG_READONLY</name>
+        <initializer>(1 &lt;&lt; 0)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="70" column="9" bodyfile="fpdf_annot.h" bodystart="70" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a927c0f02a51413ed1e0050106abd2cd0" prot="public" static="no">
+        <name>FPDF_FORMFLAG_REQUIRED</name>
+        <initializer>(1 &lt;&lt; 1)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="71" column="9" bodyfile="fpdf_annot.h" bodystart="71" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a54aee1ac6f5df3ebfd44f22fef443ded" prot="public" static="no">
+        <name>FPDF_FORMFLAG_NOEXPORT</name>
+        <initializer>(1 &lt;&lt; 2)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="72" column="9" bodyfile="fpdf_annot.h" bodystart="72" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a48f1d77201d6227e1f555f531e51ed2d" prot="public" static="no">
+        <name>FPDF_FORMFLAG_TEXT_MULTILINE</name>
+        <initializer>(1 &lt;&lt; 12)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="76" column="9" bodyfile="fpdf_annot.h" bodystart="76" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ad6195785ba8f1918d949bab617520807" prot="public" static="no">
+        <name>FPDF_FORMFLAG_TEXT_PASSWORD</name>
+        <initializer>(1 &lt;&lt; 13)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="77" column="9" bodyfile="fpdf_annot.h" bodystart="77" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a5f78e63903b6cca236b4bfca10b29c70" prot="public" static="no">
+        <name>FPDF_FORMFLAG_CHOICE_COMBO</name>
+        <initializer>(1 &lt;&lt; 17)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="81" column="9" bodyfile="fpdf_annot.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1a63b16c8af6f79cd222813702aeb93067" prot="public" static="no">
+        <name>FPDF_FORMFLAG_CHOICE_EDIT</name>
+        <initializer>(1 &lt;&lt; 18)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="82" column="9" bodyfile="fpdf_annot.h" bodystart="82" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ad9991494d080a064a82fa561f8f00175" prot="public" static="no">
+        <name>FPDF_FORMFLAG_CHOICE_MULTI_SELECT</name>
+        <initializer>(1 &lt;&lt; 21)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="83" column="9" bodyfile="fpdf_annot.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ae1b6d7d5a589eb23b530d4dd1fa99016" prot="public" static="no">
+        <name>FPDF_ANNOT_AACTION_KEY_STROKE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="90" column="9" bodyfile="fpdf_annot.h" bodystart="90" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1aaf3292c0560fc16777c4d349da0e1fbd" prot="public" static="no">
+        <name>FPDF_ANNOT_AACTION_FORMAT</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="91" column="9" bodyfile="fpdf_annot.h" bodystart="91" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ab0c49774e68c06effb2920565724d83d" prot="public" static="no">
+        <name>FPDF_ANNOT_AACTION_VALIDATE</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="92" column="9" bodyfile="fpdf_annot.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__annot_8h_1ab57b6c9d8a4d5de7a5f8e1f448d73145" prot="public" static="no">
+        <name>FPDF_ANNOT_AACTION_CALCULATE</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="93" column="9" bodyfile="fpdf_annot.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="fpdf__annot_8h_1add10b05f5f2781f0b14583d3e2d8338d" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FPDFANNOT_COLORTYPE</name>
+        <enumvalue id="fpdf__annot_8h_1add10b05f5f2781f0b14583d3e2d8338dadb0525adf6af933cfb92268f07f6df44" prot="public">
+          <name>FPDFANNOT_COLORTYPE_Color</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__annot_8h_1add10b05f5f2781f0b14583d3e2d8338da9c9787d91a69401fc4fe4201df60baa2" prot="public">
+          <name>FPDFANNOT_COLORTYPE_InteriorColor</name>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="95" column="1" bodyfile="fpdf_annot.h" bodystart="95" bodyend="98"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__annot_8h_1af823da21576d879954866b1d892a5e45" prot="public" static="no">
+        <type>enum FPDFANNOT_COLORTYPE</type>
+        <definition>typedef enum FPDFANNOT_COLORTYPE FPDFANNOT_COLORTYPE</definition>
+        <argsstring></argsstring>
+        <name>FPDFANNOT_COLORTYPE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="98" column="21"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__annot_8h_1af300b92832e2ea0d930ee5fbf2d9b432" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_IsSupportedSubtype</definition>
+        <argsstring>(FPDF_ANNOTATION_SUBTYPE subtype)</argsstring>
+        <name>FPDFAnnot_IsSupportedSubtype</name>
+        <param>
+          <type>FPDF_ANNOTATION_SUBTYPE</type>
+          <declname>subtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="121" column="1" declfile="fpdf_annot.h" declline="121" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a53c4dc75734a73a98db3e43ac6fe0a6e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV FPDFPage_CreateAnnot</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_ANNOTATION_SUBTYPE subtype)</argsstring>
+        <name>FPDFPage_CreateAnnot</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION_SUBTYPE</type>
+          <declname>subtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="134" column="1" declfile="fpdf_annot.h" declline="134" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a5397d60d4659f77426740bca7e4fa88a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFPage_GetAnnotCount</definition>
+        <argsstring>(FPDF_PAGE page)</argsstring>
+        <name>FPDFPage_GetAnnotCount</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="142" column="31" declfile="fpdf_annot.h" declline="142" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a97cdf3b30fcf3d9a92c05d081dbc2639" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV FPDFPage_GetAnnot</definition>
+        <argsstring>(FPDF_PAGE page, int index)</argsstring>
+        <name>FPDFPage_GetAnnot</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="152" column="43" declfile="fpdf_annot.h" declline="152" declcolumn="43"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ad0ce52ab3db66bc51ff31b0d5ebf6c7c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFPage_GetAnnotIndex</definition>
+        <argsstring>(FPDF_PAGE page, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFPage_GetAnnotIndex</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="163" column="31" declfile="fpdf_annot.h" declline="163" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aab59dfdbafa82a37c4fa20b7af0b69b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFPage_CloseAnnot</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFPage_CloseAnnot</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="172" column="32" declfile="fpdf_annot.h" declline="172" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a1c99e937914752a6e8e91b7db7ab5ba9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFPage_RemoveAnnot</definition>
+        <argsstring>(FPDF_PAGE page, int index)</argsstring>
+        <name>FPDFPage_RemoveAnnot</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="181" column="37" declfile="fpdf_annot.h" declline="181" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a6810d809078f8259e88b8141c28b8c59" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ANNOTATION_SUBTYPE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ANNOTATION_SUBTYPE FPDF_CALLCONV FPDFAnnot_GetSubtype</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetSubtype</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="191" column="1" declfile="fpdf_annot.h" declline="191" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ac2e474a1f8a561494fc430c9f7766ee9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_IsObjectSupportedSubtype</definition>
+        <argsstring>(FPDF_ANNOTATION_SUBTYPE subtype)</argsstring>
+        <name>FPDFAnnot_IsObjectSupportedSubtype</name>
+        <param>
+          <type>FPDF_ANNOTATION_SUBTYPE</type>
+          <declname>subtype</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="202" column="1" declfile="fpdf_annot.h" declline="202" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aeb31512dd035eac0ade3e5327edc078b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_UpdateObject</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_PAGEOBJECT obj)</argsstring>
+        <name>FPDFAnnot_UpdateObject</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGEOBJECT</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="216" column="1" declfile="fpdf_annot.h" declline="216" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a2fac25e3e634a972be37a608f9ff3016" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_AddInkStroke</definition>
+        <argsstring>(FPDF_ANNOTATION annot, const FS_POINTF *points, size_t point_count)</argsstring>
+        <name>FPDFAnnot_AddInkStroke</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>points</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>point_count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="231" column="31" declfile="fpdf_annot.h" declline="231" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1af3b794867ea5d82f46a42de47f6198a2" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_RemoveInkList</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_RemoveInkList</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="244" column="1" declfile="fpdf_annot.h" declline="244" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ae0c2049f0c14fb026138acc8cbdc8f08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_AppendObject</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_PAGEOBJECT obj)</argsstring>
+        <name>FPDFAnnot_AppendObject</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGEOBJECT</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="258" column="1" declfile="fpdf_annot.h" declline="258" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a4d81657e18ebbc098a5acfe5fec02ebc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetObjectCount</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetObjectCount</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="267" column="31" declfile="fpdf_annot.h" declline="267" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a367040c92306a6a4272f10bcdfddf173" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_PAGEOBJECT FPDF_CALLCONV FPDFAnnot_GetObject</definition>
+        <argsstring>(FPDF_ANNOTATION annot, int index)</argsstring>
+        <name>FPDFAnnot_GetObject</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="277" column="1" declfile="fpdf_annot.h" declline="277" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a512cbcd352b9eb2cfee8f92d920a798c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_RemoveObject</definition>
+        <argsstring>(FPDF_ANNOTATION annot, int index)</argsstring>
+        <name>FPDFAnnot_RemoveObject</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="287" column="1" declfile="fpdf_annot.h" declline="287" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ae55359c3bbd263266fbeeb994ace18ca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetColor</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDFANNOT_COLORTYPE type, unsigned int R, unsigned int G, unsigned int B, unsigned int A)</argsstring>
+        <name>FPDFAnnot_SetColor</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDFANNOT_COLORTYPE</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="300" column="37" declfile="fpdf_annot.h" declline="300" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a7c04b72158387618ea9471464ca79e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetColor</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDFANNOT_COLORTYPE type, unsigned int *R, unsigned int *G, unsigned int *B, unsigned int *A)</argsstring>
+        <name>FPDFAnnot_GetColor</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDFANNOT_COLORTYPE</type>
+          <declname>type</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>B</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>A</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="319" column="37" declfile="fpdf_annot.h" declline="319" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a74551f656efff4f16e08c39cab8035fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_HasAttachmentPoints</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_HasAttachmentPoints</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="339" column="1" declfile="fpdf_annot.h" declline="339" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1af606c53c1dccc8cd1a53d274340fa79d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetAttachmentPoints</definition>
+        <argsstring>(FPDF_ANNOTATION annot, size_t quad_index, const FS_QUADPOINTSF *quad_points)</argsstring>
+        <name>FPDFAnnot_SetAttachmentPoints</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>quad_index</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__FS__QUADPOINTSF" kindref="compound">FS_QUADPOINTSF</ref> *</type>
+          <declname>quad_points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="355" column="1" declfile="fpdf_annot.h" declline="355" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a7264f983eed41f76bacdf5663d415f1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_AppendAttachmentPoints</definition>
+        <argsstring>(FPDF_ANNOTATION annot, const FS_QUADPOINTSF *quad_points)</argsstring>
+        <name>FPDFAnnot_AppendAttachmentPoints</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__FS__QUADPOINTSF" kindref="compound">FS_QUADPOINTSF</ref> *</type>
+          <declname>quad_points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="370" column="1" declfile="fpdf_annot.h" declline="370" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a3948a8ec4c1628827cd15a6c7918475f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT size_t FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT size_t FPDF_CALLCONV FPDFAnnot_CountAttachmentPoints</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_CountAttachmentPoints</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="380" column="1" declfile="fpdf_annot.h" declline="380" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a2c36665ba9180c186e445b6fd6308187" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetAttachmentPoints</definition>
+        <argsstring>(FPDF_ANNOTATION annot, size_t quad_index, FS_QUADPOINTSF *quad_points)</argsstring>
+        <name>FPDFAnnot_GetAttachmentPoints</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>quad_index</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FS__QUADPOINTSF" kindref="compound">FS_QUADPOINTSF</ref> *</type>
+          <declname>quad_points</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="391" column="1" declfile="fpdf_annot.h" declline="391" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a089a6cbee642c3b852cc2dc33d3a1c99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetRect</definition>
+        <argsstring>(FPDF_ANNOTATION annot, const FS_RECTF *rect)</argsstring>
+        <name>FPDFAnnot_SetRect</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>const <ref refid="struct__FS__RECTF__" kindref="compound">FS_RECTF</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="405" column="37" declfile="fpdf_annot.h" declline="405" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ac24b5612e7f038999571fba630f452c3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetRect</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FS_RECTF *rect)</argsstring>
+        <name>FPDFAnnot_GetRect</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FS__RECTF__" kindref="compound">FS_RECTF</ref> *</type>
+          <declname>rect</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="415" column="37" declfile="fpdf_annot.h" declline="415" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a3410b27ae24ad3b9de2e818a12727ab7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetVertices</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FS_POINTF *buffer, unsigned long length)</argsstring>
+        <name>FPDFAnnot_GetVertices</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type><ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="430" column="1" declfile="fpdf_annot.h" declline="430" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ad86089c033743253a67375cdacafb545" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetInkListCount</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetInkListCount</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="442" column="1" declfile="fpdf_annot.h" declline="442" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a8c1b4a0fe2313eca48d6b0ddce83c962" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetInkListPath</definition>
+        <argsstring>(FPDF_ANNOTATION annot, unsigned long path_index, FS_POINTF *buffer, unsigned long length)</argsstring>
+        <name>FPDFAnnot_GetInkListPath</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>path_index</declname>
+        </param>
+        <param>
+          <type><ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="457" column="1" declfile="fpdf_annot.h" declline="457" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1acf02cbc527908145bb06d9ed31b361d7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetLine</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FS_POINTF *start, FS_POINTF *end)</argsstring>
+        <name>FPDFAnnot_GetLine</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type><ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>start</declname>
+        </param>
+        <param>
+          <type><ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>end</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="471" column="37" declfile="fpdf_annot.h" declline="471" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ae04ce7612127d70464eda5c8fc4b38d4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetBorder</definition>
+        <argsstring>(FPDF_ANNOTATION annot, float horizontal_radius, float vertical_radius, float border_width)</argsstring>
+        <name>FPDFAnnot_SetBorder</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>horizontal_radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>vertical_radius</declname>
+        </param>
+        <param>
+          <type>float</type>
+          <declname>border_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="487" column="37" declfile="fpdf_annot.h" declline="487" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a28313518acdfcbfbbb9ba5650c9662c6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetBorder</definition>
+        <argsstring>(FPDF_ANNOTATION annot, float *horizontal_radius, float *vertical_radius, float *border_width)</argsstring>
+        <name>FPDFAnnot_GetBorder</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>horizontal_radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>vertical_radius</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>border_width</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="503" column="1" declfile="fpdf_annot.h" declline="503" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1af3e949952b184a44eacd590240a26fbe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetFormAdditionalActionJavaScript</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, int event, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetFormAdditionalActionJavaScript</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>event</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="527" column="1" declfile="fpdf_annot.h" declline="527" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a467099b75981b2f4e71a91f533d515ce" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_HasKey</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key)</argsstring>
+        <name>FPDFAnnot_HasKey</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="540" column="37" declfile="fpdf_annot.h" declline="540" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a6c9f0f57a4d53080f32a11cc94cd67e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV FPDFAnnot_GetValueType</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key)</argsstring>
+        <name>FPDFAnnot_GetValueType</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="551" column="1" declfile="fpdf_annot.h" declline="551" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a7fc7e1efa4f198a59c3cbed605138f4e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetStringValue</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key, FPDF_WIDESTRING value)</argsstring>
+        <name>FPDFAnnot_SetStringValue</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="564" column="1" declfile="fpdf_annot.h" declline="564" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aa597f833c473dc5787bbddcde0a08554" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetStringValue</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetStringValue</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="584" column="1" declfile="fpdf_annot.h" declline="584" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aac846c75e06e9b8d75621e8d73c24988" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetNumberValue</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key, float *value)</argsstring>
+        <name>FPDFAnnot_GetNumberValue</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="601" column="1" declfile="fpdf_annot.h" declline="601" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a5e859a339af94716d77aa7cae0ff6387" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetAP</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_ANNOT_APPEARANCEMODE appearanceMode, FPDF_WIDESTRING value)</argsstring>
+        <name>FPDFAnnot_SetAP</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOT_APPEARANCEMODE</type>
+          <declname>appearanceMode</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="618" column="1" declfile="fpdf_annot.h" declline="618" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ac2de45e951c95618d70848c767a085e8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetAP</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_ANNOT_APPEARANCEMODE appearanceMode, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetAP</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOT_APPEARANCEMODE</type>
+          <declname>appearanceMode</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="640" column="1" declfile="fpdf_annot.h" declline="640" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a46b8eac071da38532f90dc34ef21e94a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV FPDFAnnot_GetLinkedAnnot</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_BYTESTRING key)</argsstring>
+        <name>FPDFAnnot_GetLinkedAnnot</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="656" column="1" declfile="fpdf_annot.h" declline="656" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a9a6a84d140dc43487801deec68b3fd95" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFlags</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFlags</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="664" column="31" declfile="fpdf_annot.h" declline="664" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a3eb231470d7a9ed86b34d5b2936c90a0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetFlags</definition>
+        <argsstring>(FPDF_ANNOTATION annot, int flags)</argsstring>
+        <name>FPDFAnnot_SetFlags</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="673" column="37" declfile="fpdf_annot.h" declline="673" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a7e6468c1c6b830274c9d4efd4856be15" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFormFieldFlags</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFormFieldFlags</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="685" column="1" declfile="fpdf_annot.h" declline="685" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ac37f05743ba39e4a70dfe306b68f2afe" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetFormFieldFlags</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, FPDF_ANNOTATION annot, int flags)</argsstring>
+        <name>FPDFAnnot_SetFormFieldFlags</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="698" column="1" declfile="fpdf_annot.h" declline="698" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ad7ebe23e4e381c4e82e6e90932cf0561" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ANNOTATION FPDF_CALLCONV FPDFAnnot_GetFormFieldAtPoint</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_PAGE page, const FS_POINTF *point)</argsstring>
+        <name>FPDFAnnot_GetFormFieldAtPoint</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <param>
+          <type>const <ref refid="structFS__POINTF__" kindref="compound">FS_POINTF</ref> *</type>
+          <declname>point</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="716" column="1" declfile="fpdf_annot.h" declline="716" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a45d57380f3c3265929ff0fcf24640349" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetFormFieldName</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetFormFieldName</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="734" column="1" declfile="fpdf_annot.h" declline="734" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a5a4b010f78535ce65d4255e3d3a2bcc9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetFormFieldAlternateName</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetFormFieldAlternateName</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="754" column="1" declfile="fpdf_annot.h" declline="754" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aaf6cc71272586951cae7fa6ab6c28579" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFormFieldType</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFormFieldType</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="770" column="1" declfile="fpdf_annot.h" declline="770" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1abbd278aeed3e3807e2370e3795c751b8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetFormFieldValue</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetFormFieldValue</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="786" column="1" declfile="fpdf_annot.h" declline="786" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a3348f017df3fb7095db0a6711138b2bb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetOptionCount</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetOptionCount</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="801" column="31" declfile="fpdf_annot.h" declline="801" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a818f3c9c18a97d331ad4dfec4f3c973d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetOptionLabel</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, int index, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetOptionLabel</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="823" column="1" declfile="fpdf_annot.h" declline="823" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a96c140e86bd809e62fab44edbb494827" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_IsOptionSelected</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, FPDF_ANNOTATION annot, int index)</argsstring>
+        <name>FPDFAnnot_IsOptionSelected</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="841" column="1" declfile="fpdf_annot.h" declline="841" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a076b97a0acb73b172aa960701301c651" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetFontSize</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, float *value)</argsstring>
+        <name>FPDFAnnot_GetFontSize</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="858" column="1" declfile="fpdf_annot.h" declline="858" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a67ab36c57557a8d2bce71102327577b6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetFontColor</definition>
+        <argsstring>(FPDF_FORMHANDLE handle, FPDF_ANNOTATION annot, unsigned int R, unsigned int G, unsigned int B)</argsstring>
+        <name>FPDFAnnot_SetFontColor</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>handle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="877" column="1" declfile="fpdf_annot.h" declline="877" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a740bdb1645505b28f141c845205e9c0f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetFontColor</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, unsigned int *R, unsigned int *G, unsigned int *B)</argsstring>
+        <name>FPDFAnnot_GetFontColor</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>R</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>G</declname>
+        </param>
+        <param>
+          <type>unsigned int *</type>
+          <declname>B</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="894" column="1" declfile="fpdf_annot.h" declline="894" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a5a0b1688328efe6f1bcac7b1fb88cfd9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_IsChecked</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_IsChecked</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="909" column="37" declfile="fpdf_annot.h" declline="909" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a2828c1b69173ff0ef714e9f27786ffd4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetFocusableSubtypes</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, const FPDF_ANNOTATION_SUBTYPE *subtypes, size_t count)</argsstring>
+        <name>FPDFAnnot_SetFocusableSubtypes</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>const FPDF_ANNOTATION_SUBTYPE *</type>
+          <declname>subtypes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="924" column="1" declfile="fpdf_annot.h" declline="924" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a2ddfd8f344a8e6dcca754213f22e485f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFocusableSubtypesCount</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle)</argsstring>
+        <name>FPDFAnnot_GetFocusableSubtypesCount</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="937" column="1" declfile="fpdf_annot.h" declline="937" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1abf7222d1a1824d2ac26232e2d2ad0642" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_GetFocusableSubtypes</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION_SUBTYPE *subtypes, size_t count)</argsstring>
+        <name>FPDFAnnot_GetFocusableSubtypes</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION_SUBTYPE *</type>
+          <declname>subtypes</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>count</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="953" column="1" declfile="fpdf_annot.h" declline="953" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a5a7ed52741d3af9848624d40f8389dbb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_LINK FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_LINK FPDF_CALLCONV FPDFAnnot_GetLink</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetLink</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="964" column="37" declfile="fpdf_annot.h" declline="964" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a06e5b92a994f7d7cb96e6704003657c5" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFormControlCount</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFormControlCount</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="978" column="1" declfile="fpdf_annot.h" declline="978" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1aa79a2346ce92b6e60a8b4fef17639e6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAnnot_GetFormControlIndex</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFormControlIndex</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="992" column="1" declfile="fpdf_annot.h" declline="992" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a9830185d25339f31a1ca48d565616a62" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAnnot_GetFormFieldExportValue</definition>
+        <argsstring>(FPDF_FORMHANDLE hHandle, FPDF_ANNOTATION annot, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAnnot_GetFormFieldExportValue</name>
+        <param>
+          <type>FPDF_FORMHANDLE</type>
+          <declname>hHandle</declname>
+        </param>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="1009" column="1" declfile="fpdf_annot.h" declline="1009" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ab421305810b47a62071171d938323747" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAnnot_SetURI</definition>
+        <argsstring>(FPDF_ANNOTATION annot, const char *uri)</argsstring>
+        <name>FPDFAnnot_SetURI</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>const char *</type>
+          <declname>uri</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="1021" column="37" declfile="fpdf_annot.h" declline="1021" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1ae799d514eaa3331f6193f86609577022" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV FPDFAnnot_GetFileAttachment</definition>
+        <argsstring>(FPDF_ANNOTATION annot)</argsstring>
+        <name>FPDFAnnot_GetFileAttachment</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="1031" column="1" declfile="fpdf_annot.h" declline="1031" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__annot_8h_1a4a9e984e55b6f484d1d7e399bf1d9cca" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV FPDFAnnot_AddFileAttachment</definition>
+        <argsstring>(FPDF_ANNOTATION annot, FPDF_WIDESTRING name)</argsstring>
+        <name>FPDFAnnot_AddFileAttachment</name>
+        <param>
+          <type>FPDF_ANNOTATION</type>
+          <declname>annot</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_annot.h" line="1041" column="1" declfile="fpdf_annot.h" declline="1041" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_annot.h"/>
+  </compounddef>
+</doxygen>

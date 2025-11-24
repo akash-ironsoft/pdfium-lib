@@ -1,0 +1,1477 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__fwlevent_8h" kind="file" language="C++">
+    <compoundname>fpdf_fwlevent.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_fwlevent.h</label>
+        <link refid="fpdf__fwlevent_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="enum">
+      <memberdef kind="enum" id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FWL_EVENTFLAG</name>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4a26a7320fe2d0ce7fbbc6c77d975201f5" prot="public">
+          <name>FWL_EVENTFLAG_ShiftKey</name>
+          <initializer>= 1 &lt;&lt; 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4ace169abd18ac689c8404cc50d9b78ec7" prot="public">
+          <name>FWL_EVENTFLAG_ControlKey</name>
+          <initializer>= 1 &lt;&lt; 1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4acad8c56a5ebb8dce0ccb7f3877357ae2" prot="public">
+          <name>FWL_EVENTFLAG_AltKey</name>
+          <initializer>= 1 &lt;&lt; 2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4aca741c088919f17ee2c221a63c1f671b" prot="public">
+          <name>FWL_EVENTFLAG_MetaKey</name>
+          <initializer>= 1 &lt;&lt; 3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4a9b762a65bf53f2efbd47240e4ac0d688" prot="public">
+          <name>FWL_EVENTFLAG_KeyPad</name>
+          <initializer>= 1 &lt;&lt; 4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4a88e4785978eb3d90fe44a2ca56e6be02" prot="public">
+          <name>FWL_EVENTFLAG_AutoRepeat</name>
+          <initializer>= 1 &lt;&lt; 5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4a62b8cfc56ed39ed86af371e3e73b83b7" prot="public">
+          <name>FWL_EVENTFLAG_LeftButtonDown</name>
+          <initializer>= 1 &lt;&lt; 6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4aa3b14f19f665c144fbbe7148b652c86a" prot="public">
+          <name>FWL_EVENTFLAG_MiddleButtonDown</name>
+          <initializer>= 1 &lt;&lt; 7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1aed87a4a861317b3b3dd59d0d873735c4a37aaf33253f29403b1bb7f3feb426a4b" prot="public">
+          <name>FWL_EVENTFLAG_RightButtonDown</name>
+          <initializer>= 1 &lt;&lt; 8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_fwlevent.h" line="18" column="1" bodyfile="fpdf_fwlevent.h" bodystart="18" bodyend="28"/>
+      </memberdef>
+      <memberdef kind="enum" id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30" prot="public" static="no" strong="no">
+        <type></type>
+        <name>FWL_VKEYCODE</name>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ac8480befac13c91d07daa1ea539ff6cd" prot="public">
+          <name>FWL_VKEY_Back</name>
+          <initializer>= 0x08</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a5739caebc539a7cfbb8899f4b47e6514" prot="public">
+          <name>FWL_VKEY_Tab</name>
+          <initializer>= 0x09</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a630e7c7442006e71f60d21bcb5e96ac1" prot="public">
+          <name>FWL_VKEY_NewLine</name>
+          <initializer>= 0x0A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae8239320a9a3deb1d9af2ea0a92ea2a6" prot="public">
+          <name>FWL_VKEY_Clear</name>
+          <initializer>= 0x0C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aed14a7895e173097b57e2853e7145692" prot="public">
+          <name>FWL_VKEY_Return</name>
+          <initializer>= 0x0D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a2fe6ecb99759f7c7fba7435548369d8d" prot="public">
+          <name>FWL_VKEY_Shift</name>
+          <initializer>= 0x10</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a47c34887be7278e3687399d8b9256cc0" prot="public">
+          <name>FWL_VKEY_Control</name>
+          <initializer>= 0x11</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a265b52b1ebe942d2fc2549c2a08ebf3a" prot="public">
+          <name>FWL_VKEY_Menu</name>
+          <initializer>= 0x12</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9bc5ba58b42386e2e413a08f7e2188e6" prot="public">
+          <name>FWL_VKEY_Pause</name>
+          <initializer>= 0x13</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1bf15d5b032c9118caf6df86ab3465fd" prot="public">
+          <name>FWL_VKEY_Capital</name>
+          <initializer>= 0x14</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae065f00e651a020a84ea4e2a3e422ddc" prot="public">
+          <name>FWL_VKEY_Kana</name>
+          <initializer>= 0x15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a3f9f059910b06bbb5a48f9c39ba573ea" prot="public">
+          <name>FWL_VKEY_Hangul</name>
+          <initializer>= 0x15</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a76a1ac77f6310c052174e39627bd9dfd" prot="public">
+          <name>FWL_VKEY_Junja</name>
+          <initializer>= 0x17</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0a5bb18052689f24ebae8886f1d73dd7" prot="public">
+          <name>FWL_VKEY_Final</name>
+          <initializer>= 0x18</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa8800540b3fdfda537c065e012b378f6" prot="public">
+          <name>FWL_VKEY_Hanja</name>
+          <initializer>= 0x19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1c784aed581293e844a5fb66b08bfbea" prot="public">
+          <name>FWL_VKEY_Kanji</name>
+          <initializer>= 0x19</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae386f5d9226b2f3c8ce9ab2848829b60" prot="public">
+          <name>FWL_VKEY_Escape</name>
+          <initializer>= 0x1B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30abd3c23c99c7cd23a95e4b27aef93e328" prot="public">
+          <name>FWL_VKEY_Convert</name>
+          <initializer>= 0x1C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af577927883a019e30410eb78dc8e40fe" prot="public">
+          <name>FWL_VKEY_NonConvert</name>
+          <initializer>= 0x1D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a771e423a2b37407b8520b6d1bcf60201" prot="public">
+          <name>FWL_VKEY_Accept</name>
+          <initializer>= 0x1E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a377feb5b098240314bdc982e75db278a" prot="public">
+          <name>FWL_VKEY_ModeChange</name>
+          <initializer>= 0x1F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8e0547b9282836835e57b4fb543d28cf" prot="public">
+          <name>FWL_VKEY_Space</name>
+          <initializer>= 0x20</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad6e89cae71f43280051e82783e52a954" prot="public">
+          <name>FWL_VKEY_Prior</name>
+          <initializer>= 0x21</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a43ccfae148ea3b932002998f9a1fd31a" prot="public">
+          <name>FWL_VKEY_Next</name>
+          <initializer>= 0x22</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0cb2173cc5d86841a6db3c3f78264f38" prot="public">
+          <name>FWL_VKEY_End</name>
+          <initializer>= 0x23</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a2dfdcc4e3b802652d6312d3fdf94d882" prot="public">
+          <name>FWL_VKEY_Home</name>
+          <initializer>= 0x24</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae11ecdae91cc571a79055f2bc360207f" prot="public">
+          <name>FWL_VKEY_Left</name>
+          <initializer>= 0x25</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a19521558e4f3a61e3ddfbddf0c51a893" prot="public">
+          <name>FWL_VKEY_Up</name>
+          <initializer>= 0x26</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a190114e4de7fd4fed334c542bbc0f989" prot="public">
+          <name>FWL_VKEY_Right</name>
+          <initializer>= 0x27</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a306bd94793f624bf60a59bb080af3dae" prot="public">
+          <name>FWL_VKEY_Down</name>
+          <initializer>= 0x28</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af42d156816dbeafea6d7bf538d852529" prot="public">
+          <name>FWL_VKEY_Select</name>
+          <initializer>= 0x29</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a68e676639862ba5a09e1f9da744fbb48" prot="public">
+          <name>FWL_VKEY_Print</name>
+          <initializer>= 0x2A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8ea83fb7e6d2df0032e0a51d528a4d6b" prot="public">
+          <name>FWL_VKEY_Execute</name>
+          <initializer>= 0x2B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1bfe6607e92ebe7eaf71db96c9dc6ac5" prot="public">
+          <name>FWL_VKEY_Snapshot</name>
+          <initializer>= 0x2C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa3b4ef8833eb63e7383bf72d9abe61ab" prot="public">
+          <name>FWL_VKEY_Insert</name>
+          <initializer>= 0x2D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30afebf336f96606fc45d8ee7232adb403a" prot="public">
+          <name>FWL_VKEY_Delete</name>
+          <initializer>= 0x2E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a43a6b171928575c3a8aec60a2bc3b575" prot="public">
+          <name>FWL_VKEY_Help</name>
+          <initializer>= 0x2F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a09cb0675922ba838012036f59be5b245" prot="public">
+          <name>FWL_VKEY_0</name>
+          <initializer>= 0x30</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a16b70f035e1a0425af5bf15d67160a9a" prot="public">
+          <name>FWL_VKEY_1</name>
+          <initializer>= 0x31</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8997a1831d103e130bb51cb2c05bf2f8" prot="public">
+          <name>FWL_VKEY_2</name>
+          <initializer>= 0x32</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8031cc1afd034bda094b67a85bca99b0" prot="public">
+          <name>FWL_VKEY_3</name>
+          <initializer>= 0x33</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a19988afaead76399e4911c7bf4489e59" prot="public">
+          <name>FWL_VKEY_4</name>
+          <initializer>= 0x34</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aee91b6a6f99b9fd0ddb8ad14bbd0902d" prot="public">
+          <name>FWL_VKEY_5</name>
+          <initializer>= 0x35</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1f1757c6fd2aefcdc8dc48cc8c6f0063" prot="public">
+          <name>FWL_VKEY_6</name>
+          <initializer>= 0x36</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a26e7a5cd7d916a376c5091b75a2b3b30" prot="public">
+          <name>FWL_VKEY_7</name>
+          <initializer>= 0x37</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30acc95de20eb6da18e94fc92df1f1b5c76" prot="public">
+          <name>FWL_VKEY_8</name>
+          <initializer>= 0x38</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a92bb9e5ab0d4dfffb435dbaf8b6903d6" prot="public">
+          <name>FWL_VKEY_9</name>
+          <initializer>= 0x39</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a6b94bdba76e996f8ac9d4dcc89f0335a" prot="public">
+          <name>FWL_VKEY_A</name>
+          <initializer>= 0x41</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af88065b280a7b33fbb19345388226fc4" prot="public">
+          <name>FWL_VKEY_B</name>
+          <initializer>= 0x42</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ab99615cfd2c68ccf64776d89e4de2ad1" prot="public">
+          <name>FWL_VKEY_C</name>
+          <initializer>= 0x43</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7b587281dbc9f50d18351daacd530816" prot="public">
+          <name>FWL_VKEY_D</name>
+          <initializer>= 0x44</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a07f67a6e391508a56e87b7aa1971ad37" prot="public">
+          <name>FWL_VKEY_E</name>
+          <initializer>= 0x45</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a2e3ffdb99a7bf33a499894f27aca9878" prot="public">
+          <name>FWL_VKEY_F</name>
+          <initializer>= 0x46</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a2d6ce945315bb9546e9f233d0e0c274a" prot="public">
+          <name>FWL_VKEY_G</name>
+          <initializer>= 0x47</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a00d05c52b11373f26ed6b640ecce5dab" prot="public">
+          <name>FWL_VKEY_H</name>
+          <initializer>= 0x48</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a479d6b4929309ac2b032129db105b8b2" prot="public">
+          <name>FWL_VKEY_I</name>
+          <initializer>= 0x49</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a987b094538bb89ac2dc4fae3fda5bc45" prot="public">
+          <name>FWL_VKEY_J</name>
+          <initializer>= 0x4A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a95cf5d25ccf849576f33b26684f0a140" prot="public">
+          <name>FWL_VKEY_K</name>
+          <initializer>= 0x4B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9e0e5d868544402d170436eb5efad740" prot="public">
+          <name>FWL_VKEY_L</name>
+          <initializer>= 0x4C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a6cebc5b943c384bbd0717660b5923e33" prot="public">
+          <name>FWL_VKEY_M</name>
+          <initializer>= 0x4D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa40931946fb24489f715fa9a76079d11" prot="public">
+          <name>FWL_VKEY_N</name>
+          <initializer>= 0x4E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8e2ae107fca481cc6afbfbad3c273c7a" prot="public">
+          <name>FWL_VKEY_O</name>
+          <initializer>= 0x4F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a697786b5e9ebbfc687c73cece94c5033" prot="public">
+          <name>FWL_VKEY_P</name>
+          <initializer>= 0x50</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a382030ee3be0603c0660fd293d1bdcd4" prot="public">
+          <name>FWL_VKEY_Q</name>
+          <initializer>= 0x51</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a938c017c30d81a72df45e758125051c1" prot="public">
+          <name>FWL_VKEY_R</name>
+          <initializer>= 0x52</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a6e7c025c4c5b2f736ba8b8bf281d2893" prot="public">
+          <name>FWL_VKEY_S</name>
+          <initializer>= 0x53</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9d3f1cda6d48b866b2afd155cdc0021d" prot="public">
+          <name>FWL_VKEY_T</name>
+          <initializer>= 0x54</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad40688028797a9cdadbe28dabec07c02" prot="public">
+          <name>FWL_VKEY_U</name>
+          <initializer>= 0x55</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad9ea96e9012c06cfbae289187987d93a" prot="public">
+          <name>FWL_VKEY_V</name>
+          <initializer>= 0x56</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a68585add3be1b2fe19c42a7cc33f06a4" prot="public">
+          <name>FWL_VKEY_W</name>
+          <initializer>= 0x57</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a96c3ad571f774d5fb8ef00274e316bdb" prot="public">
+          <name>FWL_VKEY_X</name>
+          <initializer>= 0x58</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af6f5457acc4ac165aa0e36bbc5d9f60f" prot="public">
+          <name>FWL_VKEY_Y</name>
+          <initializer>= 0x59</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0eefb1b6be17df55a8eaee7408b92906" prot="public">
+          <name>FWL_VKEY_Z</name>
+          <initializer>= 0x5A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a2793e39af712c13190e9c629a89c955b" prot="public">
+          <name>FWL_VKEY_LWin</name>
+          <initializer>= 0x5B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a092d2c4f9b3f2d30d38f49bbe689c561" prot="public">
+          <name>FWL_VKEY_Command</name>
+          <initializer>= 0x5B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8b1fa3203fbc84eece39c36f2b92171e" prot="public">
+          <name>FWL_VKEY_RWin</name>
+          <initializer>= 0x5C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ac49f4c36905689f57942d8acf3ca97dd" prot="public">
+          <name>FWL_VKEY_Apps</name>
+          <initializer>= 0x5D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1ebf6e88a7b4b09994aacae380147818" prot="public">
+          <name>FWL_VKEY_Sleep</name>
+          <initializer>= 0x5F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8f0fb3e5d6be7c9be60784ce61100da5" prot="public">
+          <name>FWL_VKEY_NumPad0</name>
+          <initializer>= 0x60</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a57cd8a4948cceee99ec96a1dd3655024" prot="public">
+          <name>FWL_VKEY_NumPad1</name>
+          <initializer>= 0x61</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa5b597c9fd204a6112c1f6ed99c36ad8" prot="public">
+          <name>FWL_VKEY_NumPad2</name>
+          <initializer>= 0x62</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a50626d66851a5c4f86d13bcdc2b4f5d9" prot="public">
+          <name>FWL_VKEY_NumPad3</name>
+          <initializer>= 0x63</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af6dc87efd15cb68f8804446a31227870" prot="public">
+          <name>FWL_VKEY_NumPad4</name>
+          <initializer>= 0x64</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ac1b646c5760b09bcab805d47451f96cd" prot="public">
+          <name>FWL_VKEY_NumPad5</name>
+          <initializer>= 0x65</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad0d97a05f7979bad9177f6dfabca1c8d" prot="public">
+          <name>FWL_VKEY_NumPad6</name>
+          <initializer>= 0x66</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a776037af794d83e21358375f76bcea73" prot="public">
+          <name>FWL_VKEY_NumPad7</name>
+          <initializer>= 0x67</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a4fd1cc477847084f29dc1c6687162ef8" prot="public">
+          <name>FWL_VKEY_NumPad8</name>
+          <initializer>= 0x68</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a286c8a180810bf4f68c46bbf204ec642" prot="public">
+          <name>FWL_VKEY_NumPad9</name>
+          <initializer>= 0x69</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a3359c36e08ec4f21e652836d126a4e7e" prot="public">
+          <name>FWL_VKEY_Multiply</name>
+          <initializer>= 0x6A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0c585f6f9f6607b65609e99034a98a2e" prot="public">
+          <name>FWL_VKEY_Add</name>
+          <initializer>= 0x6B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa00f37af6dc4df60fe13c70315da54de" prot="public">
+          <name>FWL_VKEY_Separator</name>
+          <initializer>= 0x6C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8bfab7494b11e2901088c708f4572529" prot="public">
+          <name>FWL_VKEY_Subtract</name>
+          <initializer>= 0x6D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a096c42cc0b24b365bbd9c912c12a42dd" prot="public">
+          <name>FWL_VKEY_Decimal</name>
+          <initializer>= 0x6E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad7b3bcf58f95901d81132069fad5933d" prot="public">
+          <name>FWL_VKEY_Divide</name>
+          <initializer>= 0x6F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a02f7a02c9b14288a187bf9166b2de6d5" prot="public">
+          <name>FWL_VKEY_F1</name>
+          <initializer>= 0x70</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7e3530a34389af0dec43511827d74ac1" prot="public">
+          <name>FWL_VKEY_F2</name>
+          <initializer>= 0x71</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad982b9cb9206388a30f06dbf3da8dbfd" prot="public">
+          <name>FWL_VKEY_F3</name>
+          <initializer>= 0x72</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae4f7b2c563cf56668733fd4f37caea13" prot="public">
+          <name>FWL_VKEY_F4</name>
+          <initializer>= 0x73</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9062126a8d61fd89ff1aa01e136fca2e" prot="public">
+          <name>FWL_VKEY_F5</name>
+          <initializer>= 0x74</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a63b6a7e3a302a837babdcb58934c5075" prot="public">
+          <name>FWL_VKEY_F6</name>
+          <initializer>= 0x75</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae8c1037f63fa4faf256ef5f2dcbab192" prot="public">
+          <name>FWL_VKEY_F7</name>
+          <initializer>= 0x76</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30add019c18dd75d9236811c8fae67bc6c3" prot="public">
+          <name>FWL_VKEY_F8</name>
+          <initializer>= 0x77</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a618afaf0bf921c9e69336a671c507ea2" prot="public">
+          <name>FWL_VKEY_F9</name>
+          <initializer>= 0x78</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a93db48a7827b3c2219b10bb67e391a86" prot="public">
+          <name>FWL_VKEY_F10</name>
+          <initializer>= 0x79</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1be6e349b1ba24e7198a6b1a2b208fdb" prot="public">
+          <name>FWL_VKEY_F11</name>
+          <initializer>= 0x7A</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a08bf3d9c700eca90687c51859b7789c6" prot="public">
+          <name>FWL_VKEY_F12</name>
+          <initializer>= 0x7B</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a830b1ef6e37c8c72b054ee5811dcf430" prot="public">
+          <name>FWL_VKEY_F13</name>
+          <initializer>= 0x7C</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a3fd3e6e282c163431c59c7bc8429c917" prot="public">
+          <name>FWL_VKEY_F14</name>
+          <initializer>= 0x7D</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aad159586525d5d9cbe30dd8e03242553" prot="public">
+          <name>FWL_VKEY_F15</name>
+          <initializer>= 0x7E</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9ec63345767c715b8bde39b6cb0386cd" prot="public">
+          <name>FWL_VKEY_F16</name>
+          <initializer>= 0x7F</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a76acfadd6949eceea823067256bd0c0a" prot="public">
+          <name>FWL_VKEY_F17</name>
+          <initializer>= 0x80</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aea242a69607c0b3a4698d5dffacb0b8b" prot="public">
+          <name>FWL_VKEY_F18</name>
+          <initializer>= 0x81</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a04aaca46508417407d4005cff749497b" prot="public">
+          <name>FWL_VKEY_F19</name>
+          <initializer>= 0x82</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30afea609cfb86382b738d0fcfdd3f79c00" prot="public">
+          <name>FWL_VKEY_F20</name>
+          <initializer>= 0x83</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a381511e458445399f1a8f2e91b4e48f2" prot="public">
+          <name>FWL_VKEY_F21</name>
+          <initializer>= 0x84</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af48eb927fb7a8ed4e890d4fe50ec3329" prot="public">
+          <name>FWL_VKEY_F22</name>
+          <initializer>= 0x85</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a22a1c688b6da142f1ea64bc2897f279e" prot="public">
+          <name>FWL_VKEY_F23</name>
+          <initializer>= 0x86</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7ecb80db3479009728c2e191ca959e54" prot="public">
+          <name>FWL_VKEY_F24</name>
+          <initializer>= 0x87</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ab3f8d6c8e0e99fb39353de6a9eda12af" prot="public">
+          <name>FWL_VKEY_NunLock</name>
+          <initializer>= 0x90</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a82f8007a4f474d40db03d2da364b4475" prot="public">
+          <name>FWL_VKEY_Scroll</name>
+          <initializer>= 0x91</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a83301e92f2300eb90f546bc63f56b6ff" prot="public">
+          <name>FWL_VKEY_LShift</name>
+          <initializer>= 0xA0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30affe5ac89d2cf7538343230b148ce782d" prot="public">
+          <name>FWL_VKEY_RShift</name>
+          <initializer>= 0xA1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa7ff677d4d92f3358de8be11eb2ad11f" prot="public">
+          <name>FWL_VKEY_LControl</name>
+          <initializer>= 0xA2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30afc84940af7bd78e2c8b74434eba25a1b" prot="public">
+          <name>FWL_VKEY_RControl</name>
+          <initializer>= 0xA3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ac4a9013b3a25cbbfc7ba4b1b89b514b7" prot="public">
+          <name>FWL_VKEY_LMenu</name>
+          <initializer>= 0xA4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a217b66be1a333af7ef8d8a587bf67c24" prot="public">
+          <name>FWL_VKEY_RMenu</name>
+          <initializer>= 0xA5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8ed1d57ef7ce19f085fd4a0b3bab81c0" prot="public">
+          <name>FWL_VKEY_BROWSER_Back</name>
+          <initializer>= 0xA6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a3ae0c7ffb0590c2e21fba44b53c4d10a" prot="public">
+          <name>FWL_VKEY_BROWSER_Forward</name>
+          <initializer>= 0xA7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af63302ea8f9d4c64c42ee000e314492e" prot="public">
+          <name>FWL_VKEY_BROWSER_Refresh</name>
+          <initializer>= 0xA8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad28d75d3f56187aa0ff56d5ed9811b93" prot="public">
+          <name>FWL_VKEY_BROWSER_Stop</name>
+          <initializer>= 0xA9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae4f6f241bc0c430d3d4f85fa9b37d1b1" prot="public">
+          <name>FWL_VKEY_BROWSER_Search</name>
+          <initializer>= 0xAA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9d8c1aca0ba04564a710f550faf9bb4e" prot="public">
+          <name>FWL_VKEY_BROWSER_Favorites</name>
+          <initializer>= 0xAB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ac768b692c4b27816fe9d86e0c75e0634" prot="public">
+          <name>FWL_VKEY_BROWSER_Home</name>
+          <initializer>= 0xAC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8805c713f274aa6e7715e3b35b7100bb" prot="public">
+          <name>FWL_VKEY_VOLUME_Mute</name>
+          <initializer>= 0xAD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af8ed0955b3e651b28088454dab43f8a9" prot="public">
+          <name>FWL_VKEY_VOLUME_Down</name>
+          <initializer>= 0xAE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a814c82b167a60dec4a7ece23858ad00a" prot="public">
+          <name>FWL_VKEY_VOLUME_Up</name>
+          <initializer>= 0xAF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7714660c14ca76cebe82d5630777e939" prot="public">
+          <name>FWL_VKEY_MEDIA_NEXT_Track</name>
+          <initializer>= 0xB0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a41d5fcc3c86eb6f3e94f55ad9615f3e7" prot="public">
+          <name>FWL_VKEY_MEDIA_PREV_Track</name>
+          <initializer>= 0xB1</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a83c9bae4df31dd1e6f260d7f99c58731" prot="public">
+          <name>FWL_VKEY_MEDIA_Stop</name>
+          <initializer>= 0xB2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a6ee031ca706c6c929a094fcde2076486" prot="public">
+          <name>FWL_VKEY_MEDIA_PLAY_Pause</name>
+          <initializer>= 0xB3</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a3b6a17218178a1caaf36e25b590910f2" prot="public">
+          <name>FWL_VKEY_MEDIA_LAUNCH_Mail</name>
+          <initializer>= 0xB4</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30afa93340572a2c04073a29917d2ee7fc8" prot="public">
+          <name>FWL_VKEY_MEDIA_LAUNCH_MEDIA_Select</name>
+          <initializer>= 0xB5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0b5efae4256ca4635828d983915cb247" prot="public">
+          <name>FWL_VKEY_MEDIA_LAUNCH_APP1</name>
+          <initializer>= 0xB6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7cdfc85bcb3772b3d9852d635dbf4d31" prot="public">
+          <name>FWL_VKEY_MEDIA_LAUNCH_APP2</name>
+          <initializer>= 0xB7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ab844bcf1281b1ede2e57d5479ab0113f" prot="public">
+          <name>FWL_VKEY_OEM_1</name>
+          <initializer>= 0xBA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aed2166e6e5603d7ace49d37f26b98cb0" prot="public">
+          <name>FWL_VKEY_OEM_Plus</name>
+          <initializer>= 0xBB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aebc5253d87d78bae1da91276f0ba78b1" prot="public">
+          <name>FWL_VKEY_OEM_Comma</name>
+          <initializer>= 0xBC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a8718a487cadf399cd723ee73c1526eda" prot="public">
+          <name>FWL_VKEY_OEM_Minus</name>
+          <initializer>= 0xBD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30abf018db15398989c429b1bfae73cc3a2" prot="public">
+          <name>FWL_VKEY_OEM_Period</name>
+          <initializer>= 0xBE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9d006659902251256e313a83f03c6d55" prot="public">
+          <name>FWL_VKEY_OEM_2</name>
+          <initializer>= 0xBF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa986d7af47dad0e599fabc4aabcbf0e8" prot="public">
+          <name>FWL_VKEY_OEM_3</name>
+          <initializer>= 0xC0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af36c509e01a1038ea173355454fe415f" prot="public">
+          <name>FWL_VKEY_OEM_4</name>
+          <initializer>= 0xDB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9c40e691ef084e7d3ca7f6ebc77f8642" prot="public">
+          <name>FWL_VKEY_OEM_5</name>
+          <initializer>= 0xDC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0fd815655cfaab1ab28ff6d1b426ce41" prot="public">
+          <name>FWL_VKEY_OEM_6</name>
+          <initializer>= 0xDD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7b12b3dd7c070d3c3f0861d17fd35d66" prot="public">
+          <name>FWL_VKEY_OEM_7</name>
+          <initializer>= 0xDE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad8bcae16e3abb1df407cb810bd608b9e" prot="public">
+          <name>FWL_VKEY_OEM_8</name>
+          <initializer>= 0xDF</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ae0d2875d503d4cc99a658e17868d69b5" prot="public">
+          <name>FWL_VKEY_OEM_102</name>
+          <initializer>= 0xE2</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a9c72f1a2910c38d6ddc41d58095c7b78" prot="public">
+          <name>FWL_VKEY_ProcessKey</name>
+          <initializer>= 0xE5</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a5a5cfe075bd9e0feac523e72d2173533" prot="public">
+          <name>FWL_VKEY_Packet</name>
+          <initializer>= 0xE7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a1e200a0ef04dccbb4ffdbe7964f198cb" prot="public">
+          <name>FWL_VKEY_Attn</name>
+          <initializer>= 0xF6</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a24a6404cf6f8d0b4fb4ea0f941274a94" prot="public">
+          <name>FWL_VKEY_Crsel</name>
+          <initializer>= 0xF7</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30adefd2c9edc4831909d3cab7ed5954f22" prot="public">
+          <name>FWL_VKEY_Exsel</name>
+          <initializer>= 0xF8</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a7dd507f8922bae47a8d8a3c069bf9ac2" prot="public">
+          <name>FWL_VKEY_Ereof</name>
+          <initializer>= 0xF9</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a079984097e4cae8cc58764f826eff09f" prot="public">
+          <name>FWL_VKEY_Play</name>
+          <initializer>= 0xFA</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a0f4a758bdbc10fa11d9f50c221f8661c" prot="public">
+          <name>FWL_VKEY_Zoom</name>
+          <initializer>= 0xFB</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30aa50e6c324b66221a1bcc8f6093e8973b" prot="public">
+          <name>FWL_VKEY_NoName</name>
+          <initializer>= 0xFC</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30af9d0dcbc6d5985b669f79bc32620fbc9" prot="public">
+          <name>FWL_VKEY_PA1</name>
+          <initializer>= 0xFD</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30ad1dbb6f4f06d40959ffe45812fd1b810" prot="public">
+          <name>FWL_VKEY_OEM_Clear</name>
+          <initializer>= 0xFE</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <enumvalue id="fpdf__fwlevent_8h_1af62a24698ddec5d7708e3bd9cb332f30a350c7a610285ecd2261fb1c1f9fa4dcc" prot="public">
+          <name>FWL_VKEY_Unknown</name>
+          <initializer>= 0</initializer>
+          <briefdescription>
+          </briefdescription>
+          <detaileddescription>
+          </detaileddescription>
+        </enumvalue>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_fwlevent.h" line="31" column="1" bodyfile="fpdf_fwlevent.h" bodystart="31" bodyend="201"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_fwlevent.h"/>
+  </compounddef>
+</doxygen>

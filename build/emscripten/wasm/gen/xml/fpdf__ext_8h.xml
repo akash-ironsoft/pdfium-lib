@@ -1,0 +1,365 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__ext_8h" kind="file" language="C++">
+    <compoundname>fpdf_ext.h</compoundname>
+    <includes local="no">time.h</includes>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_ext.h</label>
+        <link refid="fpdf__ext_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>stddef.h</label>
+      </node>
+      <node id="2">
+        <label>time.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__UNSUPPORT__INFO" prot="public">_UNSUPPORT_INFO</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__ext_8h_1aca320c9e989b387223ee04e35f909f74" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_XFAFORM</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="20" column="9" bodyfile="fpdf_ext.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a1a6dbc080f72536a105122fdf2487213" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_PORTABLECOLLECTION</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="22" column="9" bodyfile="fpdf_ext.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a82784f4323804fa36c9404425b548eed" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_ATTACHMENT</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="24" column="9" bodyfile="fpdf_ext.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a46a49de70c63ad1571c2d1f55c49c93e" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_SECURITY</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="26" column="9" bodyfile="fpdf_ext.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1af9fb803d777ed594ea16644b7023e50e" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_SHAREDREVIEW</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="28" column="9" bodyfile="fpdf_ext.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1acca674f49a42405e32c053a3f8c08a03" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_SHAREDFORM_ACROBAT</name>
+        <initializer>6</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="30" column="9" bodyfile="fpdf_ext.h" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a4d27f66c28bed7be235aea7646b47737" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_SHAREDFORM_FILESYSTEM</name>
+        <initializer>7</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="32" column="9" bodyfile="fpdf_ext.h" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1aa738d9df8cc567530d590693bc0f5c06" prot="public" static="no">
+        <name>FPDF_UNSP_DOC_SHAREDFORM_EMAIL</name>
+        <initializer>8</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="34" column="9" bodyfile="fpdf_ext.h" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1acdb72c8d56cb5e9bf254cb0e73fc3ca4" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_3DANNOT</name>
+        <initializer>11</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="36" column="9" bodyfile="fpdf_ext.h" bodystart="36" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1adc31a83a34313e9cf734494cafc6464f" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_MOVIE</name>
+        <initializer>12</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="38" column="9" bodyfile="fpdf_ext.h" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1aa3e89e8b8e52bc8175cc6bb6da452b8b" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_SOUND</name>
+        <initializer>13</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="40" column="9" bodyfile="fpdf_ext.h" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1af9b68fbf6bc561b2dddaacdf0fd274e8" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_SCREEN_MEDIA</name>
+        <initializer>14</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="42" column="9" bodyfile="fpdf_ext.h" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a348b9e7dc3ba175333820ebb919a0817" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_SCREEN_RICHMEDIA</name>
+        <initializer>15</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="44" column="9" bodyfile="fpdf_ext.h" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a3edf0c1c710f546774621d90348c4bd9" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_ATTACHMENT</name>
+        <initializer>16</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="46" column="9" bodyfile="fpdf_ext.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1aa3e5f4e09c0cc316f8cb9c1968ca081b" prot="public" static="no">
+        <name>FPDF_UNSP_ANNOT_SIG</name>
+        <initializer>17</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="48" column="9" bodyfile="fpdf_ext.h" bodystart="48" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a633e8e719df4926a5e48c524a550a43d" prot="public" static="no">
+        <name>PAGEMODE_UNKNOWN</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="92" column="9" bodyfile="fpdf_ext.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a6ad292376127527d563aa69f4ae5accf" prot="public" static="no">
+        <name>PAGEMODE_USENONE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="94" column="9" bodyfile="fpdf_ext.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1aabcf8b1966e1497bfc4c460e5861d0c8" prot="public" static="no">
+        <name>PAGEMODE_USEOUTLINES</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="96" column="9" bodyfile="fpdf_ext.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1ac9147780b4e940b345728a77be7f46cd" prot="public" static="no">
+        <name>PAGEMODE_USETHUMBS</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="98" column="9" bodyfile="fpdf_ext.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a9f2af62e1097c173ebafa0d3adfd33f3" prot="public" static="no">
+        <name>PAGEMODE_FULLSCREEN</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="100" column="9" bodyfile="fpdf_ext.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a16cc03a4c6c206b10297fa84a92a54ab" prot="public" static="no">
+        <name>PAGEMODE_USEOC</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="102" column="9" bodyfile="fpdf_ext.h" bodystart="102" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__ext_8h_1a1bb76911b423634393797c3ecb748234" prot="public" static="no">
+        <name>PAGEMODE_USEATTACHMENTS</name>
+        <initializer>5</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="104" column="9" bodyfile="fpdf_ext.h" bodystart="104" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__ext_8h_1a64cb63c61e7baeb272545e9437f45e89" prot="public" static="no">
+        <type>struct <ref refid="struct__UNSUPPORT__INFO" kindref="compound">_UNSUPPORT_INFO</ref></type>
+        <definition>typedef struct _UNSUPPORT_INFO UNSUPPORT_INFO</definition>
+        <argsstring></argsstring>
+        <name>UNSUPPORT_INFO</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="62" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__ext_8h_1a6e5f92431c77f772efae80862f843698" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FSDK_SetUnSpObjProcessHandler</definition>
+        <argsstring>(UNSUPPORT_INFO *unsp_info)</argsstring>
+        <name>FSDK_SetUnSpObjProcessHandler</name>
+        <param>
+          <type><ref refid="struct__UNSUPPORT__INFO" kindref="compound">UNSUPPORT_INFO</ref> *</type>
+          <declname>unsp_info</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="70" column="1" declfile="fpdf_ext.h" declline="70" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ext_8h_1af4f7f0174e33da4c16936677249dd783" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FSDK_SetTimeFunction</definition>
+        <argsstring>(time_t(*func)())</argsstring>
+        <name>FSDK_SetTimeFunction</name>
+        <param>
+          <type>time_t(*)()</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="79" column="32" declfile="fpdf_ext.h" declline="79" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ext_8h_1a63f65b89bc7ac74bfb55a10217776237" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FSDK_SetLocaltimeFunction</definition>
+        <argsstring>(struct tm *(*func)(const time_t *))</argsstring>
+        <name>FSDK_SetLocaltimeFunction</name>
+        <param>
+          <type>struct tm *(*)(const time_t *)</type>
+          <declname>func</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="89" column="1" declfile="fpdf_ext.h" declline="89" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__ext_8h_1a26c6bc5e598060fb8a96fb08b0a964b9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFDoc_GetPageMode</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDFDoc_GetPageMode</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_ext.h" line="113" column="31" declfile="fpdf_ext.h" declline="113" declcolumn="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_ext.h"/>
+  </compounddef>
+</doxygen>

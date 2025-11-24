@@ -1,0 +1,702 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__structtree_8h" kind="file" language="C++">
+    <compoundname>fpdf_structtree.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_structtree.h</label>
+        <link refid="fpdf__structtree_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__structtree_8h_1a2d1c5fa762909935381b18ecd1de79ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTTREE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTTREE FPDF_CALLCONV FPDF_StructTree_GetForPage</definition>
+        <argsstring>(FPDF_PAGE page)</argsstring>
+        <name>FPDF_StructTree_GetForPage</name>
+        <param>
+          <type>FPDF_PAGE</type>
+          <declname>page</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="27" column="1" declfile="fpdf_structtree.h" declline="27" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a1e483099154111883b67d9a030fe8993" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDF_StructTree_Close</definition>
+        <argsstring>(FPDF_STRUCTTREE struct_tree)</argsstring>
+        <name>FPDF_StructTree_Close</name>
+        <param>
+          <type>FPDF_STRUCTTREE</type>
+          <declname>struct_tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="37" column="1" declfile="fpdf_structtree.h" declline="37" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ae3dce527c76b29fb0cbd9b40b5c22bdc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructTree_CountChildren</definition>
+        <argsstring>(FPDF_STRUCTTREE struct_tree)</argsstring>
+        <name>FPDF_StructTree_CountChildren</name>
+        <param>
+          <type>FPDF_STRUCTTREE</type>
+          <declname>struct_tree</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="47" column="1" declfile="fpdf_structtree.h" declline="47" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a7a6fdd1f48900c03dde8ec9ad957a965" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV FPDF_StructTree_GetChildAtIndex</definition>
+        <argsstring>(FPDF_STRUCTTREE struct_tree, int index)</argsstring>
+        <name>FPDF_StructTree_GetChildAtIndex</name>
+        <param>
+          <type>FPDF_STRUCTTREE</type>
+          <declname>struct_tree</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="63" column="1" declfile="fpdf_structtree.h" declline="63" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1adb094be38d9120fc1e867cf9374c729a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetAltText</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetAltText</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="81" column="1" declfile="fpdf_structtree.h" declline="81" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a6fce19ac84aee43ac73760550e227253" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetActualText</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetActualText</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="102" column="1" declfile="fpdf_structtree.h" declline="102" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a938f0dda2348064b2ce0709fb742959e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetID</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetID</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="122" column="1" declfile="fpdf_structtree.h" declline="122" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a05bd8035d1be49dbcb5279f0eddd8bc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetLang</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetLang</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="143" column="1" declfile="fpdf_structtree.h" declline="143" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a434b4f753d79c53afcd62c448078579c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetStringAttribute</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, FPDF_BYTESTRING attr_name, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetStringAttribute</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>attr_name</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="165" column="1" declfile="fpdf_structtree.h" declline="165" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a34c02d70a87d3177beddc7b73db594f9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_GetMarkedContentID</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element)</argsstring>
+        <name>FPDF_StructElement_GetMarkedContentID</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="182" column="1" declfile="fpdf_structtree.h" declline="182" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ad683ea812d22de822e936c165a66ced6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetType</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetType</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="200" column="1" declfile="fpdf_structtree.h" declline="200" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ac72b1c4d0fa9dc94a4e7d3e1bc200623" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetObjType</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetObjType</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="221" column="1" declfile="fpdf_structtree.h" declline="221" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1af9a28ce65149d9711b46b6fe4bb3f5e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDF_StructElement_GetTitle</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, void *buffer, unsigned long buflen)</argsstring>
+        <name>FPDF_StructElement_GetTitle</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="241" column="1" declfile="fpdf_structtree.h" declline="241" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1af083388fac9a86f292c8434292018c1b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_CountChildren</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element)</argsstring>
+        <name>FPDF_StructElement_CountChildren</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="252" column="1" declfile="fpdf_structtree.h" declline="252" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ab4dacc1b742c19f90f1ae062f285428d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV FPDF_StructElement_GetChildAtIndex</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, int index)</argsstring>
+        <name>FPDF_StructElement_GetChildAtIndex</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="267" column="1" declfile="fpdf_structtree.h" declline="267" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ae31541ef5830f07a521418ca2e7d746d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_GetChildMarkedContentID</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, int index)</argsstring>
+        <name>FPDF_StructElement_GetChildMarkedContentID</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="286" column="1" declfile="fpdf_structtree.h" declline="286" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a01291f83fc3f0ede499c219ae3f95ffc" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT FPDF_CALLCONV FPDF_StructElement_GetParent</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element)</argsstring>
+        <name>FPDF_StructElement_GetParent</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="300" column="1" declfile="fpdf_structtree.h" declline="300" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a0c79e2f1244ceb1714bb4d5924019311" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_GetAttributeCount</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element)</argsstring>
+        <name>FPDF_StructElement_GetAttributeCount</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="309" column="1" declfile="fpdf_structtree.h" declline="309" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ace47bd660ce3a6b9a99413a2bb4044da" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR FPDF_CALLCONV FPDF_StructElement_GetAttributeAtIndex</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, int index)</argsstring>
+        <name>FPDF_StructElement_GetAttributeAtIndex</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="327" column="1" declfile="fpdf_structtree.h" declline="327" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a85558ea9ccdbde781b61d52830acf862" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_Attr_GetCount</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR struct_attribute)</argsstring>
+        <name>FPDF_StructElement_Attr_GetCount</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR</type>
+          <declname>struct_attribute</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="337" column="1" declfile="fpdf_structtree.h" declline="337" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a5ca50665ea2b0fc1bd87339ed83fbc17" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_StructElement_Attr_GetName</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR struct_attribute, int index, void *buffer, unsigned long buflen, unsigned long *out_buflen)</argsstring>
+        <name>FPDF_StructElement_Attr_GetName</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR</type>
+          <declname>struct_attribute</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <param>
+          <type>unsigned long *</type>
+          <declname>out_buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="357" column="1" declfile="fpdf_structtree.h" declline="357" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ab019deda8754e545352c9e86831ee66c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR_VALUE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR_VALUE FPDF_CALLCONV FPDF_StructElement_Attr_GetValue</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR struct_attribute, FPDF_BYTESTRING name)</argsstring>
+        <name>FPDF_StructElement_Attr_GetValue</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR</type>
+          <declname>struct_attribute</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="375" column="1" declfile="fpdf_structtree.h" declline="375" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1aa34981839773989c0400142b050ff881" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV FPDF_StructElement_Attr_GetType</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value)</argsstring>
+        <name>FPDF_StructElement_Attr_GetType</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="388" column="1" declfile="fpdf_structtree.h" declline="388" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ae44816a2f4973ac108555a9b38e780c7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_StructElement_Attr_GetBooleanValue</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value, FPDF_BOOL *out_value)</argsstring>
+        <name>FPDF_StructElement_Attr_GetBooleanValue</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>FPDF_BOOL *</type>
+          <declname>out_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="403" column="1" declfile="fpdf_structtree.h" declline="403" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ac628057f9e5a73603e2abc5fdf109deb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_StructElement_Attr_GetNumberValue</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value, float *out_value)</argsstring>
+        <name>FPDF_StructElement_Attr_GetNumberValue</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>float *</type>
+          <declname>out_value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="419" column="1" declfile="fpdf_structtree.h" declline="419" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ad54d19e1590ba7f61137f3a4ee644bb7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_StructElement_Attr_GetStringValue</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value, void *buffer, unsigned long buflen, unsigned long *out_buflen)</argsstring>
+        <name>FPDF_StructElement_Attr_GetStringValue</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <param>
+          <type>unsigned long *</type>
+          <declname>out_buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="441" column="1" declfile="fpdf_structtree.h" declline="441" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ad1422e93626c82b5a38363082172f885" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_StructElement_Attr_GetBlobValue</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value, void *buffer, unsigned long buflen, unsigned long *out_buflen)</argsstring>
+        <name>FPDF_StructElement_Attr_GetBlobValue</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <param>
+          <type>unsigned long *</type>
+          <declname>out_buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="463" column="1" declfile="fpdf_structtree.h" declline="463" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1ad6fae6bb5fb55a1b8b3ccb10e8228e9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_Attr_CountChildren</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value)</argsstring>
+        <name>FPDF_StructElement_Attr_CountChildren</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="476" column="1" declfile="fpdf_structtree.h" declline="476" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a6cbc884a6423c8acc8084f4723038e2a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR_VALUE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_STRUCTELEMENT_ATTR_VALUE FPDF_CALLCONV FPDF_StructElement_Attr_GetChildAtIndex</definition>
+        <argsstring>(FPDF_STRUCTELEMENT_ATTR_VALUE value, int index)</argsstring>
+        <name>FPDF_StructElement_Attr_GetChildAtIndex</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT_ATTR_VALUE</type>
+          <declname>value</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="490" column="1" declfile="fpdf_structtree.h" declline="490" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1af91e679e481e61b24015189f5eb2062a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_GetMarkedContentIdCount</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element)</argsstring>
+        <name>FPDF_StructElement_GetMarkedContentIdCount</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="501" column="1" declfile="fpdf_structtree.h" declline="501" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__structtree_8h_1a6d4612422db2f0d7f965411adbca84a8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_StructElement_GetMarkedContentIdAtIndex</definition>
+        <argsstring>(FPDF_STRUCTELEMENT struct_element, int index)</argsstring>
+        <name>FPDF_StructElement_GetMarkedContentIdAtIndex</name>
+        <param>
+          <type>FPDF_STRUCTELEMENT</type>
+          <declname>struct_element</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_structtree.h" line="517" column="1" declfile="fpdf_structtree.h" declline="517" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_structtree.h"/>
+  </compounddef>
+</doxygen>

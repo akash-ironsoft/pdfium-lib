@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__javascript_8h" kind="file" language="C++">
+    <compoundname>fpdf_javascript.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_javascript.h</label>
+        <link refid="fpdf__javascript_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__javascript_8h_1a9a49ef35211aba363dc40947859e68d1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFDoc_GetJavaScriptActionCount</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDFDoc_GetJavaScriptActionCount</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_javascript.h" line="22" column="1" declfile="fpdf_javascript.h" declline="22" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__javascript_8h_1ada6cdaab728aa766076c5c2138057dda" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_JAVASCRIPT_ACTION FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_JAVASCRIPT_ACTION FPDF_CALLCONV FPDFDoc_GetJavaScriptAction</definition>
+        <argsstring>(FPDF_DOCUMENT document, int index)</argsstring>
+        <name>FPDFDoc_GetJavaScriptAction</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_javascript.h" line="34" column="1" declfile="fpdf_javascript.h" declline="34" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__javascript_8h_1aa3db2cc01a2459152d1f03940849a397" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFDoc_CloseJavaScriptAction</definition>
+        <argsstring>(FPDF_JAVASCRIPT_ACTION javascript)</argsstring>
+        <name>FPDFDoc_CloseJavaScriptAction</name>
+        <param>
+          <type>FPDF_JAVASCRIPT_ACTION</type>
+          <declname>javascript</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_javascript.h" line="41" column="1" declfile="fpdf_javascript.h" declline="41" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__javascript_8h_1a29fed7caf7da69d3a4dc7271366ae585" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFJavaScriptAction_GetName</definition>
+        <argsstring>(FPDF_JAVASCRIPT_ACTION javascript, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFJavaScriptAction_GetName</name>
+        <param>
+          <type>FPDF_JAVASCRIPT_ACTION</type>
+          <declname>javascript</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_javascript.h" line="54" column="1" declfile="fpdf_javascript.h" declline="54" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__javascript_8h_1af60302a702e3c0e49879708170937ec6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFJavaScriptAction_GetScript</definition>
+        <argsstring>(FPDF_JAVASCRIPT_ACTION javascript, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFJavaScriptAction_GetScript</name>
+        <param>
+          <type>FPDF_JAVASCRIPT_ACTION</type>
+          <declname>javascript</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_javascript.h" line="69" column="1" declfile="fpdf_javascript.h" declline="69" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_javascript.h"/>
+  </compounddef>
+</doxygen>

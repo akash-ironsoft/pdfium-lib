@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__IMAGEOBJ__METADATA" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_IMAGEOBJ_METADATA</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1ac46d9baa9f318b0a97e0c909dbe2f809" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FPDF_IMAGEOBJ_METADATA::width</definition>
+        <argsstring></argsstring>
+        <name>width</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::width</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="79" column="16" bodyfile="fpdf_edit.h" bodystart="79" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1a5b65ab79edd61db87c77b2399c44f8f8" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FPDF_IMAGEOBJ_METADATA::height</definition>
+        <argsstring></argsstring>
+        <name>height</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::height</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="81" column="16" bodyfile="fpdf_edit.h" bodystart="81" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1a7da17498cccbfdf5fc4ac2fbba40c781" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FPDF_IMAGEOBJ_METADATA::horizontal_dpi</definition>
+        <argsstring></argsstring>
+        <name>horizontal_dpi</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::horizontal_dpi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="83" column="9" bodyfile="fpdf_edit.h" bodystart="83" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1afe93e5d615e78acfe3c890ce803e16e0" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float FPDF_IMAGEOBJ_METADATA::vertical_dpi</definition>
+        <argsstring></argsstring>
+        <name>vertical_dpi</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::vertical_dpi</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="85" column="9" bodyfile="fpdf_edit.h" bodystart="85" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1a240a016fa9c1b45e40a6218e2c9e66c9" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int FPDF_IMAGEOBJ_METADATA::bits_per_pixel</definition>
+        <argsstring></argsstring>
+        <name>bits_per_pixel</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::bits_per_pixel</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="87" column="16" bodyfile="fpdf_edit.h" bodystart="87" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1a9524f9da792a80ed3152f8fd27b55367" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_IMAGEOBJ_METADATA::colorspace</definition>
+        <argsstring></argsstring>
+        <name>colorspace</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::colorspace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="89" column="7" bodyfile="fpdf_edit.h" bodystart="89" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__IMAGEOBJ__METADATA_1a869ebbe602dd6116ab81958e21d93ef5" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int FPDF_IMAGEOBJ_METADATA::marked_content_id</definition>
+        <argsstring></argsstring>
+        <name>marked_content_id</name>
+        <qualifiedname>FPDF_IMAGEOBJ_METADATA::marked_content_id</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_edit.h" line="92" column="7" bodyfile="fpdf_edit.h" bodystart="92" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_edit.h" line="77" column="1" bodyfile="fpdf_edit.h" bodystart="77" bodyend="93"/>
+    <listofallmembers>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1a240a016fa9c1b45e40a6218e2c9e66c9" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>bits_per_pixel</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1a9524f9da792a80ed3152f8fd27b55367" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>colorspace</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1a5b65ab79edd61db87c77b2399c44f8f8" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>height</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1a7da17498cccbfdf5fc4ac2fbba40c781" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>horizontal_dpi</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1a869ebbe602dd6116ab81958e21d93ef5" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>marked_content_id</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1afe93e5d615e78acfe3c890ce803e16e0" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>vertical_dpi</name></member>
+      <member refid="structFPDF__IMAGEOBJ__METADATA_1ac46d9baa9f318b0a97e0c909dbe2f809" prot="public" virt="non-virtual"><scope>FPDF_IMAGEOBJ_METADATA</scope><name>width</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

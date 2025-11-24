@@ -1,0 +1,211 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__signature_8h" kind="file" language="C++">
+    <compoundname>fpdf_signature.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_signature.h</label>
+        <link refid="fpdf__signature_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__signature_8h_1a476f652bceb6061e1a775c9053ed3de8" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDF_GetSignatureCount</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDF_GetSignatureCount</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="22" column="31" declfile="fpdf_signature.h" declline="22" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1a23cc0f6d0707ba82c256b4de4bbfcf06" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_SIGNATURE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_SIGNATURE FPDF_CALLCONV FPDF_GetSignatureObject</definition>
+        <argsstring>(FPDF_DOCUMENT document, int index)</argsstring>
+        <name>FPDF_GetSignatureObject</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="35" column="1" declfile="fpdf_signature.h" declline="35" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1aaaf8fa152d2723bbf4425d7682d7716b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFSignatureObj_GetContents</definition>
+        <argsstring>(FPDF_SIGNATURE signature, void *buffer, unsigned long length)</argsstring>
+        <name>FPDFSignatureObj_GetContents</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="52" column="1" declfile="fpdf_signature.h" declline="52" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1aa55655518008935ae309f2cc764abf92" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFSignatureObj_GetByteRange</definition>
+        <argsstring>(FPDF_SIGNATURE signature, int *buffer, unsigned long length)</argsstring>
+        <name>FPDFSignatureObj_GetByteRange</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>int *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="74" column="1" declfile="fpdf_signature.h" declline="74" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1ab998da024567f726f03cdb989c1a8741" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFSignatureObj_GetSubFilter</definition>
+        <argsstring>(FPDF_SIGNATURE signature, char *buffer, unsigned long length)</argsstring>
+        <name>FPDFSignatureObj_GetSubFilter</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="93" column="1" declfile="fpdf_signature.h" declline="93" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1a87df0e8b3b2fefc26b17044a497e6f47" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFSignatureObj_GetReason</definition>
+        <argsstring>(FPDF_SIGNATURE signature, void *buffer, unsigned long length)</argsstring>
+        <name>FPDFSignatureObj_GetReason</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="112" column="1" declfile="fpdf_signature.h" declline="112" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1a56920291ad8bb04a9353903384e0cfb6" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFSignatureObj_GetTime</definition>
+        <argsstring>(FPDF_SIGNATURE signature, char *buffer, unsigned long length)</argsstring>
+        <name>FPDFSignatureObj_GetTime</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <param>
+          <type>char *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>length</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="136" column="1" declfile="fpdf_signature.h" declline="136" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__signature_8h_1a2043363ece44c3091558e8f2787291b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned int FPDF_CALLCONV FPDFSignatureObj_GetDocMDPPermission</definition>
+        <argsstring>(FPDF_SIGNATURE signature)</argsstring>
+        <name>FPDFSignatureObj_GetDocMDPPermission</name>
+        <param>
+          <type>FPDF_SIGNATURE</type>
+          <declname>signature</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_signature.h" line="149" column="1" declfile="fpdf_signature.h" declline="149" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_signature.h"/>
+  </compounddef>
+</doxygen>

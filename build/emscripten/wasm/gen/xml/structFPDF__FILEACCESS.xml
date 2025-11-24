@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="structFPDF__FILEACCESS" kind="struct" language="C++" prot="public">
+    <compoundname>FPDF_FILEACCESS</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="structFPDF__FILEACCESS_1aeecb48c0ed366c3a1ca36e893797e9a9" prot="public" static="no" mutable="no">
+        <type>unsigned long</type>
+        <definition>unsigned long FPDF_FILEACCESS::m_FileLen</definition>
+        <argsstring></argsstring>
+        <name>m_FileLen</name>
+        <qualifiedname>FPDF_FILEACCESS::m_FileLen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="447" column="17" bodyfile="fpdfview.h" bodystart="447" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEACCESS_1af20b771fe07b7343e6c6b529137e1ec5" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* FPDF_FILEACCESS::m_GetBlock) (void *param, unsigned long position, unsigned char *pBuf, unsigned long size)</definition>
+        <argsstring>)(void *param, unsigned long position, unsigned char *pBuf, unsigned long size)</argsstring>
+        <name>m_GetBlock</name>
+        <qualifiedname>FPDF_FILEACCESS::m_GetBlock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="456" column="3" bodyfile="fpdfview.h" bodystart="456" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="structFPDF__FILEACCESS_1ade62a986b3e580a8866a76ccefbd9e96" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* FPDF_FILEACCESS::m_Param</definition>
+        <argsstring></argsstring>
+        <name>m_Param</name>
+        <qualifiedname>FPDF_FILEACCESS::m_Param</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdfview.h" line="463" column="8" bodyfile="fpdfview.h" bodystart="463" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdfview.h" line="445" column="1" bodyfile="fpdfview.h" bodystart="445" bodyend="464"/>
+    <listofallmembers>
+      <member refid="structFPDF__FILEACCESS_1aeecb48c0ed366c3a1ca36e893797e9a9" prot="public" virt="non-virtual"><scope>FPDF_FILEACCESS</scope><name>m_FileLen</name></member>
+      <member refid="structFPDF__FILEACCESS_1af20b771fe07b7343e6c6b529137e1ec5" prot="public" virt="non-virtual"><scope>FPDF_FILEACCESS</scope><name>m_GetBlock</name></member>
+      <member refid="structFPDF__FILEACCESS_1ade62a986b3e580a8866a76ccefbd9e96" prot="public" virt="non-virtual"><scope>FPDF_FILEACCESS</scope><name>m_Param</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

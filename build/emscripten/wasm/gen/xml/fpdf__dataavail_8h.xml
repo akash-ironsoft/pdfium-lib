@@ -1,0 +1,336 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__dataavail_8h" kind="file" language="C++">
+    <compoundname>fpdf_dataavail.h</compoundname>
+    <includes local="no">stddef.h</includes>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_dataavail.h</label>
+        <link refid="fpdf__dataavail_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="struct__FX__FILEAVAIL" prot="public">_FX_FILEAVAIL</innerclass>
+    <innerclass refid="struct__FX__DOWNLOADHINTS" prot="public">_FX_DOWNLOADHINTS</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a4ec9931a670fcc7c1a732b369b0cf414" prot="public" static="no">
+        <name>PDF_LINEARIZATION_UNKNOWN</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="15" column="9" bodyfile="fpdf_dataavail.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1ab58238f3e62165b9ba4814cfae2a834d" prot="public" static="no">
+        <name>PDF_NOT_LINEARIZED</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="16" column="9" bodyfile="fpdf_dataavail.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a68546e713d302ad8c4d23955c02ccb03" prot="public" static="no">
+        <name>PDF_LINEARIZED</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="17" column="9" bodyfile="fpdf_dataavail.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a53d776aa42aeaa43a10b6cd33238a575" prot="public" static="no">
+        <name>PDF_DATA_ERROR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="19" column="9" bodyfile="fpdf_dataavail.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a4cd3dc78ca06e7345da8d12fe99d0797" prot="public" static="no">
+        <name>PDF_DATA_NOTAVAIL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="20" column="9" bodyfile="fpdf_dataavail.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a1805ae7ea97a702f7715f52dce5a7b2b" prot="public" static="no">
+        <name>PDF_DATA_AVAIL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="21" column="9" bodyfile="fpdf_dataavail.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1aabe88de3cf6f5855d006d4e8e6432f1b" prot="public" static="no">
+        <name>PDF_FORM_ERROR</name>
+        <initializer>-1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="23" column="9" bodyfile="fpdf_dataavail.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a4825de6ceebf535763cbc305eea1765d" prot="public" static="no">
+        <name>PDF_FORM_NOTAVAIL</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="24" column="9" bodyfile="fpdf_dataavail.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a4ec9a8551165d726cc60368948033b9b" prot="public" static="no">
+        <name>PDF_FORM_AVAIL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="25" column="9" bodyfile="fpdf_dataavail.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__dataavail_8h_1a0abf72ced85f1d3b32e6241811e6d9a4" prot="public" static="no">
+        <name>PDF_FORM_NOTEXIST</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="26" column="9" bodyfile="fpdf_dataavail.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__dataavail_8h_1aec75d8dbd178b9214ca12983b14ec98a" prot="public" static="no">
+        <type>struct <ref refid="struct__FX__FILEAVAIL" kindref="compound">_FX_FILEAVAIL</ref></type>
+        <definition>typedef struct _FX_FILEAVAIL FX_FILEAVAIL</definition>
+        <argsstring></argsstring>
+        <name>FX_FILEAVAIL</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="52" column="14"/>
+      </memberdef>
+      <memberdef kind="typedef" id="fpdf__dataavail_8h_1afdcc0b18aa1c17e1b6fdb6d53a014be0" prot="public" static="no">
+        <type>struct <ref refid="struct__FX__DOWNLOADHINTS" kindref="compound">_FX_DOWNLOADHINTS</ref></type>
+        <definition>typedef struct _FX_DOWNLOADHINTS FX_DOWNLOADHINTS</definition>
+        <argsstring></argsstring>
+        <name>FX_DOWNLOADHINTS</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="90" column="18"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__dataavail_8h_1af6363ce82e2838e94d13aad4a0b1fd4f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_AVAIL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_AVAIL FPDF_CALLCONV FPDFAvail_Create</definition>
+        <argsstring>(FX_FILEAVAIL *file_avail, FPDF_FILEACCESS *file)</argsstring>
+        <name>FPDFAvail_Create</name>
+        <param>
+          <type><ref refid="struct__FX__FILEAVAIL" kindref="compound">FX_FILEAVAIL</ref> *</type>
+          <declname>file_avail</declname>
+        </param>
+        <param>
+          <type><ref refid="structFPDF__FILEACCESS" kindref="compound">FPDF_FILEACCESS</ref> *</type>
+          <declname>file</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="62" column="38" declfile="fpdf_dataavail.h" declline="62" declcolumn="38"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1a7fa8eca8b98c808dee6be167692ae797" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT void FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT void FPDF_CALLCONV FPDFAvail_Destroy</definition>
+        <argsstring>(FPDF_AVAIL avail)</argsstring>
+        <name>FPDFAvail_Destroy</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="68" column="32" declfile="fpdf_dataavail.h" declline="68" declcolumn="32"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1ab5993fcf4802fc06b39b4e623f4ee6ad" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAvail_IsDocAvail</definition>
+        <argsstring>(FPDF_AVAIL avail, FX_DOWNLOADHINTS *hints)</argsstring>
+        <name>FPDFAvail_IsDocAvail</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FX__DOWNLOADHINTS" kindref="compound">FX_DOWNLOADHINTS</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="109" column="31" declfile="fpdf_dataavail.h" declline="109" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1ab2be1d903d8c983adfc03703278c7524" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_DOCUMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_DOCUMENT FPDF_CALLCONV FPDFAvail_GetDocument</definition>
+        <argsstring>(FPDF_AVAIL avail, FPDF_BYTESTRING password)</argsstring>
+        <name>FPDFAvail_GetDocument</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>password</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="124" column="1" declfile="fpdf_dataavail.h" declline="124" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1ac59de5c919cb7765cc6e5b05c85d2bcf" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAvail_GetFirstPageNum</definition>
+        <argsstring>(FPDF_DOCUMENT doc)</argsstring>
+        <name>FPDFAvail_GetFirstPageNum</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>doc</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="135" column="31" declfile="fpdf_dataavail.h" declline="135" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1ab206355cfd9c7e1f5b55eed949f007de" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAvail_IsPageAvail</definition>
+        <argsstring>(FPDF_AVAIL avail, int page_index, FX_DOWNLOADHINTS *hints)</argsstring>
+        <name>FPDFAvail_IsPageAvail</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>page_index</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FX__DOWNLOADHINTS" kindref="compound">FX_DOWNLOADHINTS</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="157" column="31" declfile="fpdf_dataavail.h" declline="157" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1a576348ceffebb3c10f20704618c390e4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAvail_IsFormAvail</definition>
+        <argsstring>(FPDF_AVAIL avail, FX_DOWNLOADHINTS *hints)</argsstring>
+        <name>FPDFAvail_IsFormAvail</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <param>
+          <type><ref refid="struct__FX__DOWNLOADHINTS" kindref="compound">FX_DOWNLOADHINTS</ref> *</type>
+          <declname>hints</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="182" column="31" declfile="fpdf_dataavail.h" declline="182" declcolumn="31"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__dataavail_8h_1aeae212e9732f2d415ae65a056ebe8756" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFAvail_IsLinearized</definition>
+        <argsstring>(FPDF_AVAIL avail)</argsstring>
+        <name>FPDFAvail_IsLinearized</name>
+        <param>
+          <type>FPDF_AVAIL</type>
+          <declname>avail</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_dataavail.h" line="198" column="31" declfile="fpdf_dataavail.h" declline="198" declcolumn="31"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_dataavail.h"/>
+  </compounddef>
+</doxygen>

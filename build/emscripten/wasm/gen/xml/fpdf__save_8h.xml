@@ -1,0 +1,136 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__save_8h" kind="file" language="C++">
+    <compoundname>fpdf_save.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_save.h</label>
+        <link refid="fpdf__save_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <innerclass refid="structFPDF__FILEWRITE__" prot="public">FPDF_FILEWRITE_</innerclass>
+    <sectiondef kind="define">
+      <memberdef kind="define" id="fpdf__save_8h_1a1d5b1a39fb70282aecc2f1a45a68bf5c" prot="public" static="no">
+        <name>FPDF_INCREMENTAL</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="45" column="9" bodyfile="fpdf_save.h" bodystart="45" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__save_8h_1a9375f96ff98b297d95191f83ccd3d6b0" prot="public" static="no">
+        <name>FPDF_NO_INCREMENTAL</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="46" column="9" bodyfile="fpdf_save.h" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fpdf__save_8h_1a7b21724e4dda81e14d4fc3af0e72cf33" prot="public" static="no">
+        <name>FPDF_REMOVE_SECURITY</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="47" column="9" bodyfile="fpdf_save.h" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="fpdf__save_8h_1a1313f662740bac9a370234a7995c68b6" prot="public" static="no">
+        <type>struct <ref refid="structFPDF__FILEWRITE__" kindref="compound">FPDF_FILEWRITE_</ref></type>
+        <definition>typedef struct FPDF_FILEWRITE_ FPDF_FILEWRITE</definition>
+        <argsstring></argsstring>
+        <name>FPDF_FILEWRITE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="42" column="16"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__save_8h_1a8bbf8d5b4ccf5ee21f9b0a63957d60e1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_SaveAsCopy</definition>
+        <argsstring>(FPDF_DOCUMENT document, FPDF_FILEWRITE *pFileWrite, FPDF_DWORD flags)</argsstring>
+        <name>FPDF_SaveAsCopy</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type><ref refid="structFPDF__FILEWRITE__" kindref="compound">FPDF_FILEWRITE</ref> *</type>
+          <declname>pFileWrite</declname>
+        </param>
+        <param>
+          <type>FPDF_DWORD</type>
+          <declname>flags</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="60" column="37" declfile="fpdf_save.h" declline="60" declcolumn="37"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__save_8h_1a9d590e63538e8bb51f36f381b7be5052" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDF_SaveWithVersion</definition>
+        <argsstring>(FPDF_DOCUMENT document, FPDF_FILEWRITE *pFileWrite, FPDF_DWORD flags, int fileVersion)</argsstring>
+        <name>FPDF_SaveWithVersion</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type><ref refid="structFPDF__FILEWRITE__" kindref="compound">FPDF_FILEWRITE</ref> *</type>
+          <declname>pFileWrite</declname>
+        </param>
+        <param>
+          <type>FPDF_DWORD</type>
+          <declname>flags</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>fileVersion</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_save.h" line="77" column="1" declfile="fpdf_save.h" declline="77" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_save.h"/>
+  </compounddef>
+</doxygen>

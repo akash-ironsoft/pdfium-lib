@@ -1,0 +1,315 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="fpdf__attachment_8h" kind="file" language="C++">
+    <compoundname>fpdf_attachment.h</compoundname>
+    <includes refid="fpdfview_8h" local="yes">fpdfview.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>fpdf_attachment.h</label>
+        <link refid="fpdf__attachment_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>fpdfview.h</label>
+        <link refid="fpdfview_8h_source"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="3">
+        <label>stddef.h</label>
+      </node>
+    </incdepgraph>
+    <sectiondef kind="func">
+      <memberdef kind="function" id="fpdf__attachment_8h_1a5a2edca8bb28d5d55833c2873285dd7d" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT int FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT int FPDF_CALLCONV FPDFDoc_GetAttachmentCount</definition>
+        <argsstring>(FPDF_DOCUMENT document)</argsstring>
+        <name>FPDFDoc_GetAttachmentCount</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="22" column="1" declfile="fpdf_attachment.h" declline="22" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a65084b1361ea6d2098303bf21c6f4236" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV FPDFDoc_AddAttachment</definition>
+        <argsstring>(FPDF_DOCUMENT document, FPDF_WIDESTRING name)</argsstring>
+        <name>FPDFDoc_AddAttachment</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>name</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="35" column="1" declfile="fpdf_attachment.h" declline="35" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1ac37b1cf623bf50f1d48132c52aa5a565" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_ATTACHMENT FPDF_CALLCONV FPDFDoc_GetAttachment</definition>
+        <argsstring>(FPDF_DOCUMENT document, int index)</argsstring>
+        <name>FPDFDoc_GetAttachment</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="46" column="1" declfile="fpdf_attachment.h" declline="46" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a77076651f9397b0fc1bfe296a9a6c056" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFDoc_DeleteAttachment</definition>
+        <argsstring>(FPDF_DOCUMENT document, int index)</argsstring>
+        <name>FPDFDoc_DeleteAttachment</name>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="59" column="1" declfile="fpdf_attachment.h" declline="59" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a5c9e7ecee4377cd3df979bd27dd8eaa0" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAttachment_GetName</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAttachment_GetName</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="72" column="1" declfile="fpdf_attachment.h" declline="72" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1af2567062e199e4cf7b127915a731047f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAttachment_HasKey</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_BYTESTRING key)</argsstring>
+        <name>FPDFAttachment_HasKey</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="84" column="1" declfile="fpdf_attachment.h" declline="84" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a3800b2bc83ee21bad46e2ffe5ca43034" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_OBJECT_TYPE FPDF_CALLCONV FPDFAttachment_GetValueType</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_BYTESTRING key)</argsstring>
+        <name>FPDFAttachment_GetValueType</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="95" column="1" declfile="fpdf_attachment.h" declline="95" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a8197fb98cda34d2285fdaa464facb544" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAttachment_SetStringValue</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_BYTESTRING key, FPDF_WIDESTRING value)</argsstring>
+        <name>FPDFAttachment_SetStringValue</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>FPDF_WIDESTRING</type>
+          <declname>value</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="108" column="1" declfile="fpdf_attachment.h" declline="108" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a4978b1113900d5977b7ecbddbff83b9c" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAttachment_GetStringValue</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_BYTESTRING key, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAttachment_GetStringValue</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_BYTESTRING</type>
+          <declname>key</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="129" column="1" declfile="fpdf_attachment.h" declline="129" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a42a31b2b7d61169458b554e004899b16" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAttachment_SetFile</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_DOCUMENT document, const void *contents, unsigned long len)</argsstring>
+        <name>FPDFAttachment_SetFile</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_DOCUMENT</type>
+          <declname>document</declname>
+        </param>
+        <param>
+          <type>const void *</type>
+          <declname>contents</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>len</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="146" column="1" declfile="fpdf_attachment.h" declline="146" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1ae2b8c63c4db77cef25dcfecfa1a78f4a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT FPDF_BOOL FPDF_CALLCONV FPDFAttachment_GetFile</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, void *buffer, unsigned long buflen, unsigned long *out_buflen)</argsstring>
+        <name>FPDFAttachment_GetFile</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>void *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <param>
+          <type>unsigned long *</type>
+          <declname>out_buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="170" column="1" declfile="fpdf_attachment.h" declline="170" declcolumn="1"/>
+      </memberdef>
+      <memberdef kind="function" id="fpdf__attachment_8h_1a878b9646d2d909d18f6890568bd87046" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>FPDF_EXPORT unsigned long FPDF_CALLCONV</type>
+        <definition>FPDF_EXPORT unsigned long FPDF_CALLCONV FPDFAttachment_GetSubtype</definition>
+        <argsstring>(FPDF_ATTACHMENT attachment, FPDF_WCHAR *buffer, unsigned long buflen)</argsstring>
+        <name>FPDFAttachment_GetSubtype</name>
+        <param>
+          <type>FPDF_ATTACHMENT</type>
+          <declname>attachment</declname>
+        </param>
+        <param>
+          <type>FPDF_WCHAR *</type>
+          <declname>buffer</declname>
+        </param>
+        <param>
+          <type>unsigned long</type>
+          <declname>buflen</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_attachment.h" line="188" column="1" declfile="fpdf_attachment.h" declline="188" declcolumn="1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_attachment.h"/>
+  </compounddef>
+</doxygen>

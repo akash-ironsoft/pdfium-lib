@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.8" xml:lang="en-US">
+  <compounddef id="struct__IPDF__JsPlatform" kind="struct" language="C++" prot="public">
+    <compoundname>_IPDF_JsPlatform</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1ac093a2a2472ce25e171cc6431aba5809" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int _IPDF_JsPlatform::version</definition>
+        <argsstring></argsstring>
+        <name>version</name>
+        <qualifiedname>_IPDF_JsPlatform::version</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="54" column="7" bodyfile="fpdf_formfill.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1aa2ba296e6025fef1a3a26ce24bf1d940" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _IPDF_JsPlatform::app_alert) (struct _IPDF_JsPlatform *pThis, FPDF_WIDESTRING Msg, FPDF_WIDESTRING Title, int Type, int Icon)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, FPDF_WIDESTRING Msg, FPDF_WIDESTRING Title, int Type, int Icon)</argsstring>
+        <name>app_alert</name>
+        <qualifiedname>_IPDF_JsPlatform::app_alert</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="75" column="3" bodyfile="fpdf_formfill.h" bodystart="75" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1ac4af6f4c0d733831d9a80f7c23c6133f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _IPDF_JsPlatform::app_beep) (struct _IPDF_JsPlatform *pThis, int nType)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, int nType)</argsstring>
+        <name>app_beep</name>
+        <qualifiedname>_IPDF_JsPlatform::app_beep</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="93" column="3" bodyfile="fpdf_formfill.h" bodystart="93" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a87f5cc37bcdfa1aa8305b3de74df83f6" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _IPDF_JsPlatform::app_response) (struct _IPDF_JsPlatform *pThis, FPDF_WIDESTRING Question, FPDF_WIDESTRING Title, FPDF_WIDESTRING Default, FPDF_WIDESTRING cLabel, FPDF_BOOL bPassword, void *response, int length)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, FPDF_WIDESTRING Question, FPDF_WIDESTRING Title, FPDF_WIDESTRING Default, FPDF_WIDESTRING cLabel, FPDF_BOOL bPassword, void *response, int length)</argsstring>
+        <name>app_response</name>
+        <qualifiedname>_IPDF_JsPlatform::app_response</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="128" column="3" bodyfile="fpdf_formfill.h" bodystart="128" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a394cadac72a09db24ca6d631fba56ba2" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _IPDF_JsPlatform::Doc_getFilePath) (struct _IPDF_JsPlatform *pThis, void *filePath, int length)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, void *filePath, int length)</argsstring>
+        <name>Doc_getFilePath</name>
+        <qualifiedname>_IPDF_JsPlatform::Doc_getFilePath</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="157" column="3" bodyfile="fpdf_formfill.h" bodystart="157" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a81d27df966637bfd08e738bedc7e9bdc" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _IPDF_JsPlatform::Doc_mail) (struct _IPDF_JsPlatform *pThis, void *mailData, int length, FPDF_BOOL bUI, FPDF_WIDESTRING To, FPDF_WIDESTRING Subject, FPDF_WIDESTRING CC, FPDF_WIDESTRING BCC, FPDF_WIDESTRING Msg)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, void *mailData, int length, FPDF_BOOL bUI, FPDF_WIDESTRING To, FPDF_WIDESTRING Subject, FPDF_WIDESTRING CC, FPDF_WIDESTRING BCC, FPDF_WIDESTRING Msg)</argsstring>
+        <name>Doc_mail</name>
+        <qualifiedname>_IPDF_JsPlatform::Doc_mail</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="192" column="3" bodyfile="fpdf_formfill.h" bodystart="192" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a54afeb53c7c1dd72bb917640dccec41f" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _IPDF_JsPlatform::Doc_print) (struct _IPDF_JsPlatform *pThis, FPDF_BOOL bUI, int nStart, int nEnd, FPDF_BOOL bSilent, FPDF_BOOL bShrinkToFit, FPDF_BOOL bPrintAsImage, FPDF_BOOL bReverse, FPDF_BOOL bAnnotations)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, FPDF_BOOL bUI, int nStart, int nEnd, FPDF_BOOL bSilent, FPDF_BOOL bShrinkToFit, FPDF_BOOL bPrintAsImage, FPDF_BOOL bReverse, FPDF_BOOL bAnnotations)</argsstring>
+        <name>Doc_print</name>
+        <qualifiedname>_IPDF_JsPlatform::Doc_print</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="227" column="3" bodyfile="fpdf_formfill.h" bodystart="227" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a1c0a63ac5b280f64e6b0a33af196fd38" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _IPDF_JsPlatform::Doc_submitForm) (struct _IPDF_JsPlatform *pThis, void *formData, int length, FPDF_WIDESTRING URL)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, void *formData, int length, FPDF_WIDESTRING URL)</argsstring>
+        <name>Doc_submitForm</name>
+        <qualifiedname>_IPDF_JsPlatform::Doc_submitForm</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="251" column="3" bodyfile="fpdf_formfill.h" bodystart="251" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a4929e398f52cf4a8568cadf8f21f4814" prot="public" static="no" mutable="no">
+        <type>void(*</type>
+        <definition>void(* _IPDF_JsPlatform::Doc_gotoPage) (struct _IPDF_JsPlatform *pThis, int nPageNum)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, int nPageNum)</argsstring>
+        <name>Doc_gotoPage</name>
+        <qualifiedname>_IPDF_JsPlatform::Doc_gotoPage</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="267" column="3" bodyfile="fpdf_formfill.h" bodystart="267" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1aff77d9c9c7978ba38e3613cdd1bc8d48" prot="public" static="no" mutable="no">
+        <type>int(*</type>
+        <definition>int(* _IPDF_JsPlatform::Field_browse) (struct _IPDF_JsPlatform *pThis, void *filePath, int length)</definition>
+        <argsstring>)(struct _IPDF_JsPlatform *pThis, void *filePath, int length)</argsstring>
+        <name>Field_browse</name>
+        <qualifiedname>_IPDF_JsPlatform::Field_browse</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="284" column="3" bodyfile="fpdf_formfill.h" bodystart="284" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a5709a8a2490f24f646cfc16b7f58adfc" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _IPDF_JsPlatform::m_pFormfillinfo</definition>
+        <argsstring></argsstring>
+        <name>m_pFormfillinfo</name>
+        <qualifiedname>_IPDF_JsPlatform::m_pFormfillinfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="291" column="8" bodyfile="fpdf_formfill.h" bodystart="291" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1ad0ca4348ca13819f8346fef47e937a76" prot="public" static="no" mutable="no">
+        <type>void *</type>
+        <definition>void* _IPDF_JsPlatform::m_isolate</definition>
+        <argsstring></argsstring>
+        <name>m_isolate</name>
+        <qualifiedname>_IPDF_JsPlatform::m_isolate</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="295" column="8" bodyfile="fpdf_formfill.h" bodystart="295" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct__IPDF__JsPlatform_1a211bb38f38f979c5a41a8b2032c107ed" prot="public" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int _IPDF_JsPlatform::m_v8EmbedderSlot</definition>
+        <argsstring></argsstring>
+        <name>m_v8EmbedderSlot</name>
+        <qualifiedname>_IPDF_JsPlatform::m_v8EmbedderSlot</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="fpdf_formfill.h" line="296" column="16" bodyfile="fpdf_formfill.h" bodystart="296" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="fpdf_formfill.h" line="52" column="1" bodyfile="fpdf_formfill.h" bodystart="52" bodyend="300"/>
+    <listofallmembers>
+      <member refid="struct__IPDF__JsPlatform_1aa2ba296e6025fef1a3a26ce24bf1d940" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>app_alert</name></member>
+      <member refid="struct__IPDF__JsPlatform_1ac4af6f4c0d733831d9a80f7c23c6133f" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>app_beep</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a87f5cc37bcdfa1aa8305b3de74df83f6" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>app_response</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a394cadac72a09db24ca6d631fba56ba2" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Doc_getFilePath</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a4929e398f52cf4a8568cadf8f21f4814" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Doc_gotoPage</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a81d27df966637bfd08e738bedc7e9bdc" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Doc_mail</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a54afeb53c7c1dd72bb917640dccec41f" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Doc_print</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a1c0a63ac5b280f64e6b0a33af196fd38" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Doc_submitForm</name></member>
+      <member refid="struct__IPDF__JsPlatform_1aff77d9c9c7978ba38e3613cdd1bc8d48" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>Field_browse</name></member>
+      <member refid="struct__IPDF__JsPlatform_1ad0ca4348ca13819f8346fef47e937a76" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>m_isolate</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a5709a8a2490f24f646cfc16b7f58adfc" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>m_pFormfillinfo</name></member>
+      <member refid="struct__IPDF__JsPlatform_1a211bb38f38f979c5a41a8b2032c107ed" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>m_v8EmbedderSlot</name></member>
+      <member refid="struct__IPDF__JsPlatform_1ac093a2a2472ce25e171cc6431aba5809" prot="public" virt="non-virtual"><scope>_IPDF_JsPlatform</scope><name>version</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
